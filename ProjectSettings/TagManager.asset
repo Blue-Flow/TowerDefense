@@ -47,6 +47,9 @@ TagManager:
   - name: Units
     uniqueID: 1426079505
     locked: 0
+  - name: Projectiles
+    uniqueID: 1564161749
+    locked: 0
   - name: Trees
     uniqueID: 1074265023
     locked: 0
