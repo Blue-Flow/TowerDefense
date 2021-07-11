@@ -15,6 +15,8 @@ public class Spawner : MonoBehaviour
      new Vector2(10, 4.35f),
      new Vector2(10, 5.35f)
         };
+    private int lastSpawnedLineNumber;
+    private int lineToSpawn;
 
     [Header("LevelInfo")] // Transfer this to the LevelManager and add a method to get the info from it at the start of the level
     [SerializeField] float minSpawnDelay = 1f;
@@ -34,19 +36,24 @@ public class Spawner : MonoBehaviour
             float timeToWait = GenerateRandomTimeToWait(minSpawnDelay, maxSpawnDelay);
 
             yield return new WaitForSeconds(timeToWait);
-
+            
             SpawnAttacker();
         }
     }
     private void SpawnAttacker()
     {
-        int lineToSpawn = GenerateRandomLineToSpawn();
+        lineToSpawn = GenerateRandomLineToSpawn();
+        lastSpawnedLineNumber = lineToSpawn;
         Attacker ennemyToSpawn = Instantiate(attackerPrefabs[0]);
         ennemyToSpawn.transform.position = spawnPositions[lineToSpawn];
     }
     int GenerateRandomLineToSpawn()
     {
-        return Random.Range((minNumberOfLines-1), (maxNumberOfLines-1));
+        while (lastSpawnedLineNumber == lineToSpawn)
+        {
+           lineToSpawn = Random.Range((minNumberOfLines - 1), (maxNumberOfLines - 1));
+        }
+        return lineToSpawn;
     }
     float GenerateRandomTimeToWait(float minTime, float maxTime)
     {
