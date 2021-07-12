@@ -17,7 +17,7 @@ TagManager:
   - UI
   - Background
   - Units
-  - Trees
+  - Fog
   - 
   - 
   - 
@@ -54,6 +54,6 @@ TagManager:
   - name: Projectiles
     uniqueID: 1564161749
     locked: 0
-  - name: Trees
+  - name: Fog
     uniqueID: 1074265023
     locked: 0
