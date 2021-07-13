@@ -5,24 +5,18 @@ using UnityEngine;
 public class DefenderPlacement : MonoBehaviour
 {
     [SerializeField] List<Defender> defendersPrefabs;
-    private Vector2 tileClickedPosition;
     private void OnMouseDown()
     {
-        tileClickedPosition = GetSelectedTile();
-        if (tileClickedPosition != Vector2.zero)
-            SpawnDefender();
+        SpawnDefender(GetSelectedTilePosition());
     }
-    private void SpawnDefender()
+    private void SpawnDefender(Vector2 tileClickedPosition)
     {
         Instantiate(defendersPrefabs[0], tileClickedPosition, Quaternion.identity);
     }
-    private Vector2 GetSelectedTile()
+    private Vector2 GetSelectedTilePosition()
     {
-        RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-        if (hit.collider != null)
-        {
-            return hit.collider.transform.position;
-        }
-        else return Vector2.zero;
+        Vector2 clickPosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+        Vector2 worldPosition = Camera.main.ScreenToWorldPoint(clickPosition);
+        return worldPosition;
     }
 }
