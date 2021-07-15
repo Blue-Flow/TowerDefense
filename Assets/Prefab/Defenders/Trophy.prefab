@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3622053500362825296}
   - component: {fileID: 3622053500362825299}
   - component: {fileID: 3622053500362825298}
+  - component: {fileID: 675891199377772904}
   m_Layer: 0
   m_Name: Trophy
   m_TagString: Untagged
@@ -4828,6 +4829,19 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &675891199377772904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3622053500362825303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c2909a19ac1f90439b4809271146ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defenderCost: 5
 --- !u!1 &3622053500400104087
 GameObject:
   m_ObjectHideFlags: 0

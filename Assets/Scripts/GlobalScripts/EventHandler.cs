@@ -7,6 +7,8 @@ public class EventHandler : MonoBehaviour
 {
     public static event Action OnStartGame;
     public static event Action<bool> OnUnitDie;
+    public static event Action<Defender> OnSpawnDefender;
+    public static event Action<int> OnResourceValueChange;
 
     public static void StartGame()
     {
@@ -23,5 +25,21 @@ public class EventHandler : MonoBehaviour
             OnUnitDie(isAttacker);
         }
         else Debug.Log("Error with event OnUnitDie, no subscriber");
+    }
+    public static void SpawnDefender(Defender defender)
+    {
+        if (OnSpawnDefender!= null)
+        {
+            OnSpawnDefender(defender);
+        }
+        else Debug.Log("Error with event OnSpawnDefender, no subscriber");
+    }
+    public static void ResourceValueChanged(int valueToDisplay)
+    {
+        if (OnResourceValueChange != null)
+        {
+            OnResourceValueChange(valueToDisplay);
+        }
+        else Debug.Log("Error with event OnResourceValueChange, no subscriber");
     }
 }
