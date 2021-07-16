@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3622053500362825296}
   - component: {fileID: 3622053500362825299}
   - component: {fileID: 3622053500362825298}
-  - component: {fileID: 675891199377772904}
+  - component: {fileID: 4271820879086872625}
   m_Layer: 0
   m_Name: Trophy
   m_TagString: Untagged
@@ -4829,7 +4829,7 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &675891199377772904
+--- !u!114 &4271820879086872625
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

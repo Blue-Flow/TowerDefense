@@ -17,6 +17,7 @@ public class DefenderSpawner : MonoBehaviour
             EventHandler.SpawnDefender(defender);
             EventHandler.ResourceValueChanged(currentResourceAmount);
         }
+        else Debug.Log("Not enough ressources" + currentResourceAmount + "/" + defenderCost);
     }
 
 }

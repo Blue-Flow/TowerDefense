@@ -28,7 +28,7 @@ public class EventHandler : MonoBehaviour
     }
     public static void SpawnDefender(Defender defender)
     {
-        if (OnSpawnDefender!= null)
+        if (OnSpawnDefender != null)
         {
             OnSpawnDefender(defender);
         }

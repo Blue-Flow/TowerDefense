@@ -24,7 +24,7 @@ public class DefenderPlacement : MonoBehaviour
     private void OnMouseDown()
     {
         if (isSpawning)
-        SpawnDefender(GetSelectedTilePosition());
+            SpawnDefender(GetSelectedTilePosition());
     }
     private Vector2 GetSelectedTilePosition()
     {
@@ -33,7 +33,7 @@ public class DefenderPlacement : MonoBehaviour
         Vector2 gridPosition = SnapToGrid(worldPosition);
         return gridPosition;
     }
-    private Vector2 SnapToGrid (Vector2 rawWorldPosition)
+    private Vector2 SnapToGrid(Vector2 rawWorldPosition)
     {
         float newX = Mathf.RoundToInt(rawWorldPosition.x);
         float newY = Mathf.RoundToInt(rawWorldPosition.y);
