@@ -5,8 +5,12 @@ using UnityEngine;
 public class DefenderSpawner : MonoBehaviour
 {
     private Defender currentSelectedDefender;
-    private int currentResourceAmount;
+    private int currentResourceAmount = 25;
 
+    private void Start()
+    {
+        EventHandler.ResourceValueChanged(currentResourceAmount);
+    }
     public void CheckDefenderCost(Defender defender)
     {
         int defenderCost = defender.GetCost();
