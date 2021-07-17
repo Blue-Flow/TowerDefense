@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class DefenderSpawner : MonoBehaviour
 {
-    private Defender currentSelectedDefender;
     private int currentResourceAmount = 25;
 
+    private void Awake()
+    {
+        EventsSubscribe();
+    }
     private void Start()
     {
         EventHandler.ResourceValueChanged(currentResourceAmount);
@@ -16,12 +19,30 @@ public class DefenderSpawner : MonoBehaviour
         int defenderCost = defender.GetCost();
         if (defenderCost <= currentResourceAmount)
         {
-            currentSelectedDefender = defender;
-            currentResourceAmount -= defenderCost;
+            SubstractResourceToCount(defenderCost);
             EventHandler.SpawnDefender(defender);
-            EventHandler.ResourceValueChanged(currentResourceAmount);
         }
         else Debug.Log("Not enough ressources" + currentResourceAmount + "/" + defenderCost);
     }
+    private void SubstractResourceToCount(int amountToSubstract)
+    {
+        currentResourceAmount -= amountToSubstract;
+        EventHandler.ResourceValueChanged(currentResourceAmount);
+    }
+    private void AddResourceToCount(int amountToAdd)
+    {
+        currentResourceAmount += amountToAdd;
+        EventHandler.ResourceValueChanged(currentResourceAmount);
+    }
+    #region Events
+    private void EventsSubscribe()
+    {
+        EventHandler.OnResourceProduced += AddResourceToCount;
+    }
 
+    private void OnDestroy()
+    {
+        EventHandler.OnResourceProduced -= AddResourceToCount;
+    }
+    #endregion
 }

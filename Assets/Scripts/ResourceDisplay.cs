@@ -15,6 +15,7 @@ public class ResourceDisplay : MonoBehaviour
     {
         resourcesDisplay.text = valueToDisplay.ToString();
     }
+    #region Events
     private void EventsSubscribe()
     {
         EventHandler.OnResourceValueChange += DisplayResourceValue;
@@ -23,5 +24,6 @@ public class ResourceDisplay : MonoBehaviour
     {
         EventHandler.OnResourceValueChange -= DisplayResourceValue;
     }
+    #endregion
 }
 

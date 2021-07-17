@@ -9,6 +9,7 @@ public class EventHandler : MonoBehaviour
     public static event Action<bool> OnUnitDie;
     public static event Action<Defender> OnSpawnDefender;
     public static event Action<int> OnResourceValueChange;
+    public static event Action<int> OnResourceProduced;
 
     public static void StartGame()
     {
@@ -41,5 +42,13 @@ public class EventHandler : MonoBehaviour
             OnResourceValueChange(valueToDisplay);
         }
         else Debug.Log("Error with event OnResourceValueChange, no subscriber");
+    }
+    public static void ResourceProduced(int valueToAdd)
+    {
+        if (OnResourceProduced != null)
+        {
+            OnResourceProduced(valueToAdd);
+        }
+        else Debug.Log("Error with event OnResourceProduced, no subscriber");
     }
 }
