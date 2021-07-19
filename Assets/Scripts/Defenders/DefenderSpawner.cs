@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DefenderSpawner : MonoBehaviour
 {
-    private int currentResourceAmount = 25;
+    [SerializeField] int currentResourceAmount = 1000;
 
     private void Awake()
     {

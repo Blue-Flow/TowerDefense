@@ -8,9 +8,11 @@ public class Defender : MonoBehaviour
     [SerializeField] float defenserRange;
     private bool isAttacking = false;
     LayerMask enemyLayerMask;
+    Animator animator;
     private void Start()
     {
         enemyLayerMask = LayerMask.GetMask("Attackers");
+        animator = GetComponent<Animator>();
     }
     private void Update()
     {
@@ -30,13 +32,14 @@ public class Defender : MonoBehaviour
     }
     private void StartAttacking()
     {
+        animator.SetBool("isAttacking", true);
         isAttacking = true;
-        Debug.Log("is attacking :" + isAttacking);
     }
     private void StopAttacking()
     {
+        animator.SetBool("isAttacking", false);
         isAttacking = false;
-        Debug.Log("is attacking :" + isAttacking);
+
     }
 }
 

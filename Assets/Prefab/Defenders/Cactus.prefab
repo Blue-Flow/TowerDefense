@@ -182,7 +182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defenderCost: 10
-  defenserRange: 1000
+  defenserRange: 4
 --- !u!61 &6774250482354977897
 BoxCollider2D:
   m_ObjectHideFlags: 0
