@@ -7,13 +7,16 @@ public class DefenderPlacement : MonoBehaviour
     [SerializeField] List<Defender> defendersPrefabs;
     private bool isSpawning = false;
     private Defender currentDefenderToSpawn;
+    private int indexOfDefenderToSpawn;
     private void Start()
     {
         EventsSubscribe();
     }
     private void ActivateSpawnMode(Defender defenderToSpawn)
     {
-        currentDefenderToSpawn = defenderToSpawn;
+        //currentDefenderToSpawn = defendersPrefabs.Find(x => x == defenderToSpawn);
+        indexOfDefenderToSpawn = defendersPrefabs.FindIndex(x => x == defenderToSpawn);
+        Debug.Log(indexOfDefenderToSpawn);
         isSpawning = true;
     }
     private void DeactivateSpawnMode()
@@ -42,7 +45,7 @@ public class DefenderPlacement : MonoBehaviour
     private void SpawnDefender(Vector2 finalPosition)
     {
         // Find the right prefab to spawn inside the list according to the currentDefenderToSpawn
-        Instantiate(defendersPrefabs[0], finalPosition, Quaternion.identity);
+        Instantiate(defendersPrefabs[indexOfDefenderToSpawn], finalPosition, Quaternion.identity);
         DeactivateSpawnMode();
     }
     private void EventsSubscribe()

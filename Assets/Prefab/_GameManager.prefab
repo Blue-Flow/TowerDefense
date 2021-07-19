@@ -60,6 +60,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defendersPrefabs:
   - {fileID: 6084068942332240114, guid: 9a762474c07b4f24ba2c22120000c36e, type: 3}
+  - {fileID: 4271820879086872625, guid: f2629ab3ff724034da2fb4031ae1f040, type: 3}
 --- !u!61 &32155553
 BoxCollider2D:
   m_ObjectHideFlags: 0
