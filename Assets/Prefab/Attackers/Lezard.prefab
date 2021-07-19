@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -5654898285858331912}
   - component: {fileID: 8581580985976143316}
   - component: {fileID: 3783226715935805750}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Lezard
   m_TagString: Attacker
   m_Icon: {fileID: 0}

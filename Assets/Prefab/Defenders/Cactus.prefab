@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 3699054063588431254}
   - component: {fileID: -7975586273875010436}
   - component: {fileID: 6551525332141084929}
+  - component: {fileID: 6084068942332240114}
   - component: {fileID: 6774250482354977897}
   - component: {fileID: -6865133409558286883}
   m_Layer: 0
@@ -152,6 +153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthPoints: 1
   isAttacker: 0
+  deathVFX: {fileID: 0}
 --- !u!114 &6551525332141084929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,6 +169,20 @@ MonoBehaviour:
   thisCharacterGun: {fileID: 870027966688505415}
   projectile: {fileID: -8354519513383699604, guid: ceefde8ab3269b54baa8fd41dd2005b9, type: 3}
   projectileSpeed: 1
+--- !u!114 &6084068942332240114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4439607708957231643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c2909a19ac1f90439b4809271146ee5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defenderCost: 10
+  defenserRange: 4
 --- !u!61 &6774250482354977897
 BoxCollider2D:
   m_ObjectHideFlags: 0
