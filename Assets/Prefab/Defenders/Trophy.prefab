@@ -4874,6 +4874,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   defenderCost: 5
+  defenserRange: 0
 --- !u!114 &-2450452227540605399
 MonoBehaviour:
   m_ObjectHideFlags: 0

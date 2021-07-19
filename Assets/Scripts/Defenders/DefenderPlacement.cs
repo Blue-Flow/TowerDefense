@@ -14,9 +14,8 @@ public class DefenderPlacement : MonoBehaviour
     }
     private void ActivateSpawnMode(Defender defenderToSpawn)
     {
-        //currentDefenderToSpawn = defendersPrefabs.Find(x => x == defenderToSpawn);
+        // Find the right prefab to spawn inside the list according to the currentDefenderToSpawn
         indexOfDefenderToSpawn = defendersPrefabs.FindIndex(x => x == defenderToSpawn);
-        Debug.Log(indexOfDefenderToSpawn);
         isSpawning = true;
     }
     private void DeactivateSpawnMode()
@@ -44,7 +43,6 @@ public class DefenderPlacement : MonoBehaviour
     }
     private void SpawnDefender(Vector2 finalPosition)
     {
-        // Find the right prefab to spawn inside the list according to the currentDefenderToSpawn
         Instantiate(defendersPrefabs[indexOfDefenderToSpawn], finalPosition, Quaternion.identity);
         DeactivateSpawnMode();
     }

@@ -10,6 +10,7 @@ public class EventHandler : MonoBehaviour
     public static event Action<Defender> OnSpawnDefender;
     public static event Action<int> OnResourceValueChange;
     public static event Action<int> OnResourceProduced;
+    //public static event Action<> OnAttackerSpawned;
 
     public static void StartGame()
     {
@@ -51,4 +52,12 @@ public class EventHandler : MonoBehaviour
         }
         else Debug.Log("Error with event OnResourceProduced, no subscriber");
     }
+    /*public static void AttackerSpawned()
+    {
+        if (OnAttackerSpawned != null)
+        {
+            OnAttackerSpawned();
+        }
+        else Debug.Log("Error with event OnAttackerSpawned, no subscriber");
+    }*/
 }
