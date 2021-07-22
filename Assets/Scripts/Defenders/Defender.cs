@@ -6,6 +6,7 @@ public class Defender : MonoBehaviour
 {
     [SerializeField] int defenderCost;
     [SerializeField] float defenserRange;
+    [SerializeField] bool canAttack;
     private bool isAttacking = false;
     LayerMask enemyLayerMask;
     Animator animator;
@@ -16,6 +17,7 @@ public class Defender : MonoBehaviour
     }
     private void Update()
     {
+        if(canAttack)
         CheckForEnemyInRange();
     }
     private void CheckForEnemyInRange()
