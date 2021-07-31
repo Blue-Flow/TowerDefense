@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 4596538600383484367}
   - component: {fileID: 4596538600383484360}
   - component: {fileID: 4596538600383484361}
+  - component: {fileID: 2175763636807293727}
   - component: {fileID: 4596538600383484362}
   - component: {fileID: 1148820273949312338}
   - component: {fileID: 2240613466365394514}
@@ -153,6 +154,18 @@ MonoBehaviour:
   defenderCost: 15
   defenserRange: 0
   canAttack: 0
+--- !u!114 &2175763636807293727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4596538600383484363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c8f52809042ea3468a51bab9da8ea73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &4596538600383484362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,4 +227,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 3
+  m_Constraints: 7

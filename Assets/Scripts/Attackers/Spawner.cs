@@ -7,7 +7,7 @@ public class Spawner : MonoBehaviour
     private bool isSpawning = true;
 
     [SerializeField] List<Attacker> attackerPrefabs = new List<Attacker>();
-    // private int indexOfAttackerToSpawn;
+    [SerializeField] int NumberOfDifferentAttackersToSpawn;
 
     private Vector2[] spawnPositions = 
         {
@@ -46,8 +46,8 @@ public class Spawner : MonoBehaviour
     {
         lineToSpawn = GenerateRandomLineToSpawn();
         lastSpawnedLineNumber = lineToSpawn;
-        // indexOfAttackerToSpawn = attackerPrefabs.FindIndex(x => x == attackerToSpawn);
-        Attacker ennemyToSpawn = Instantiate(attackerPrefabs[0], transform);
+        int indexOfAttackerToSpawn = GenerateRandomAttackerToSpawn();
+        Attacker ennemyToSpawn = Instantiate(attackerPrefabs[indexOfAttackerToSpawn], transform);
         ennemyToSpawn.transform.position = spawnPositions[lineToSpawn];
     }
     int GenerateRandomLineToSpawn()
@@ -61,5 +61,9 @@ public class Spawner : MonoBehaviour
     float GenerateRandomTimeToWait(float minTime, float maxTime)
     {
         return Random.Range(minTime, maxTime);
+    }
+    int GenerateRandomAttackerToSpawn()
+    {
+        return Random.Range(0, NumberOfDifferentAttackersToSpawn);
     }
 }

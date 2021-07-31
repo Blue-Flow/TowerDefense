@@ -16,8 +16,7 @@ public class Attacker : MonoBehaviour
     void Update()
     {
         Move();
-        if (!currentTarget)
-            StopAttacking();
+        if (!currentTarget)  StopAttacking();
     }
     private void Move()
     {
@@ -27,15 +26,11 @@ public class Attacker : MonoBehaviour
     {
         moveSpeed = speed;
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void TriggerJump()
     {
-        GameObject otherObject = collision.gameObject;
-        if (otherObject.GetComponent<Defender>())
-        {
-            StartAttacking(otherObject);
-        }
+        animator.SetTrigger("jumpTrigger");
     }
-    private void StartAttacking(GameObject target)
+    public void StartAttacking(GameObject target)
     {
         currentTarget = target;
         animator.SetBool("isAttacking", true);

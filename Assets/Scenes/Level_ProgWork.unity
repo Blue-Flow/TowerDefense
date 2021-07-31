@@ -370,63 +370,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1975b4b5130cffb45a7e3e0831209ac1, type: 3}
---- !u!1001 &1580851083
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5639901465126721906, guid: e2f290458792dc54c80342f551351cbd, type: 3}
-      propertyPath: m_Name
-      value: Lezard
-      objectReference: {fileID: 0}
-    - target: {fileID: 5639901465126721911, guid: e2f290458792dc54c80342f551351cbd, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5639901465126721911, guid: e2f290458792dc54c80342f551351cbd, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 6.445933
-      objectReference: {fileID: 0}
-    - target: {fileID: 5639901465126721911, guid: e2f290458792dc54c80342f551351cbd, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.1864016
-      objectReference: {fileID: 0}
-    - target: {fileID: 5639901465126721911, guid: e2f290458792dc54c80342f551351cbd, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.82994896
-      objectReference: {fileID: 0}
-    - target: {fileID: 5639901465126721911, guid: e2f290458792dc54c80342f551351cbd, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5639901465126721911, guid: e2f290458792dc54c80342f551351cbd, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5639901465126721911, guid: e2f290458792dc54c80342f551351cbd, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5639901465126721911, guid: e2f290458792dc54c80342f551351cbd, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5639901465126721911, guid: e2f290458792dc54c80342f551351cbd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5639901465126721911, guid: e2f290458792dc54c80342f551351cbd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5639901465126721911, guid: e2f290458792dc54c80342f551351cbd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e2f290458792dc54c80342f551351cbd, type: 3}
 --- !u!1001 &1797133290
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -434,6 +377,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 242175306620033927, guid: d7a3baaf33451644c942faf83bf5e18b, type: 3}
+      propertyPath: attackerPrefabs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 242175306620033927, guid: d7a3baaf33451644c942faf83bf5e18b, type: 3}
+      propertyPath: attackerPrefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: 8057496370945090169, guid: 4af54c0a86b5ddd40a799c4246926c9a, type: 3}
+    - target: {fileID: 242175306620033927, guid: d7a3baaf33451644c942faf83bf5e18b, type: 3}
+      propertyPath: NumberOfDifferentAttackersToSpawn
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 242175306620033927, guid: d7a3baaf33451644c942faf83bf5e18b, type: 3}
+      propertyPath: indexesOfAttackersToSpawn.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 242175306620033927, guid: d7a3baaf33451644c942faf83bf5e18b, type: 3}
+      propertyPath: indexesOfAttackersToSpawn.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 242175306623511858, guid: d7a3baaf33451644c942faf83bf5e18b, type: 3}
       propertyPath: m_RootOrder
       value: 2
