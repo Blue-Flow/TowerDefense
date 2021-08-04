@@ -6,12 +6,14 @@ using UnityEngine.UI;
 public class LevelProgressionDisplay : MonoBehaviour
 {
     [SerializeField] Slider defenseGauge;
-
-    private void DefenseGaugeDisplay(int valueToDisplay)
+    private void Awake()
+    {
+        EventsSubscribe();
+    }
+    private void DefenseGaugeDisplay(float valueToDisplay)
     {
         defenseGauge.value = valueToDisplay;
     }
-
     private void EventsSubscribe()
     {
         EventHandler.OnLevelProgressionValueChange += DefenseGaugeDisplay;

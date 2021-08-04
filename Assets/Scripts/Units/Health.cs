@@ -5,7 +5,6 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [SerializeField] int healthPoints = 1;
-    [SerializeField] bool isAttacker;
     [SerializeField] GameObject deathVFX;
 
     public void DealDamage(int damageToInflict)
@@ -19,6 +18,7 @@ public class Health : MonoBehaviour
     }
     private void TriggerDeathVFX()
     {
+        // death SFX géré ailleurs, retirer la partie VFX aussi ?
         if (!deathVFX) return;
         GameObject deathVFXObject = Instantiate(deathVFX, transform.position, Quaternion.identity);
         Destroy(deathVFXObject, 1f);

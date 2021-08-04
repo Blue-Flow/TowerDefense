@@ -5,8 +5,8 @@ using UnityEngine.Audio;
 
 public class Audio : MonoBehaviour
 {
-    [SerializeField] AudioClip attackerDeathVFX;
-    [SerializeField] AudioClip defenderDeathVFX;
+    [SerializeField] AudioClip attackerDeathSFX;
+    [SerializeField] AudioClip defenderDeathSFX;
     private AudioSource audioSource;
 
     void Awake()
@@ -14,24 +14,25 @@ public class Audio : MonoBehaviour
         EventsSubscribe();
         audioSource = GetComponent<AudioSource>();
     }
-    private void PlayAttackerDeathVFX()
+    private void PlayAttackerDeathSFX()
     {
-            audioSource.PlayOneShot(attackerDeathVFX);
+        // Actuellement le
+        audioSource.PlayOneShot(attackerDeathSFX);
     }
-    private void PlayDefenderDeathVFX()
+    private void PlayDefenderDeathSFX()
     {
-        audioSource.PlayOneShot(defenderDeathVFX);
+        audioSource.PlayOneShot(defenderDeathSFX);
     }
 
     private void EventsSubscribe()
     {
-        EventHandler.OnAttackerDie += PlayAttackerDeathVFX;
-        EventHandler.OnDefenderDie += PlayDefenderDeathVFX;
+        EventHandler.OnAttackerDie += PlayAttackerDeathSFX;
+        EventHandler.OnDefenderDie += PlayDefenderDeathSFX;
     }
 
     private void OnDestroy()
     {
-        EventHandler.OnAttackerDie -= PlayAttackerDeathVFX;
-        EventHandler.OnDefenderDie -= PlayDefenderDeathVFX;
+        EventHandler.OnAttackerDie -= PlayAttackerDeathSFX;
+        EventHandler.OnDefenderDie -= PlayDefenderDeathSFX;
     }
 }

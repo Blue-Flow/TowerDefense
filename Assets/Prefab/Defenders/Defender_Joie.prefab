@@ -152,7 +152,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthPoints: 4
-  isAttacker: 0
   deathVFX: {fileID: 0}
 --- !u!114 &6551525332141084929
 MonoBehaviour:
@@ -197,7 +196,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0017415285, y: -0.04994923}
+  m_Offset: {x: -0.001741648, y: -0.04994923}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -208,7 +207,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.3919809, y: 1.0140394}
+  m_Size: {x: 1.285297, y: 1.0140394}
   m_EdgeRadius: 0
 --- !u!50 &-6865133409558286883
 Rigidbody2D:

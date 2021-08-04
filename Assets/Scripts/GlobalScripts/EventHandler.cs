@@ -10,7 +10,7 @@ public class EventHandler : MonoBehaviour
     public static event Action OnDefenderDie;
     public static event Action<Defender> OnSpawnDefender;
     public static event Action<int> OnResourceValueChange;
-    public static event Action<int> OnLevelProgressionValueChange;
+    public static event Action<float> OnLevelProgressionValueChange;
     public static event Action<int> OnResourceProduced;
     //public static event Action<> OnAttackerSpawned;
 
@@ -38,7 +38,7 @@ public class EventHandler : MonoBehaviour
         }
         else Debug.Log("Error with event OnDefenderDie, no subscriber");
     }
-        public static void SpawnDefender(Defender defender)
+    public static void SpawnDefender(Defender defender)
     {
         if (OnSpawnDefender != null)
         {
@@ -46,7 +46,7 @@ public class EventHandler : MonoBehaviour
         }
         else Debug.Log("Error with event OnSpawnDefender, no subscriber");
     }
-    public static void LevelProgressionValueChange(int valueToDisplay)
+    public static void LevelProgressionValueChange(float valueToDisplay)
     {
         if (OnLevelProgressionValueChange != null)
         {

@@ -5,11 +5,16 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     [SerializeField] int spawnPointsForThisLevel = 20;
-    private int currentProgression;
-
+    private float currentProgression = 0;
+    private int numberOfDeadAttacker = 0;
+    private void Awake()
+    {
+        EventsSubscribe();
+    }
     private void UpdateCurrentLevelProgression()
     {
-        // Calcul de la valeur de progression actuelle en %
+        numberOfDeadAttacker++;
+        currentProgression = ((float)(numberOfDeadAttacker) / (float)(spawnPointsForThisLevel));
         EventHandler.LevelProgressionValueChange(currentProgression);
     }
 
