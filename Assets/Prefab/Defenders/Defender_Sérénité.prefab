@@ -4822,7 +4822,7 @@ GameObject:
   - component: {fileID: 2731665614902165317}
   - component: {fileID: 6987457889270285630}
   m_Layer: 0
-  m_Name: Trophy
+  m_Name: "Defender_S\xE9r\xE9nit\xE9"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

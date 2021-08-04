@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4394914903468049690}
   - component: {fileID: 3171819756268762018}
   m_Layer: 7
-  m_Name: Ennemi2_Fox
+  m_Name: Ennemi_Ingratitude
   m_TagString: Attacker
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

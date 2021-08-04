@@ -5,12 +5,26 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealthManager : MonoBehaviour
 {
-    // Currently one life, death on enemy that goes through
+    [SerializeField] int initialPlayerHealth = 3;
+    private int currentHealth;
+    private void Start()
+    {
+        currentHealth = initialPlayerHealth;
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        StartCoroutine(nameof(LoadEndScreen_Loose));
+        SubstractHealth();
+        CheckRemainingHealth();
     }
-
+    private void SubstractHealth()
+    {
+        currentHealth--;
+    }
+    private void CheckRemainingHealth()
+    {
+        if (currentHealth == 0)
+           StartCoroutine(nameof(LoadEndScreen_Loose));
+    }
     private IEnumerator LoadEndScreen_Loose()
     {
         Time.timeScale = 0.2f;
