@@ -6,9 +6,11 @@ using UnityEngine;
 public class EventHandler : MonoBehaviour
 {
     public static event Action OnStartGame;
-    public static event Action<bool> OnUnitDie;
+    public static event Action OnAttackerDie;
+    public static event Action OnDefenderDie;
     public static event Action<Defender> OnSpawnDefender;
     public static event Action<int> OnResourceValueChange;
+    public static event Action<int> OnLevelProgressionValueChange;
     public static event Action<int> OnResourceProduced;
     //public static event Action<> OnAttackerSpawned;
 
@@ -20,21 +22,37 @@ public class EventHandler : MonoBehaviour
         }
         else Debug.Log("Error with event OnStartGame, no subscriber");
     }
-    public static void UnitDie(bool isAttacker)
+    public static void AttackerDie()
     {
-        if (OnUnitDie != null)
+        if (OnAttackerDie != null)
         {
-            OnUnitDie(isAttacker);
+            OnAttackerDie();
         }
-        else Debug.Log("Error with event OnUnitDie, no subscriber");
+        else Debug.Log("Error with event OnAttackerDie, no subscriber");
     }
-    public static void SpawnDefender(Defender defender)
+    public static void DefenderDie()
+    {
+        if (OnDefenderDie != null)
+        {
+            OnDefenderDie();
+        }
+        else Debug.Log("Error with event OnDefenderDie, no subscriber");
+    }
+        public static void SpawnDefender(Defender defender)
     {
         if (OnSpawnDefender != null)
         {
             OnSpawnDefender(defender);
         }
         else Debug.Log("Error with event OnSpawnDefender, no subscriber");
+    }
+    public static void LevelProgressionValueChange(int valueToDisplay)
+    {
+        if (OnLevelProgressionValueChange != null)
+        {
+            OnLevelProgressionValueChange(valueToDisplay);
+        }
+        else Debug.Log("Error with event OnLevelProgressionValueChange, no subscriber");
     }
     public static void ResourceValueChanged(int valueToDisplay)
     {

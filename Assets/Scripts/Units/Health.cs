@@ -14,7 +14,6 @@ public class Health : MonoBehaviour
         if (healthPoints < 1)
         {
             TriggerDeathVFX();
-            EventHandler.UnitDie(isAttacker);
             Destroy(gameObject);
         }
     }

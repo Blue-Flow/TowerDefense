@@ -14,20 +14,24 @@ public class Audio : MonoBehaviour
         EventsSubscribe();
         audioSource = GetComponent<AudioSource>();
     }
+    private void PlayAttackerDeathVFX()
+    {
+            audioSource.PlayOneShot(attackerDeathVFX);
+    }
+    private void PlayDefenderDeathVFX()
+    {
+        audioSource.PlayOneShot(defenderDeathVFX);
+    }
 
     private void EventsSubscribe()
     {
-        EventHandler.OnUnitDie += PlayUnitDeathVFX;
+        EventHandler.OnAttackerDie += PlayAttackerDeathVFX;
+        EventHandler.OnDefenderDie += PlayDefenderDeathVFX;
     }
 
-    private void PlayUnitDeathVFX(bool isAttacker)
-    {
-        if (isAttacker)
-        audioSource.PlayOneShot(attackerDeathVFX);
-        else audioSource.PlayOneShot(defenderDeathVFX);
-    }
     private void OnDestroy()
     {
-        EventHandler.OnUnitDie -= PlayUnitDeathVFX;
+        EventHandler.OnAttackerDie -= PlayAttackerDeathVFX;
+        EventHandler.OnDefenderDie -= PlayDefenderDeathVFX;
     }
 }

@@ -41,7 +41,10 @@ public class Defender : MonoBehaviour
     {
         animator.SetBool("isAttacking", false);
         isAttacking = false;
-
+    }
+    private void OnDestroy()
+    {
+        EventHandler.DefenderDie();
     }
 }
 

@@ -44,4 +44,8 @@ public class Attacker : MonoBehaviour
         if (!currentTarget) { return; }
         else currentTarget.GetComponent<Health>().DealDamage(damageToDeal);
     }
+    private void OnDestroy()
+    {
+        EventHandler.AttackerDie();
+    }
 }
