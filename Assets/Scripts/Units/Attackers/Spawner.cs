@@ -26,12 +26,15 @@ public class Spawner : MonoBehaviour
 
     [SerializeField] int minNumberOfLines = 1;
     [SerializeField] int maxNumberOfLines = 5;
-    void Start()
+    private void Start()
     { 
         StartCoroutine(SpawnEnnemies());
-
     }
-    IEnumerator SpawnEnnemies ()
+    public void SetIsSpawning(bool state)
+    {
+        isSpawning = state;
+    }
+    private IEnumerator SpawnEnnemies ()
     {
         while (isSpawning)
         {
@@ -40,6 +43,7 @@ public class Spawner : MonoBehaviour
             yield return new WaitForSeconds(timeToWait);
             
             SpawnAttacker();
+            EventHandler.AttackerSpawned();
         }
     }
     private void SpawnAttacker()

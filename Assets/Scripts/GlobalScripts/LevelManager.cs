@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
-    [SerializeField] int spawnPointsForThisLevel = 20;
-    private float currentProgression = 0;
+    [SerializeField] int spawnNumberForThisLevel = 20;
+    private int numberOfSpawnedAttacker = 0;
     private int numberOfDeadAttacker = 0;
     private void Awake()
     {
@@ -13,18 +13,41 @@ public class LevelManager : MonoBehaviour
     }
     private void UpdateCurrentLevelProgression()
     {
-        numberOfDeadAttacker++;
-        currentProgression = ((float)(numberOfDeadAttacker) / (float)(spawnPointsForThisLevel));
+        float currentProgression = (float) numberOfDeadAttacker / (float) spawnNumberForThisLevel;
         EventHandler.LevelProgressionValueChange(currentProgression);
     }
-
+    private void CountAttackerKilled()
+    {
+        numberOfDeadAttacker++;
+        UpdateCurrentLevelProgression();
+        if (numberOfDeadAttacker == numberOfSpawnedAttacker)
+        {
+            EventHandler.WinGame();
+        }
+    }
+    private void CountAttackerSpawned()
+    {
+        numberOfSpawnedAttacker++;
+        if (numberOfSpawnedAttacker >= spawnNumberForThisLevel)
+        {
+            Debug.Log("Cap reached");
+            StopSpawner();
+        }
+    }
+    private void StopSpawner()
+    {
+        FindObjectOfType<Spawner>().SetIsSpawning(false);
+    }
     private void EventsSubscribe()
     {
-        EventHandler.OnAttackerDie += UpdateCurrentLevelProgression;
+        EventHandler.OnAttackerDie += CountAttackerKilled;
+        EventHandler.OnAttackerSpawned += CountAttackerSpawned;
     }
 
     private void OnDestroy()
     {
-        EventHandler.OnAttackerDie -= UpdateCurrentLevelProgression;
+        EventHandler.OnAttackerDie -= CountAttackerKilled;
+        EventHandler.OnAttackerSpawned -= CountAttackerSpawned;
     }
+    
 }

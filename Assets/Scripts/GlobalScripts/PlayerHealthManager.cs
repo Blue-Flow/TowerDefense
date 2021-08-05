@@ -23,14 +23,7 @@ public class PlayerHealthManager : MonoBehaviour
     private void CheckRemainingHealth()
     {
         if (currentHealth == 0)
-           StartCoroutine(nameof(LoadEndScreen_Loose));
+            EventHandler.LooseGame();
     }
-    private IEnumerator LoadEndScreen_Loose()
-    {
-        Time.timeScale = 0.2f;
-        // play SFX
-        yield return new WaitForSeconds(1.5f);
-        SceneManager.LoadScene(2);
-        Time.timeScale = 1;
-    }
+
 }

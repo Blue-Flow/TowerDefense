@@ -6,13 +6,16 @@ using UnityEngine;
 public class EventHandler : MonoBehaviour
 {
     public static event Action OnStartGame;
+    public static event Action OnLooseGame;
+    public static event Action OnWinGame;
+
     public static event Action OnAttackerDie;
     public static event Action OnDefenderDie;
     public static event Action<Defender> OnSpawnDefender;
     public static event Action<int> OnResourceValueChange;
     public static event Action<float> OnLevelProgressionValueChange;
     public static event Action<int> OnResourceProduced;
-    //public static event Action<> OnAttackerSpawned;
+    public static event Action OnAttackerSpawned;
 
     public static void StartGame()
     {
@@ -21,6 +24,22 @@ public class EventHandler : MonoBehaviour
             OnStartGame();
         }
         else Debug.Log("Error with event OnStartGame, no subscriber");
+    }
+    public static void LooseGame()
+    {
+        if (OnLooseGame != null)
+        {
+            OnLooseGame();
+        }
+        else Debug.Log("Error with event OnLooseGame, no subscriber");
+    }
+    public static void WinGame()
+    {
+        if (OnWinGame != null)
+        {
+            OnWinGame();
+        }
+        else Debug.Log("Error with event OnWinGame, no subscriber");
     }
     public static void AttackerDie()
     {
@@ -70,12 +89,12 @@ public class EventHandler : MonoBehaviour
         }
         else Debug.Log("Error with event OnResourceProduced, no subscriber");
     }
-    /*public static void AttackerSpawned()
+    public static void AttackerSpawned()
     {
         if (OnAttackerSpawned != null)
         {
             OnAttackerSpawned();
         }
         else Debug.Log("Error with event OnAttackerSpawned, no subscriber");
-    }*/
+    }
 }
