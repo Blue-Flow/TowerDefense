@@ -16,6 +16,7 @@ public class EventHandler : MonoBehaviour
     public static event Action<float> OnLevelProgressionValueChange;
     public static event Action<int> OnResourceProduced;
     public static event Action OnAttackerSpawned;
+    public static event Action OnLostLife;
 
     public static void StartGame()
     {
@@ -96,5 +97,13 @@ public class EventHandler : MonoBehaviour
             OnAttackerSpawned();
         }
         else Debug.Log("Error with event OnAttackerSpawned, no subscriber");
+    }
+    public static void LostLife()
+    {
+        if (OnLostLife != null)
+        {
+            OnLostLife();
+        }
+        else Debug.Log("Error with event OnLostLife, no subscriber");
     }
 }

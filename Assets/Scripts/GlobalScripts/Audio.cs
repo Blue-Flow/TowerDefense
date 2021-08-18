@@ -7,6 +7,7 @@ public class Audio : MonoBehaviour
 {
     [SerializeField] AudioClip attackerDeathSFX;
     [SerializeField] AudioClip defenderDeathSFX;
+    [SerializeField] AudioClip winSFX;
     private AudioSource audioSource;
 
     void Awake()
@@ -23,16 +24,22 @@ public class Audio : MonoBehaviour
     {
         audioSource.PlayOneShot(defenderDeathSFX);
     }
+    private void PlayWinSFX()
+    {
+        audioSource.PlayOneShot(winSFX);
+    }
 
     private void EventsSubscribe()
     {
         EventHandler.OnAttackerDie += PlayAttackerDeathSFX;
         EventHandler.OnDefenderDie += PlayDefenderDeathSFX;
+        EventHandler.OnWinGame += PlayWinSFX;
     }
 
     private void OnDestroy()
     {
         EventHandler.OnAttackerDie -= PlayAttackerDeathSFX;
         EventHandler.OnDefenderDie -= PlayDefenderDeathSFX;
+        EventHandler.OnWinGame -= PlayWinSFX;
     }
 }

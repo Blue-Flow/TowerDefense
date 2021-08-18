@@ -1,18 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealthDisplay : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] List<Image> livesList;
+    int index = 0;
 
-    // Update is called once per frame
-    void Update()
+    private void Awake()
     {
-        
+        EventsSubscribe();
+    }
+    private void DisplayLostLife()
+    {
+        livesList[index].gameObject.SetActive(false);
+        if (index <= livesList.Count)
+        index++;
+    }
+    private void EventsSubscribe()
+    {
+        EventHandler.OnLostLife += DisplayLostLife;
+    }
+    private void OnDestroy()
+    {
+        EventHandler.OnLostLife -= DisplayLostLife;
     }
 }

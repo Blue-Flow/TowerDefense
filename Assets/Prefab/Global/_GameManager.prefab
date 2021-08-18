@@ -76,7 +76,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -77.64484, y: 3}
+  m_Offset: {x: 0.7381897, y: 3}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -87,7 +87,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 962.25305, y: 800}
+  m_Size: {x: 1119.019, y: 800}
   m_EdgeRadius: 0
 --- !u!1 &242175306620033925
 GameObject:
@@ -134,6 +134,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackerPrefabs:
   - {fileID: 5639901465126721910, guid: e2f290458792dc54c80342f551351cbd, type: 3}
+  - {fileID: 8057496370945090169, guid: 4af54c0a86b5ddd40a799c4246926c9a, type: 3}
+  NumberOfDifferentAttackersToSpawn: 2
   minSpawnDelay: 1
   maxSpawnDelay: 2.5
   minNumberOfLines: 1
@@ -147,6 +149,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 242175306623511858}
+  - component: {fileID: 524044620}
+  - component: {fileID: 524044621}
   m_Layer: 0
   m_Name: _GameManager
   m_TagString: Untagged
@@ -170,3 +174,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &524044620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242175306623511859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f6502789e2caa442ac771446bd5835d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnNumberForThisLevel: 10
+--- !u!114 &524044621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242175306623511859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a9ea41af869bb041b9cd6df945c92fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defenseGauge: {fileID: 0}
+  levelCompletedCanvas: {fileID: 0}

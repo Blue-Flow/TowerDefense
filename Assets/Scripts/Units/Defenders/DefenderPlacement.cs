@@ -6,7 +6,6 @@ public class DefenderPlacement : MonoBehaviour
 {
     [SerializeField] List<Defender> defendersPrefabs;
     private bool isSpawning = false;
-    private Defender currentDefenderToSpawn;
     private int indexOfDefenderToSpawn;
     private void Start()
     {
@@ -20,7 +19,6 @@ public class DefenderPlacement : MonoBehaviour
     }
     private void DeactivateSpawnMode()
     {
-        currentDefenderToSpawn = null;
         isSpawning = false;
     }
     private void OnMouseDown()

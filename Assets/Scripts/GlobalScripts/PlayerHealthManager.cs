@@ -19,6 +19,7 @@ public class PlayerHealthManager : MonoBehaviour
     private void SubstractHealth()
     {
         currentHealth--;
+        EventHandler.LostLife();
     }
     private void CheckRemainingHealth()
     {
