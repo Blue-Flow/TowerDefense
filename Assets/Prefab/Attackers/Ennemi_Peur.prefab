@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4394914903468049690}
   - component: {fileID: 3171819756268762018}
   m_Layer: 7
-  m_Name: Ennemi_Ingratitude
+  m_Name: Ennemi_Peur
   m_TagString: Attacker
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 8994067725937222474}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.422914, y: 2.5693011, z: -0.2889945}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children:
   - {fileID: 8994067726472193857}
   m_Father: {fileID: 0}
@@ -69,7 +69,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.08149874, y: -0.22777164}
+  m_Offset: {x: 0.005680084, y: -0.019667119}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -80,7 +80,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1862833, y: 0.68416953}
+  m_Size: {x: 1.0119257, y: 0.864152}
   m_EdgeRadius: 0
 --- !u!50 &8242402787770756990
 Rigidbody2D:
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83e517f298e6f55418dad0dd835aed7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: 6b5825d51c71de949b5a1ee7247eaa5c, type: 2}
+  data: {fileID: 0}
 --- !u!114 &4394914903468049690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,7 +213,7 @@ SpriteRenderer:
   m_SortingLayerID: 1426079505
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1150964161710832084, guid: f3cede9dada56e6499733d14cdd23eec, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0811f8d28691c3a48aa6443937a24e6f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

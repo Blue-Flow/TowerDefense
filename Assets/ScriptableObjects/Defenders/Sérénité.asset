@@ -9,12 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cba29936086d8f1449d01dba513a7a30, type: 3}
-  m_Name: Tristesse
+  m_Script: {fileID: 11500000, guid: a3ad45e3e3842624bac1ccb928d4d19c, type: 3}
+  m_Name: "S\xE9r\xE9nit\xE9"
   m_EditorClassIdentifier: 
-  enemyName: Tristesse
-  moveSpeed: 1.2
-  damage: 5
-  health: 10
-  attackRange: 3
-  spawnCost: 5
+  defenderName: "S\xE9r\xE9nit\xE9"
+  moveSpeed: 0
+  damage: 0
+  health: 4
+  attackRange: 0
+  spawnCost: 2
+  targetLayerMask:
+    serializedVersion: 2
+    m_Bits: 0

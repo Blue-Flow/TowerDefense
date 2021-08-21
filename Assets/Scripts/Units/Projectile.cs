@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    [SerializeField] float moveSpeed = 1.0f;
-    [SerializeField] int damageToInflict = 1;
-    [SerializeField] bool movingRight = true;
+    [SerializeField] ProjectileDataSO data;
+    private int damageToInflict;
     [SerializeField] bool isDefenderProjectile = true;
 
     private Vector2 moveRight = new Vector2(1, 0);
@@ -16,9 +15,13 @@ public class Projectile : MonoBehaviour
     // Get the direction in which to move, and set the move function
     private void Start()
     {
-        if (movingRight == true)
+        if (data.direction == MovingDirection.Right)
             directionToMove = moveRight;
         else directionToMove = moveLeft;
+    }
+    public void SetDamage(int value)
+    {
+        damageToInflict = value;
     }
     private void Update()
     {
@@ -26,7 +29,7 @@ public class Projectile : MonoBehaviour
     }
     private void Move()
     {
-        transform.Translate(directionToMove * Time.deltaTime * moveSpeed);
+        transform.Translate(directionToMove * Time.deltaTime * data.moveSpeed);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -39,4 +42,9 @@ public class Projectile : MonoBehaviour
             Destroy(gameObject);
         }
     }
+}
+public enum MovingDirection
+{
+    Right,
+    Left,
 }

@@ -149,9 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f23e4dcbc339ab4691ac46bbaf352f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
-  damageToInflict: 1
-  movingRight: 1
+  data: {fileID: 11400000, guid: 97a88d0378a552c458f762ae56ef933c, type: 2}
   isDefenderProjectile: 1
 --- !u!61 &7145814352822119003
 BoxCollider2D:

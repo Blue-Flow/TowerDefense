@@ -4,25 +4,39 @@ using UnityEngine;
 
 public class Defender : MonoBehaviour
 {
-    [SerializeField] int defenderCost;
-    [SerializeField] float defenserRange;
-    [SerializeField] bool canAttack;
+
+    [SerializeField] private DefenderDataSO data;
     private bool isAttacking = false;
     LayerMask enemyLayerMask;
     Animator animator;
     private void Start()
     {
-        enemyLayerMask = LayerMask.GetMask("Attackers");
+        //enemyLayerMask = LayerMask.GetMask("Attackers");
+        enemyLayerMask = data.targetLayerMask;
         animator = GetComponent<Animator>();
+        SetBaseHealth();
+        SetBaseDamage();
+    }
+    private void SetBaseHealth()
+    {
+        TryGetComponent(out Health health);
+        if (health)
+            health.SetHealthPoints(data.health);
+    }
+    private void SetBaseDamage()
+    {
+        TryGetComponent(out Shooter shooter);
+        if (shooter)
+            shooter.SetDamage(data.damage);
     }
     private void Update()
     {
-        if(canAttack)
         CheckForEnemyInRange();
+        Debug.Log(isAttacking);
     }
     private void CheckForEnemyInRange()
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right, defenserRange, enemyLayerMask);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right, data.attackRange, enemyLayerMask);
         if (hit.collider != null && !isAttacking)
             StartAttacking();
         if (hit.collider == null && isAttacking)
@@ -30,7 +44,7 @@ public class Defender : MonoBehaviour
     }
     public int GetCost()
     {
-        return defenderCost;
+        return data.spawnCost;
     }
     private void StartAttacking()
     {

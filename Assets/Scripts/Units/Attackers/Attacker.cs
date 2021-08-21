@@ -15,6 +15,7 @@ public class Attacker : MonoBehaviour
         animator = GetComponent<Animator>();
         SetBaseHealth();
         SetBaseMouvementSpeed();
+        SetBaseDamage();
     }
 
     private void SetBaseHealth()
@@ -23,7 +24,12 @@ public class Attacker : MonoBehaviour
         if (health)
             health.SetHealthPoints(data.health);
     }
-
+    private void SetBaseDamage()
+    {
+        TryGetComponent(out Shooter shooter);
+        if (shooter)
+            shooter.SetDamage(data.damage);
+    }
     void Update()
     {
         Move();

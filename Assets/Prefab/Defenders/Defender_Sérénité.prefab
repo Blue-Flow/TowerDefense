@@ -4876,9 +4876,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c2909a19ac1f90439b4809271146ee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defenderCost: 5
-  defenserRange: 0
-  canAttack: 0
+  data: {fileID: 11400000, guid: 3204134c0d2d89c4fb8fd6c6f4552313, type: 2}
 --- !u!114 &4097501799236517431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4891,7 +4889,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1281dadb6cfb3e34d856ce632531aa17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPoints: 1
   deathVFX: {fileID: 0}
 --- !u!114 &-2450452227540605399
 MonoBehaviour:

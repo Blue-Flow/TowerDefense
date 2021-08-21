@@ -151,7 +151,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1281dadb6cfb3e34d856ce632531aa17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPoints: 4
   deathVFX: {fileID: 0}
 --- !u!114 &6551525332141084929
 MonoBehaviour:
@@ -180,9 +179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c2909a19ac1f90439b4809271146ee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defenderCost: 10
-  defenserRange: 6
-  canAttack: 1
+  data: {fileID: 11400000, guid: 4371c23e3a71c4b438e7f5569b167f7f, type: 2}
 --- !u!61 &6774250482354977897
 BoxCollider2D:
   m_ObjectHideFlags: 0
