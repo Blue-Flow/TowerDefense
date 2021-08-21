@@ -5,14 +5,25 @@ using UnityEngine;
 
 public class Attacker : MonoBehaviour
 {
-    private float moveSpeed = 0f;
     private GameObject currentTarget;
     private Animator animator;
-    [SerializeField] int damageToDeal;
+    private float moveSpeed;
+    [SerializeField] private EnemyDataSO data;
+
     private void Start()
     {
         animator = GetComponent<Animator>();
+        SetBaseHealth();
+        SetBaseMouvementSpeed();
     }
+
+    private void SetBaseHealth()
+    {
+        TryGetComponent(out Health health);
+        if (health)
+            health.SetHealthPoints(data.health);
+    }
+
     void Update()
     {
         Move();
@@ -22,9 +33,15 @@ public class Attacker : MonoBehaviour
     {
         transform.Translate(Vector2.left * Time.deltaTime * moveSpeed);
     }
+
+    #region Animation called functions
     public void SetMouvementSpeed(float speed)
     {
         moveSpeed = speed;
+    }
+    public void SetBaseMouvementSpeed()
+    {
+        moveSpeed = data.moveSpeed;
     }
     public void TriggerJump()
     {
@@ -35,14 +52,17 @@ public class Attacker : MonoBehaviour
         currentTarget = target;
         animator.SetBool("isAttacking", true);
     }
+    public void StrikeCurrentTarget()
+    {
+        if (!currentTarget) 
+            return;
+        else currentTarget.GetComponent<Health>().DealDamage(data.damage);
+    }
+    #endregion
     private void StopAttacking()
     {
         animator.SetBool("isAttacking", false);
-    }
-    public void StrikeCurrentTarget()
-    {
-        if (!currentTarget) { return; }
-        else currentTarget.GetComponent<Health>().DealDamage(damageToDeal);
+        currentTarget = null;
     }
     private void OnDestroy()
     {

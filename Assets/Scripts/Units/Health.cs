@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] int healthPoints = 1;
     [SerializeField] GameObject deathVFX;
+    private int healthPoints;
 
+    public void SetHealthPoints(int value)
+    {
+        healthPoints = value;
+    }
     public void DealDamage(int damageToInflict)
     {
         healthPoints -= damageToInflict;
