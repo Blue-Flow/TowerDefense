@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3720498332139893683}
   - component: {fileID: -6758471913468915130}
   m_Layer: 0
-  m_Name: Projectile_Zucchini
+  m_Name: Projectile_Joie
   m_TagString: DefenderProjectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -98,9 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f23e4dcbc339ab4691ac46bbaf352f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1.5
-  damageToInflict: 1
-  movingRight: 1
+  data: {fileID: 11400000, guid: 6221b8101de76a64f8aac05e8f2b9bbe, type: 2}
   isDefenderProjectile: 1
 --- !u!61 &3720498332139893683
 BoxCollider2D:

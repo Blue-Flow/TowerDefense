@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 649eae01bc6113942bc49efd60f7a9a6, type: 3}
+  m_Name: Level1
+  m_EditorClassIdentifier: 
+  levelID: 1
+  numberOfLives: 3
+  activeLinesNumbers: 0100000002000000030000000400000005000000
+  defendersToSpawn:
+  - {fileID: 8228716421565765270, guid: ede40c2bebffd2443849ab59b89d8cae, type: 3}
+  - {fileID: 6084068942332240114, guid: 9a762474c07b4f24ba2c22120000c36e, type: 3}
+  - {fileID: 4271820879086872625, guid: f2629ab3ff724034da2fb4031ae1f040, type: 3}
+  numberOfEnemies: 10
+  enemiesToSpawn:
+  - {fileID: 8057496370945090169, guid: 4af54c0a86b5ddd40a799c4246926c9a, type: 3}
+  - {fileID: 5639901465126721910, guid: e2f290458792dc54c80342f551351cbd, type: 3}
+  minSpawnDelayInSec: 1
+  maxSpawnDelayInSec: 2.5

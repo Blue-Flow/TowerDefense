@@ -5,11 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealthManager : MonoBehaviour
 {
-    [SerializeField] int initialPlayerHealth = 3;
     private int currentHealth;
-    private void Start()
+    public void SetHealth(int value)
     {
-        currentHealth = initialPlayerHealth;
+        currentHealth = value;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -26,5 +25,4 @@ public class PlayerHealthManager : MonoBehaviour
         if (currentHealth == 0)
             EventHandler.LooseGame();
     }
-
 }

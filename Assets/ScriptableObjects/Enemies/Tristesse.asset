@@ -15,6 +15,7 @@ MonoBehaviour:
   enemyName: Tristesse
   moveSpeed: 1.2
   damage: 5
-  health: 10
+  health: 20
   attackRange: 3
   spawnCost: 5
+  serenityAmountToGive: 5

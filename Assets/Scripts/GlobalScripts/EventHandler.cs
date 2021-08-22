@@ -17,6 +17,7 @@ public class EventHandler : MonoBehaviour
     public static event Action<int> OnResourceProduced;
     public static event Action OnAttackerSpawned;
     public static event Action OnLostLife;
+    public static event Action OnSpawnCapReached;
 
     public static void StartGame()
     {
@@ -106,4 +107,13 @@ public class EventHandler : MonoBehaviour
         }
         else Debug.Log("Error with event OnLostLife, no subscriber");
     }
+    public static void SpawnCapReached()
+    {
+        if (OnSpawnCapReached != null)
+        {
+            OnSpawnCapReached();
+        }
+        else Debug.Log("Error with event OnSpawnCapReached, no subscriber");
+    }
 }
+    

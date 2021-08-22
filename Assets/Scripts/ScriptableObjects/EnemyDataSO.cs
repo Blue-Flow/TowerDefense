@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewEnemyData", menuName = "Units/Enemy Data")]
+[CreateAssetMenu(fileName = "NewEnemyData", menuName = "Unit/Enemy")]
 public class EnemyDataSO : ScriptableObject
 {
     public string enemyName;
@@ -11,6 +11,7 @@ public class EnemyDataSO : ScriptableObject
     public int health;
     public float attackRange;
     public int spawnCost;
+    public int serenityAmountToGive;
 
     // possible d'ajouter le modèle d'ennemi (sprite etc) directement ici. Utile ?
 }

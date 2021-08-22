@@ -72,6 +72,7 @@ public class Attacker : MonoBehaviour
     }
     private void OnDestroy()
     {
+        EventHandler.ResourceProduced(data.serenityAmountToGive);
         EventHandler.AttackerDie();
     }
 }

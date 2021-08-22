@@ -9,15 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3ad45e3e3842624bac1ccb928d4d19c, type: 3}
-  m_Name: Amusement
+  m_Script: {fileID: 11500000, guid: 6136d7bb8a6021c4a8ca387ece4a8fb7, type: 3}
+  m_Name: Projectile_Joie
   m_EditorClassIdentifier: 
-  defenderName: Amusement
-  moveSpeed: 0
-  damage: 15
-  health: 10
-  attackRange: 2
-  spawnCost: 5
-  targetLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
+  moveSpeed: 2
+  direction: 0

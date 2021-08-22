@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 7145814352822119003}
   - component: {fileID: 5116051509748497823}
   m_Layer: 0
-  m_Name: Projectile_Axe
+  m_Name: Projectile_Amusement
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

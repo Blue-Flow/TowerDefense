@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewDefenderData", menuName = "Units/Defender Data")]
+[CreateAssetMenu(fileName = "NewDefenderData", menuName = "Unit/Defender")]
 public class DefenderDataSO : ScriptableObject
 {
     public string defenderName;

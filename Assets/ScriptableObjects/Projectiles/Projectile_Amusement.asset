@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6136d7bb8a6021c4a8ca387ece4a8fb7, type: 3}
   m_Name: Projectile_Amusement
   m_EditorClassIdentifier: 
-  moveSpeed: 0
+  moveSpeed: 5
   direction: 0

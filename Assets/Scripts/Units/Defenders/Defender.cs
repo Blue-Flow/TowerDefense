@@ -32,7 +32,6 @@ public class Defender : MonoBehaviour
     private void Update()
     {
         CheckForEnemyInRange();
-        Debug.Log(isAttacking);
     }
     private void CheckForEnemyInRange()
     {

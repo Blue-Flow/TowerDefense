@@ -6,8 +6,7 @@ public class Spawner : MonoBehaviour
 {
     private bool isSpawning = true;
 
-    [SerializeField] List<Attacker> attackerPrefabs = new List<Attacker>();
-    [SerializeField] int NumberOfDifferentAttackersToSpawn;
+    private List<Attacker> attackerPrefabs;
 
     private Vector2[] spawnPositions = 
         {
@@ -20,19 +19,31 @@ public class Spawner : MonoBehaviour
     private int lastSpawnedLineNumber;
     private int lineToSpawn;
 
-    [Header("LevelInfo")] // Transfer this to the LevelManager and add a method to get the info from it at the start of the level
-    [SerializeField] float minSpawnDelay = 1f;
-    [SerializeField] float maxSpawnDelay = 2.5f;
+    private float minSpawnDelay = 1f;
+    private float maxSpawnDelay = 2.5f;
 
-    [SerializeField] int minNumberOfLines = 1;
-    [SerializeField] int maxNumberOfLines = 5;
-    private void Start()
-    { 
+    private int minNumberOfLines = 1;
+    private int maxNumberOfLines = 5;
+
+    public void SetSpawnerInfo(float minDelay, float maxDelay, int[] activeLines, List<Attacker> attackerList)
+    {
+        minSpawnDelay = minDelay;
+        maxSpawnDelay = maxDelay;
+
+        minNumberOfLines = activeLines[0];
+        int activeLinesCount = activeLines.Length;
+        maxNumberOfLines = activeLines[activeLinesCount-1];
+        Debug.Log(maxNumberOfLines);
+
+        attackerPrefabs = attackerList;
+    }
+    private void StartSpawning()
+    {
         StartCoroutine(SpawnEnnemies());
     }
-    public void SetIsSpawning(bool state)
+    private void StopSpawning()
     {
-        isSpawning = state;
+        isSpawning = false;
     }
     private IEnumerator SpawnEnnemies ()
     {
@@ -68,6 +79,16 @@ public class Spawner : MonoBehaviour
     }
     int GenerateRandomAttackerToSpawn()
     {
-        return Random.Range(0, NumberOfDifferentAttackersToSpawn);
+        return Random.Range(0, attackerPrefabs.Count);
+    }
+    private void OnEnable()
+    {
+        EventHandler.OnStartGame += StartSpawning;
+        EventHandler.OnSpawnCapReached += StopSpawning;
+    }
+    private void OnDisable()
+    {
+        EventHandler.OnStartGame -= StartSpawning;
+        EventHandler.OnSpawnCapReached -= StopSpawning;
     }
 }
