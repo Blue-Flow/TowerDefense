@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class DefenderPlacement : MonoBehaviour
 {
-    [SerializeField] List<Defender> defendersPrefabs;
+    private List<Defender> defendersPrefabs;
     private bool isSpawning = false;
     private int indexOfDefenderToSpawn;
     private void Start()
     {
         EventsSubscribe();
+    }
+    public void SetDefendersToSpawn(List<Defender> defenderList)
+    {
+        defendersPrefabs = defenderList;
     }
     private void ActivateSpawnMode(Defender defenderToSpawn)
     {

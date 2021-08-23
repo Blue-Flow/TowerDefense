@@ -18,6 +18,17 @@ public class LevelManager : MonoBehaviour
         TryGetComponent(out Spawner spawner);
         if (spawner)
             spawner.SetSpawnerInfo(data.minSpawnDelayInSec, data.maxSpawnDelayInSec, data.activeLinesNumbers, data.enemiesToSpawn);
+        else
+            Debug.Log("No component Spawner found during initialization");
+
+        TryGetComponent(out PlayerHealthManager playerHealthManager);
+        if (playerHealthManager)
+            playerHealthManager.SetHealth(data.numberOfLives);
+        else
+            Debug.Log("No component PlayerHealthManager found during initialization");
+
+        FindObjectOfType<DefenderPlacement>().SetDefendersToSpawn(data.defendersToSpawn);
+
     }
     private void UpdateCurrentLevelProgression()
     {

@@ -737,10 +737,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 524044620, guid: d7a3baaf33451644c942faf83bf5e18b, type: 3}
-      propertyPath: data
-      value: 
-      objectReference: {fileID: 11400000, guid: b0c03685e9c73514c96455afe028087c, type: 2}
     - target: {fileID: 524044621, guid: d7a3baaf33451644c942faf83bf5e18b, type: 3}
       propertyPath: defenseGauge
       value: 
@@ -749,18 +745,6 @@ PrefabInstance:
       propertyPath: levelCompletedCanvas
       value: 
       objectReference: {fileID: 1628298738}
-    - target: {fileID: 242175306620033927, guid: d7a3baaf33451644c942faf83bf5e18b, type: 3}
-      propertyPath: attackerPrefabs.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 242175306620033927, guid: d7a3baaf33451644c942faf83bf5e18b, type: 3}
-      propertyPath: attackerPrefabs.Array.data[2]
-      value: 
-      objectReference: {fileID: 8057496370945090169, guid: cc8e180447b45cb4fa2873a1d4375be9, type: 3}
-    - target: {fileID: 242175306620033927, guid: d7a3baaf33451644c942faf83bf5e18b, type: 3}
-      propertyPath: NumberOfDifferentAttackersToSpawn
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 242175306623511858, guid: d7a3baaf33451644c942faf83bf5e18b, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -808,10 +792,6 @@ PrefabInstance:
     - target: {fileID: 242175306623511859, guid: d7a3baaf33451644c942faf83bf5e18b, type: 3}
       propertyPath: m_Name
       value: _GameManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 242175306623511859, guid: d7a3baaf33451644c942faf83bf5e18b, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d7a3baaf33451644c942faf83bf5e18b, type: 3}

@@ -33,7 +33,6 @@ public class Spawner : MonoBehaviour
         minNumberOfLines = activeLines[0];
         int activeLinesCount = activeLines.Length;
         maxNumberOfLines = activeLines[activeLinesCount-1];
-        Debug.Log(maxNumberOfLines);
 
         attackerPrefabs = attackerList;
     }

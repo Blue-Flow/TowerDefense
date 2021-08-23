@@ -10,7 +10,7 @@ public class PlayerHealthManager : MonoBehaviour
     {
         currentHealth = value;
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void LooseLife()
     {
         SubstractHealth();
         CheckRemainingHealth();
@@ -18,11 +18,18 @@ public class PlayerHealthManager : MonoBehaviour
     private void SubstractHealth()
     {
         currentHealth--;
-        EventHandler.LostLife();
     }
     private void CheckRemainingHealth()
     {
-        if (currentHealth == 0)
+        if (currentHealth <= 0)
             EventHandler.LooseGame();
+    }
+    private void OnEnable()
+    {
+        EventHandler.OnLostLife += LooseLife;
+    }
+    private void OnDestroy()
+    {
+        EventHandler.OnLostLife -= LooseLife;
     }
 }
