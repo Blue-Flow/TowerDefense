@@ -5,20 +5,30 @@ using UnityEngine.UI;
 
 public class PlayerHealthDisplay : MonoBehaviour
 {
-    [SerializeField] List<Image> livesList;
-    int index = 0;
+    [SerializeField] GameObject lifeImage;
+    private List<GameObject> livesList = new List<GameObject>();
+    private int livesNumber;
+    int index;
 
-    private void Awake()
+    public void SetLiveDisplaySettings(int numberOfLives)
     {
-        EventsSubscribe();
+        livesNumber = numberOfLives;
+        
+        for (int index = 0; index < livesNumber; index++)
+        {
+            GameObject newLife = Instantiate(lifeImage, transform);
+            livesList.Add(newLife);
+        }
+        index = 0;
     }
+
     private void DisplayLostLife()
     {
-        livesList[index].gameObject.SetActive(false);
+        livesList[index].GetComponent<SpriteRenderer>().color = Color.gray;
         if (index <= livesList.Count)
-        index++;
+            index++;
     }
-    private void EventsSubscribe()
+    private void OnEnable()
     {
         EventHandler.OnLostLife += DisplayLostLife;
     }

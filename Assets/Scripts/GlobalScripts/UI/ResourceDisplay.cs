@@ -7,16 +7,11 @@ public class ResourceDisplay : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI resourcesDisplay;
 
-    private void Start()
-    {
-        EventsSubscribe();
-    }
     private void DisplayResourceValue(int valueToDisplay)
     {
         resourcesDisplay.text = valueToDisplay.ToString();
     }
-    #region Events
-    private void EventsSubscribe()
+    private void OnEnable()
     {
         EventHandler.OnResourceValueChange += DisplayResourceValue;
     }
@@ -24,6 +19,5 @@ public class ResourceDisplay : MonoBehaviour
     {
         EventHandler.OnResourceValueChange -= DisplayResourceValue;
     }
-    #endregion
 }
 

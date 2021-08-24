@@ -26,6 +26,8 @@ public class LevelManager : MonoBehaviour
             playerHealthManager.SetHealth(data.numberOfLives);
         else
             Debug.Log("No component PlayerHealthManager found during initialization");
+        
+        FindObjectOfType<PlayerHealthDisplay>().SetLiveDisplaySettings(data.numberOfLives);
 
         FindObjectOfType<DefenderPlacement>().SetDefendersToSpawn(data.defendersToSpawn);
 
