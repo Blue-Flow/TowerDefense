@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Defender : MonoBehaviour
 {
-
     [SerializeField] private DefenderDataSO data;
     private bool isAttacking = false;
     LayerMask enemyLayerMask;
@@ -60,4 +59,11 @@ public class Defender : MonoBehaviour
         EventHandler.DefenderDie();
     }
 }
+public enum Defenders
+{
+    Joie,
+    Sérénité,
+    Amusement
+}
+
 

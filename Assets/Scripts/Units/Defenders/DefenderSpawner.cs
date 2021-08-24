@@ -4,38 +4,39 @@ using UnityEngine;
 
 public class DefenderSpawner : MonoBehaviour
 {
-    [SerializeField] int currentResourceAmount = 1000;
+    private int serenityAmount;
 
-    private void Awake()
+    public void SetSerenityAmount(int value)
     {
-        EventsSubscribe();
+        serenityAmount = value;
     }
+
     private void Start()
     {
-        EventHandler.ResourceValueChanged(currentResourceAmount);
+        EventHandler.ResourceValueChanged(serenityAmount);
     }
     public void CheckDefenderCost(Defender defender)
     {
         int defenderCost = defender.GetCost();
-        if (defenderCost <= currentResourceAmount)
+        if (defenderCost <= serenityAmount)
         {
             SubstractResourceToCount(defenderCost);
             EventHandler.SpawnDefender(defender);
         }
-        else Debug.Log("Not enough ressources" + currentResourceAmount + "/" + defenderCost);
+        else Debug.Log("Not enough ressources" + serenityAmount + "/" + defenderCost);
     }
     private void SubstractResourceToCount(int amountToSubstract)
     {
-        currentResourceAmount -= amountToSubstract;
-        EventHandler.ResourceValueChanged(currentResourceAmount);
+        serenityAmount -= amountToSubstract;
+        EventHandler.ResourceValueChanged(serenityAmount);
     }
     private void AddResourceToCount(int amountToAdd)
     {
-        currentResourceAmount += amountToAdd;
-        EventHandler.ResourceValueChanged(currentResourceAmount);
+        serenityAmount += amountToAdd;
+        EventHandler.ResourceValueChanged(serenityAmount);
     }
     #region Events
-    private void EventsSubscribe()
+    private void OnEnable()
     {
         EventHandler.OnResourceProduced += AddResourceToCount;
     }
