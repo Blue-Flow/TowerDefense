@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 1148820273949312338}
   - component: {fileID: 2240613466365394514}
   m_Layer: 0
-  m_Name: "Defender_R\xE9silience (tank)"
+  m_Name: "Defender_R\xE9silience"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

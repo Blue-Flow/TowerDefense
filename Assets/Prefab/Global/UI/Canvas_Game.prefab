@@ -89,12 +89,12 @@ GameObject:
   - component: {fileID: 6328640406526940655}
   - component: {fileID: 7204446993706420710}
   m_Layer: 5
-  m_Name: Button_Defender1
+  m_Name: Button_Joie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8550343241690430875
 RectTransform:
   m_ObjectHideFlags: 0
@@ -109,9 +109,9 @@ RectTransform:
   m_Father: {fileID: 8684109762045430429}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 513.75, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5873562804876068914
@@ -872,6 +872,7 @@ GameObject:
   - component: {fileID: 1445011167595182933}
   - component: {fileID: 7321802868671811583}
   - component: {fileID: 2818610478719761933}
+  - component: {fileID: 305157789393265574}
   m_Layer: 5
   m_Name: _DefenderSpawnerBG
   m_TagString: Untagged
@@ -979,7 +980,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29823ace71abbc749a96fbc8a447bd21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentResourceAmount: 1000
+--- !u!114 &305157789393265574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3654133139640996565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1640b9143643044fa199a924452aa28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Button_Amusement: {fileID: 7731521429684984192}
+  Button_Joie: {fileID: 763068552940637623}
+  "Button_R\xE9silience": {fileID: 5393081432912611892}
+  "Button_S\xE9r\xE9nit\xE9": {fileID: 9075923019909542288}
 --- !u!1 &4966539534553026435
 GameObject:
   m_ObjectHideFlags: 0
@@ -1143,12 +1159,12 @@ GameObject:
   - component: {fileID: 3917733203912728399}
   - component: {fileID: 1251852818972006317}
   m_Layer: 5
-  m_Name: Button_Defender4
+  m_Name: "Button_R\xE9silience"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1618851577614785288
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1163,9 +1179,9 @@ RectTransform:
   m_Father: {fileID: 8684109762045430429}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 922.5, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4686830448855369225
@@ -1347,12 +1363,12 @@ GameObject:
   - component: {fileID: 5221653017403843955}
   - component: {fileID: 8130086390251651758}
   m_Layer: 5
-  m_Name: Button_Defender3
+  m_Name: Button_Amusement
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2377631518407254830
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1367,9 +1383,9 @@ RectTransform:
   m_Father: {fileID: 8684109762045430429}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 650, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8763563507121292734
@@ -1479,12 +1495,12 @@ GameObject:
   - component: {fileID: 8028298687107603820}
   - component: {fileID: 4027425988569165607}
   m_Layer: 5
-  m_Name: Button_Defender2
+  m_Name: "Button_S\xE9r\xE9nit\xE9"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4962085052281737534
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1499,9 +1515,9 @@ RectTransform:
   m_Father: {fileID: 8684109762045430429}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 432, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5372969314400097516
