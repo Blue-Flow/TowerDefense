@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class EventHandler : MonoBehaviour
 {
+    public static event Action<LevelDataSO> OnStartStoryMode;
+
     public static event Action OnStartGame;
     public static event Action OnLooseGame;
     public static event Action OnWinGame;
@@ -19,6 +21,14 @@ public class EventHandler : MonoBehaviour
     public static event Action OnLostLife;
     public static event Action OnSpawnCapReached;
 
+    public static void StartStoryMode (LevelDataSO levelDataToLoad)
+    {
+        if (OnStartStoryMode != null)
+        {
+            OnStartStoryMode(levelDataToLoad);
+        }
+        else Debug.Log("Error with event OnStartStoryMode, no subscriber");
+    }
     public static void StartGame()
     {
         if (OnStartGame != null)

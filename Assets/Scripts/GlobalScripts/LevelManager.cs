@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
-    [SerializeField] private LevelDataSO data;
+    private LevelDataSO data;
     private int numberOfSpawnedAttacker = 0;
     private int numberOfDeadAttacker = 0;
 
-    private void Start()
+    private void SetStoryModeData(LevelDataSO levelData)
     {
+        data = levelData;
+        Debug.Log("SetStoryModeData called");
         SetLevelValues();
+        Debug.Log("SetLevelValues called");
         EventHandler.StartGame();
     }
     private void SetLevelValues()
@@ -63,12 +66,13 @@ public class LevelManager : MonoBehaviour
     {
         EventHandler.OnAttackerDie += CountAttackerKilled;
         EventHandler.OnAttackerSpawned += CountAttackerSpawned;
+        EventHandler.OnStartStoryMode += SetStoryModeData;
     }
 
     private void OnDisable()
     {
         EventHandler.OnAttackerDie -= CountAttackerKilled;
         EventHandler.OnAttackerSpawned -= CountAttackerSpawned;
+        EventHandler.OnStartStoryMode += SetStoryModeData;
     }
-    
 }

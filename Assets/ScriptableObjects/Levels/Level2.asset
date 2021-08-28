@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 649eae01bc6113942bc49efd60f7a9a6, type: 3}
-  m_Name: Level1
+  m_Name: Level2
   m_EditorClassIdentifier: 
-  levelID: 1
-  numberOfLives: 5
+  levelID: 2
+  numberOfLives: 3
   activeLinesNumbers: 0100000002000000030000000400000005000000
   defendersToSpawn:
   - {fileID: 8228716421565765270, guid: ede40c2bebffd2443849ab59b89d8cae, type: 3}
   - {fileID: 6084068942332240114, guid: 9a762474c07b4f24ba2c22120000c36e, type: 3}
   - {fileID: 4271820879086872625, guid: f2629ab3ff724034da2fb4031ae1f040, type: 3}
+  - {fileID: 4596538600383484361, guid: 138d5d4e34606ee4d80e03eee11be5e0, type: 3}
   startingSerenityAmount: 100
   numberOfEnemies: 10
   enemiesToSpawn:

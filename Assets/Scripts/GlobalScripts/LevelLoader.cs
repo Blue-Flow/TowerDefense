@@ -9,27 +9,30 @@ public class LevelLoader : MonoBehaviour
     private int timeToWait = 3;
     private int currentSceneIndex;
 
-    private void Awake()
-    {
-        EventsSubscribe();
-    }
     void Start()
     {
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         if (currentSceneIndex == 0)
         {
-            StartCoroutine(WaitForTime());
+            StartCoroutine(WaitForTime(LoadMenu));
         }
         else return;
     }
-
-    private void LoadNextScene()
+    public void LoadMenu()
     {
-        SceneManager.LoadScene(currentSceneIndex+1);
+        SceneManager.LoadScene("Initialization");
+        SceneManager.LoadScene("MenuScene", LoadSceneMode.Additive);
+    }
+
+    public void LoadStoryMode(LevelDataSO levelData)
+    {
+        SceneManager.UnloadSceneAsync("MenuScene");
+        SceneManager.LoadScene("StoryScene", LoadSceneMode.Additive);
+        EventHandler.StartStoryMode(levelData);
     }
     private void LoadWinScreen()
     {
-        StartCoroutine(WaitForTime_Win());
+        StartCoroutine(nameof(LoadEndScreen_Win));
     }
     private void LoadLooseScreen()
     {
@@ -40,20 +43,24 @@ public class LevelLoader : MonoBehaviour
         Time.timeScale = 0.2f;
         // play SFX
         yield return new WaitForSeconds(1);
-        SceneManager.LoadScene("LooseScreen");
+        SceneManager.LoadScene("LooseScene", LoadSceneMode.Additive);
+        SceneManager.UnloadSceneAsync("StoryScene");
         Time.timeScale = 1;
     }
-    private IEnumerator WaitForTime()
+    private IEnumerator WaitForTime(Action methodToRun)
     {
        yield return new WaitForSeconds(timeToWait);
-       LoadNextScene();
+       methodToRun();
     }
-    private IEnumerator WaitForTime_Win()
+    private IEnumerator LoadEndScreen_Win()
     {
+        Time.timeScale = 0;
         yield return new WaitForSeconds(timeToWait);
-        SceneManager.LoadScene("WinScreen");
+        SceneManager.LoadScene("WinScene", LoadSceneMode.Additive);
+        SceneManager.UnloadSceneAsync("StoryScene");
+        Time.timeScale = 1;
     }
-    private void EventsSubscribe()
+    private void OnEnable()
     {
         EventHandler.OnWinGame += LoadWinScreen;
         EventHandler.OnLooseGame += LoadLooseScreen;
