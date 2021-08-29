@@ -20,15 +20,13 @@ public class LevelLoader : MonoBehaviour
     }
     public void LoadMenu()
     {
-        SceneManager.LoadScene("Initialization");
-        SceneManager.LoadScene("MenuScene", LoadSceneMode.Additive);
+        SceneManager.LoadScene("MenuScene");
     }
 
     public void LoadStoryMode(LevelDataSO levelData)
     {
-        SceneManager.UnloadSceneAsync("MenuScene");
         SceneManager.LoadScene("StoryScene", LoadSceneMode.Additive);
-        EventHandler.StartStoryMode(levelData);
+        StartCoroutine(WaitForTimeThenEvent(levelData));
     }
     private void LoadWinScreen()
     {
@@ -43,8 +41,7 @@ public class LevelLoader : MonoBehaviour
         Time.timeScale = 0.2f;
         // play SFX
         yield return new WaitForSeconds(1);
-        SceneManager.LoadScene("LooseScene", LoadSceneMode.Additive);
-        SceneManager.UnloadSceneAsync("StoryScene");
+        SceneManager.LoadScene("LooseScene");
         Time.timeScale = 1;
     }
     private IEnumerator WaitForTime(Action methodToRun)
@@ -52,12 +49,17 @@ public class LevelLoader : MonoBehaviour
        yield return new WaitForSeconds(timeToWait);
        methodToRun();
     }
+    private IEnumerator WaitForTimeThenEvent(LevelDataSO levelData)
+    {
+        yield return new WaitForSeconds(1);
+        EventHandler.StartStoryMode(levelData);
+        SceneManager.UnloadSceneAsync("MenuScene");
+    }
     private IEnumerator LoadEndScreen_Win()
     {
         Time.timeScale = 0;
         yield return new WaitForSeconds(timeToWait);
-        SceneManager.LoadScene("WinScene", LoadSceneMode.Additive);
-        SceneManager.UnloadSceneAsync("StoryScene");
+        SceneManager.LoadScene("WinScene");
         Time.timeScale = 1;
     }
     private void OnEnable()
