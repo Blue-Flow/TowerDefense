@@ -8,6 +8,7 @@ public class LevelLoader : MonoBehaviour
 {
     private int timeToWait = 3;
     private int currentSceneIndex;
+    private LevelDataSO currentLevel;
 
     void Start()
     {
@@ -22,9 +23,19 @@ public class LevelLoader : MonoBehaviour
     {
         SceneManager.LoadScene("MenuScene");
     }
-
+    public void SetLevelData(LevelDataSO levelData)
+    {
+        currentLevel = levelData;
+    }
+    public void ReloadStoryMode()
+    {
+        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene("StoryScene", LoadSceneMode.Additive);
+        StartCoroutine(WaitForTimeThenEvent(currentLevel));
+    }
     public void LoadStoryMode(LevelDataSO levelData)
     {
+        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene("StoryScene", LoadSceneMode.Additive);
         StartCoroutine(WaitForTimeThenEvent(levelData));
     }
@@ -52,7 +63,7 @@ public class LevelLoader : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
         EventHandler.StartStoryMode(levelData);
-        SceneManager.UnloadSceneAsync("MenuScene");
+        SceneManager.UnloadSceneAsync(currentSceneIndex);
     }
     private IEnumerator LoadEndScreen_Win()
     {

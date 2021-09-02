@@ -37,6 +37,8 @@ public class LevelManager : MonoBehaviour
 
         FindObjectOfType<DefenderButtonsDisplay>().SetDefendersButtons(data.defendersToSpawn);
 
+        FindObjectOfType<LevelLoader>().SetLevelData(data);
+
     }
     private void UpdateCurrentLevelProgression()
     {
