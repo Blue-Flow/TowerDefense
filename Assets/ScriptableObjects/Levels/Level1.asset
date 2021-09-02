@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelID: 1
   numberOfLives: 5
-  activeLinesNumbers: 0100000002000000030000000400000005000000
+  activeSpawnPoints:
+  - {fileID: 7818019239737009502, guid: d1e7ac54aded61647be1cfb63cc8aa1c, type: 3}
+  - {fileID: 4389148917022102277, guid: 23c895a65dade9640bf61f27e630d2d9, type: 3}
+  - {fileID: 633814721117164040, guid: 50780cf6065b7c046b3cf04aa4aeff1f, type: 3}
   defendersToSpawn:
   - {fileID: 8228716421565765270, guid: ede40c2bebffd2443849ab59b89d8cae, type: 3}
   - {fileID: 6084068942332240114, guid: 9a762474c07b4f24ba2c22120000c36e, type: 3}

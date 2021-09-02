@@ -39,7 +39,6 @@ public class LevelLoader : MonoBehaviour
     private IEnumerator LoadEndScreen_Loose()
     {
         Time.timeScale = 0.2f;
-        // play SFX
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene("LooseScene");
         Time.timeScale = 1;

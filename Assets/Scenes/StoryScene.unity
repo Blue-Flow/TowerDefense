@@ -599,6 +599,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1622917055}
     - target: {fileID: 524044621, guid: d7a3baaf33451644c942faf83bf5e18b, type: 3}
+      propertyPath: levelLostText
+      value: 
+      objectReference: {fileID: 5048182143961598810}
+    - target: {fileID: 524044621, guid: d7a3baaf33451644c942faf83bf5e18b, type: 3}
+      propertyPath: levelCompletedText
+      value: 
+      objectReference: {fileID: 5048182143961598811}
+    - target: {fileID: 524044621, guid: d7a3baaf33451644c942faf83bf5e18b, type: 3}
       propertyPath: levelCompletedCanvas
       value: 
       objectReference: {fileID: 1628298738}
@@ -834,6 +842,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5678657625590613875, guid: b1a35ab2e4ff3ce4faa36aac53271658, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6491985639590655685, guid: b1a35ab2e4ff3ce4faa36aac53271658, type: 3}
       propertyPath: m_Color.a
       value: 0
@@ -850,8 +862,26 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.9622642
       objectReference: {fileID: 0}
+    - target: {fileID: 6947261479618432110, guid: b1a35ab2e4ff3ce4faa36aac53271658, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8968515252019619770, guid: b1a35ab2e4ff3ce4faa36aac53271658, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1a35ab2e4ff3ce4faa36aac53271658, type: 3}
+--- !u!1 &5048182143961598810 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5312934684319283069, guid: b1a35ab2e4ff3ce4faa36aac53271658, type: 3}
+  m_PrefabInstance: {fileID: 5048182143961598809}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5048182143961598811 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5653024530647650775, guid: b1a35ab2e4ff3ce4faa36aac53271658, type: 3}
+  m_PrefabInstance: {fileID: 5048182143961598809}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7196513012565497223
 PrefabInstance:
   m_ObjectHideFlags: 0
