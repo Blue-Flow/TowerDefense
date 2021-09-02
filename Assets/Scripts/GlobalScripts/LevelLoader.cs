@@ -57,10 +57,8 @@ public class LevelLoader : MonoBehaviour
     }
     private IEnumerator LoadEndScreen_Win()
     {
-        Time.timeScale = 0;
         yield return new WaitForSeconds(timeToWait);
         SceneManager.LoadScene("WinScene");
-        Time.timeScale = 1;
     }
     private void OnEnable()
     {

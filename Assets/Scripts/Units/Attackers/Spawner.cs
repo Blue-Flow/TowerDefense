@@ -6,34 +6,21 @@ public class Spawner : MonoBehaviour
 {
     private bool isSpawning = true;
 
+    private List<AttackerSpawner> activeSpawnPoints;
     private List<Attacker> attackerPrefabs;
 
-    private Vector2[] spawnPositions = 
-        {
-     new Vector2(10, 1.35f),
-     new Vector2(10, 2.35f),
-     new Vector2(10, 3.35f),
-     new Vector2(10, 4.35f),
-     new Vector2(10, 5.35f)
-        };
     private int lastSpawnedLineNumber;
     private int lineToSpawn;
 
     private float minSpawnDelay = 1f;
     private float maxSpawnDelay = 2.5f;
 
-    private int minNumberOfLines = 1;
-    private int maxNumberOfLines = 5;
-
-    public void SetSpawnerInfo(float minDelay, float maxDelay, int[] activeLines, List<Attacker> attackerList)
+    public void SetSpawnerInfo(float minDelay, float maxDelay, List<AttackerSpawner> attackerSpawnPoints, List<Attacker> attackerList)
     {
         minSpawnDelay = minDelay;
         maxSpawnDelay = maxDelay;
 
-        minNumberOfLines = activeLines[0];
-        int activeLinesCount = activeLines.Length;
-        maxNumberOfLines = activeLines[activeLinesCount-1];
-
+        activeSpawnPoints = attackerSpawnPoints;
         attackerPrefabs = attackerList;
     }
     private void StartSpawning()
@@ -62,13 +49,13 @@ public class Spawner : MonoBehaviour
         lastSpawnedLineNumber = lineToSpawn;
         int indexOfAttackerToSpawn = GenerateRandomAttackerToSpawn();
         Attacker ennemyToSpawn = Instantiate(attackerPrefabs[indexOfAttackerToSpawn], transform);
-        ennemyToSpawn.transform.position = spawnPositions[lineToSpawn];
+        ennemyToSpawn.transform.position = activeSpawnPoints[lineToSpawn].transform.position;
     }
     int GenerateRandomLineToSpawn()
     {
         while (lastSpawnedLineNumber == lineToSpawn)
         {
-           lineToSpawn = Random.Range((minNumberOfLines - 1), (maxNumberOfLines - 1));
+           lineToSpawn = Random.Range(0, activeSpawnPoints.Count);
         }
         return lineToSpawn;
     }

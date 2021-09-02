@@ -11,16 +11,15 @@ public class LevelManager : MonoBehaviour
     private void SetStoryModeData(LevelDataSO levelData)
     {
         data = levelData;
-        Debug.Log("SetStoryModeData called");
         SetLevelValues();
-        Debug.Log("SetLevelValues called");
         EventHandler.StartGame();
+        EventHandler.ResourceValueChanged(data.startingSerenityAmount);
     }
     private void SetLevelValues()
     {
         TryGetComponent(out Spawner spawner);
         if (spawner)
-            spawner.SetSpawnerInfo(data.minSpawnDelayInSec, data.maxSpawnDelayInSec, data.activeLinesNumbers, data.enemiesToSpawn);
+            spawner.SetSpawnerInfo(data.minSpawnDelayInSec, data.maxSpawnDelayInSec, data.activeSpawnPoints, data.enemiesToSpawn);
         else
             Debug.Log("No component Spawner found during initialization");
 

@@ -140,16 +140,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1640b9143643044fa199a924452aa28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonList:
-  - {fileID: 1511873659}
-  - {fileID: 924268032}
-  - {fileID: 271860288}
-  - {fileID: 565438057}
---- !u!1 &271860288 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7731521429684984192, guid: 1975b4b5130cffb45a7e3e0831209ac1, type: 3}
-  m_PrefabInstance: {fileID: 1257211129}
-  m_PrefabAsset: {fileID: 0}
+  Button_Amusement: {fileID: 0}
+  Button_Joie: {fileID: 0}
+  "Button_R\xE9silience": {fileID: 0}
+  "Button_S\xE9r\xE9nit\xE9": {fileID: 0}
 --- !u!1001 &283375998
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -273,16 +267,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &565438057 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5393081432912611892, guid: 1975b4b5130cffb45a7e3e0831209ac1, type: 3}
-  m_PrefabInstance: {fileID: 1257211129}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &924268032 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 763068552940637623, guid: 1975b4b5130cffb45a7e3e0831209ac1, type: 3}
-  m_PrefabInstance: {fileID: 1257211129}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1257211129
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -849,6 +833,22 @@ PrefabInstance:
     - target: {fileID: 5048182143440705206, guid: b1a35ab2e4ff3ce4faa36aac53271658, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491985639590655685, guid: b1a35ab2e4ff3ce4faa36aac53271658, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491985639590655685, guid: b1a35ab2e4ff3ce4faa36aac53271658, type: 3}
+      propertyPath: m_Color.b
+      value: 0.9622642
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491985639590655685, guid: b1a35ab2e4ff3ce4faa36aac53271658, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9622642
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491985639590655685, guid: b1a35ab2e4ff3ce4faa36aac53271658, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9622642
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1a35ab2e4ff3ce4faa36aac53271658, type: 3}
