@@ -70,14 +70,16 @@ public class LevelLoader : MonoBehaviour
         yield return new WaitForSeconds(timeToWait);
         SceneManager.LoadScene("WinScene");
     }
+    #region events
     private void OnEnable()
     {
         EventHandler.OnWinGame += LoadWinScreen;
         EventHandler.OnLooseGame += LoadLooseScreen;
     }
-    private void OnDestroy()
+    private void OnDisable()
     {
         EventHandler.OnWinGame -= LoadWinScreen;
         EventHandler.OnLooseGame -= LoadLooseScreen;
     }
+    #endregion
 }

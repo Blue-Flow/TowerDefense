@@ -10,10 +10,6 @@ public class LevelProgressionDisplay : MonoBehaviour
     [SerializeField] GameObject levelCompletedText;
     [SerializeField] GameObject levelLostText;
 
-    private void Awake()
-    {
-        EventsSubscribe();
-    }
     private void Start()
     {
         levelCompletedCanvas.gameObject.SetActive(false);
@@ -32,16 +28,18 @@ public class LevelProgressionDisplay : MonoBehaviour
         levelCompletedCanvas.gameObject.SetActive(true);
         levelCompletedText.SetActive(true);
     }
-    private void EventsSubscribe()
+    #region events
+    private void OnEnable()
     {
         EventHandler.OnLevelProgressionValueChange += DefenseGaugeDisplay;
         EventHandler.OnWinGame += DisplayWinMessage;
         EventHandler.OnLooseGame += DisplayLooseMessage;
     }
-    private void OnDestroy()
+    private void OnDisable()
     {
         EventHandler.OnLevelProgressionValueChange -= DefenseGaugeDisplay;
         EventHandler.OnWinGame -= DisplayWinMessage;
         EventHandler.OnLooseGame -= DisplayLooseMessage;
     }
+    #endregion
 }

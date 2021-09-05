@@ -10,7 +10,6 @@ public class Defender : MonoBehaviour
     Animator animator;
     private void Start()
     {
-        //enemyLayerMask = LayerMask.GetMask("Attackers");
         enemyLayerMask = data.targetLayerMask;
         animator = GetComponent<Animator>();
         SetBaseHealth();
@@ -58,12 +57,12 @@ public class Defender : MonoBehaviour
     {
         EventHandler.DefenderDie();
     }
-}
+}  /*
 public enum Defenders
 {
     Joie,
     Sérénité,
     Amusement
-}
+} */
 
 

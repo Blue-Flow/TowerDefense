@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ResourceSpawner : MonoBehaviour
 {
-    [SerializeField] int amountOfResourceToSpawn = 2;
+    [SerializeField] private int amountOfResourceToSpawn = 2;
 
     public void SpawnResource()
     {

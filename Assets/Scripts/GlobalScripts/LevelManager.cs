@@ -62,7 +62,7 @@ public class LevelManager : MonoBehaviour
             EventHandler.SpawnCapReached();
         }
     }
-
+    #region events
     private void OnEnable()
     {
         EventHandler.OnAttackerDie += CountAttackerKilled;
@@ -76,4 +76,5 @@ public class LevelManager : MonoBehaviour
         EventHandler.OnAttackerSpawned -= CountAttackerSpawned;
         EventHandler.OnStartStoryMode += SetStoryModeData;
     }
+    #endregion
 }

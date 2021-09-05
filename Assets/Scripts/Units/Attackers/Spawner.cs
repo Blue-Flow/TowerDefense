@@ -31,7 +31,7 @@ public class Spawner : MonoBehaviour
     {
         isSpawning = false;
     }
-    private IEnumerator SpawnEnnemies ()
+    private IEnumerator SpawnEnnemies()
     {
         while (isSpawning)
         {
@@ -67,6 +67,7 @@ public class Spawner : MonoBehaviour
     {
         return Random.Range(0, attackerPrefabs.Count);
     }
+    #region events
     private void OnEnable()
     {
         EventHandler.OnStartGame += StartSpawning;
@@ -77,4 +78,5 @@ public class Spawner : MonoBehaviour
         EventHandler.OnStartGame -= StartSpawning;
         EventHandler.OnSpawnCapReached -= StopSpawning;
     }
+    #endregion
 }

@@ -7,10 +7,6 @@ public class DefenderPlacement : MonoBehaviour
     private List<Defender> defendersPrefabs;
     private bool isSpawning = false;
     private int indexOfDefenderToSpawn;
-    private void Start()
-    {
-        EventsSubscribe();
-    }
     public void SetDefendersToSpawn(List<Defender> defenderList)
     {
         defendersPrefabs = defenderList;
@@ -48,12 +44,14 @@ public class DefenderPlacement : MonoBehaviour
         Instantiate(defendersPrefabs[indexOfDefenderToSpawn], finalPosition, Quaternion.identity);
         DeactivateSpawnMode();
     }
-    private void EventsSubscribe()
+    #region events
+    private void OnEnable()
     {
         EventHandler.OnSpawnDefender += ActivateSpawnMode;
     }
-    private void OnDestroy()
+    private void OnDisable()
     {
         EventHandler.OnSpawnDefender -= ActivateSpawnMode;
     }
+    #endregion
 }

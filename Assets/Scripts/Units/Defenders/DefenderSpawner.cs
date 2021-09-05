@@ -41,7 +41,7 @@ public class DefenderSpawner : MonoBehaviour
         EventHandler.OnResourceProduced += AddResourceToCount;
     }
 
-    private void OnDestroy()
+    private void OnDisable()
     {
         EventHandler.OnResourceProduced -= AddResourceToCount;
     }
