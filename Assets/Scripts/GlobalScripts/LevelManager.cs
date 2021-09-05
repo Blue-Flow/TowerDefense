@@ -8,6 +8,10 @@ public class LevelManager : MonoBehaviour
     private int numberOfSpawnedAttacker = 0;
     private int numberOfDeadAttacker = 0;
 
+    private void Start()
+    {
+        Debug.Log("LevelManager created");
+    }
     private void SetStoryModeData(LevelDataSO levelData)
     {
         data = levelData;
@@ -17,9 +21,13 @@ public class LevelManager : MonoBehaviour
     }
     private void SetLevelValues()
     {
+        Debug.Log("SetLevelValuesCalled");
         TryGetComponent(out Spawner spawner);
         if (spawner)
+        {
             spawner.SetSpawnerInfo(data.minSpawnDelayInSec, data.maxSpawnDelayInSec, data.activeSpawnPoints, data.enemiesToSpawn);
+            Debug.Log(spawner);
+        }
         else
             Debug.Log("No component Spawner found during initialization");
 
@@ -68,6 +76,7 @@ public class LevelManager : MonoBehaviour
         EventHandler.OnAttackerDie += CountAttackerKilled;
         EventHandler.OnAttackerSpawned += CountAttackerSpawned;
         EventHandler.OnStartStoryMode += SetStoryModeData;
+        Debug.Log("LevelManager subscribed");
     }
 
     private void OnDisable()
@@ -75,6 +84,8 @@ public class LevelManager : MonoBehaviour
         EventHandler.OnAttackerDie -= CountAttackerKilled;
         EventHandler.OnAttackerSpawned -= CountAttackerSpawned;
         EventHandler.OnStartStoryMode += SetStoryModeData;
+        Debug.Log("LevelManager unsubscribed");
+        
     }
     #endregion
 }
