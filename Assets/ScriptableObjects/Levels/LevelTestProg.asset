@@ -12,12 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 649eae01bc6113942bc49efd60f7a9a6, type: 3}
   m_Name: LevelTestProg
   m_EditorClassIdentifier: 
-  levelID: 0
-  numberOfLives: 0
-  activeSpawnPoints: []
+  levelID: 3
+  numberOfLives: 1
+  activeSpawnPoints:
+  - {fileID: 7818019239737009502, guid: d1e7ac54aded61647be1cfb63cc8aa1c, type: 3}
+  - {fileID: 2590796015544270812, guid: 3155276b6b649864a9313357765d9330, type: 3}
+  - {fileID: 4389148917022102277, guid: 23c895a65dade9640bf61f27e630d2d9, type: 3}
+  - {fileID: 7382874360297095071, guid: f84a0f519fcaa2c4e97d1cd84371ca04, type: 3}
+  - {fileID: 633814721117164040, guid: 50780cf6065b7c046b3cf04aa4aeff1f, type: 3}
   defendersToSpawn: []
   startingSerenityAmount: 0
-  numberOfEnemies: 0
-  enemiesToSpawn: []
-  minSpawnDelayInSec: 0
-  maxSpawnDelayInSec: 0
+  numberOfEnemies: 50
+  enemiesToSpawn:
+  - {fileID: 8057496370945090169, guid: 4af54c0a86b5ddd40a799c4246926c9a, type: 3}
+  minSpawnDelayInSec: 0.1
+  maxSpawnDelayInSec: 0.2

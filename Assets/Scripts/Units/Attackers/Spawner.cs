@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    private bool isSpawning = true;
+    private bool isSpawning = false;
 
     private List<AttackerSpawner> activeSpawnPoints;
     private List<Attacker> attackerPrefabs;
@@ -25,6 +25,7 @@ public class Spawner : MonoBehaviour
     }
     private void StartSpawning()
     {
+        isSpawning = true;
         StartCoroutine(SpawnEnnemies());
     }
     private void StopSpawning()

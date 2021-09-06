@@ -7,12 +7,11 @@ using UnityEngine;
 public class LevelLoader : MonoBehaviour
 {
     private int timeToWait = 3;
-    private int currentSceneIndex;
     private LevelDataSO currentLevel;
 
     void Start()
     {
-        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         if (currentSceneIndex == 0)
         {
             StartCoroutine(WaitForTime(LoadMenu));
@@ -23,21 +22,22 @@ public class LevelLoader : MonoBehaviour
     {
         SceneManager.LoadScene("MenuScene");
     }
-    public void SetLevelData(LevelDataSO levelData)
+    private void SetLevelData(LevelDataSO levelData)
     {
-        currentLevel = levelData;
+        MainManager.Instance.LastLoadedLevel = levelData;
     }
     public void ReloadStoryMode()
     {
-        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene("StoryScene", LoadSceneMode.Additive);
-        StartCoroutine(WaitForTimeThenEvent(currentLevel));
+        StartCoroutine(WaitForTimeThenEvent(MainManager.Instance.LastLoadedLevel, currentSceneIndex));
     }
     public void LoadStoryMode(LevelDataSO levelData)
     {
-        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SetLevelData(levelData);
         SceneManager.LoadScene("StoryScene", LoadSceneMode.Additive);
-        StartCoroutine(WaitForTimeThenEvent(levelData));
+        StartCoroutine(WaitForTimeThenEvent(levelData, currentSceneIndex));
     }
     private void LoadWinScreen()
     {
@@ -59,11 +59,11 @@ public class LevelLoader : MonoBehaviour
        yield return new WaitForSeconds(timeToWait);
        methodToRun();
     }
-    private IEnumerator WaitForTimeThenEvent(LevelDataSO levelData)
+    private IEnumerator WaitForTimeThenEvent(LevelDataSO levelData, int sceneIndexToUnload)
     {
         yield return new WaitForSeconds(1);
         EventHandler.StartStoryMode(levelData);
-        SceneManager.UnloadSceneAsync(currentSceneIndex);
+        SceneManager.UnloadSceneAsync(sceneIndexToUnload);
     }
     private IEnumerator LoadEndScreen_Win()
     {
