@@ -39,7 +39,7 @@ public class LevelLoader : MonoBehaviour
         SceneManager.LoadScene("StoryScene", LoadSceneMode.Additive);
         StartCoroutine(WaitForTimeThenEvent(levelData, currentSceneIndex));
     }
-    private void LoadWinScreen()
+    private void LoadWinScreen(int levelNumber)
     {
         StartCoroutine(nameof(LoadEndScreen_Win));
     }
