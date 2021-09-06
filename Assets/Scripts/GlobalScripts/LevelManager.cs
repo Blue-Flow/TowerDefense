@@ -19,10 +19,7 @@ public class LevelManager : MonoBehaviour
     {
         TryGetComponent(out Spawner spawner);
         if (spawner)
-        {
             spawner.SetSpawnerInfo(data.minSpawnDelayInSec, data.maxSpawnDelayInSec, data.activeSpawnPoints, data.enemiesToSpawn);
-            Debug.Log(spawner);
-        }
         else
             Debug.Log("No component Spawner found during initialization");
 
