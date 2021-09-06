@@ -16,10 +16,6 @@ MonoBehaviour:
   numberOfLives: 1
   activeSpawnPoints:
   - {fileID: 7818019239737009502, guid: d1e7ac54aded61647be1cfb63cc8aa1c, type: 3}
-  - {fileID: 2590796015544270812, guid: 3155276b6b649864a9313357765d9330, type: 3}
-  - {fileID: 4389148917022102277, guid: 23c895a65dade9640bf61f27e630d2d9, type: 3}
-  - {fileID: 7382874360297095071, guid: f84a0f519fcaa2c4e97d1cd84371ca04, type: 3}
-  - {fileID: 633814721117164040, guid: 50780cf6065b7c046b3cf04aa4aeff1f, type: 3}
   defendersToSpawn: []
   startingSerenityAmount: 0
   numberOfEnemies: 50
