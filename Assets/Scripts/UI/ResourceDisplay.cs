@@ -15,7 +15,7 @@ public class ResourceDisplay : MonoBehaviour
     {
         EventHandler.OnResourceValueChange += DisplayResourceValue;
     }
-    private void OnDestroy()
+    private void OnDisable()
     {
         EventHandler.OnResourceValueChange -= DisplayResourceValue;
     }

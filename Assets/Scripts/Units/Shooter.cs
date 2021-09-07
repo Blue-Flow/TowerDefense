@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class Shooter : MonoBehaviour
 {
-    [SerializeField] GameObject thisCharacterGun;
-    [Header("Projectile Info")]
-    [SerializeField] Projectile projectile;
+    [SerializeField] private GameObject thisCharacterGun;
+    [SerializeField] private Projectile projectile;
     private int damage;
     
     public void SetDamage(int value)

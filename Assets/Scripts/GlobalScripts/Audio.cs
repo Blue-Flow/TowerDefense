@@ -12,7 +12,6 @@ public class Audio : MonoBehaviour
 
     void Awake()
     {
-        EventsSubscribe();
         audioSource = GetComponent<AudioSource>();
     }
     private void PlayAttackerDeathSFX()
@@ -24,22 +23,23 @@ public class Audio : MonoBehaviour
     {
         audioSource.PlayOneShot(defenderDeathSFX);
     }
-    private void PlayWinSFX()
+    private void PlayWinSFX(int levelNumber)
     {
         audioSource.PlayOneShot(winSFX);
     }
-
-    private void EventsSubscribe()
+    #region events
+    private void OnEnable()
     {
         EventHandler.OnAttackerDie += PlayAttackerDeathSFX;
         EventHandler.OnDefenderDie += PlayDefenderDeathSFX;
         EventHandler.OnWinGame += PlayWinSFX;
     }
 
-    private void OnDestroy()
+    private void OnDisable()
     {
         EventHandler.OnAttackerDie -= PlayAttackerDeathSFX;
         EventHandler.OnDefenderDie -= PlayDefenderDeathSFX;
         EventHandler.OnWinGame -= PlayWinSFX;
     }
+    #endregion
 }
