@@ -13,6 +13,7 @@ public class ButtonFunctionnality : MonoBehaviour
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #endif
+        MainManager.Instance.SaveLevelCompleted();
         Application.Quit();
     }
 }

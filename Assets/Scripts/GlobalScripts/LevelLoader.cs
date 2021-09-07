@@ -7,11 +7,11 @@ using UnityEngine;
 public class LevelLoader : MonoBehaviour
 {
     private int timeToWait = 3;
-    private int currentSceneIndex;
+    private LevelDataSO currentLevel;
 
     void Start()
     {
-        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         if (currentSceneIndex == 0)
         {
             StartCoroutine(WaitForTime(LoadMenu));
@@ -22,13 +22,24 @@ public class LevelLoader : MonoBehaviour
     {
         SceneManager.LoadScene("MenuScene");
     }
-
+    private void SetLevelData(LevelDataSO levelData)
+    {
+        MainManager.Instance.LastLoadedLevel = levelData;
+    }
+    public void ReloadStoryMode()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene("StoryScene", LoadSceneMode.Additive);
+        StartCoroutine(WaitForTimeThenEvent(MainManager.Instance.LastLoadedLevel, currentSceneIndex));
+    }
     public void LoadStoryMode(LevelDataSO levelData)
     {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SetLevelData(levelData);
         SceneManager.LoadScene("StoryScene", LoadSceneMode.Additive);
-        StartCoroutine(WaitForTimeThenEvent(levelData));
+        StartCoroutine(WaitForTimeThenEvent(levelData, currentSceneIndex));
     }
-    private void LoadWinScreen()
+    private void LoadWinScreen(int levelNumber)
     {
         StartCoroutine(nameof(LoadEndScreen_Win));
     }
@@ -39,7 +50,6 @@ public class LevelLoader : MonoBehaviour
     private IEnumerator LoadEndScreen_Loose()
     {
         Time.timeScale = 0.2f;
-        // play SFX
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene("LooseScene");
         Time.timeScale = 1;
@@ -49,27 +59,27 @@ public class LevelLoader : MonoBehaviour
        yield return new WaitForSeconds(timeToWait);
        methodToRun();
     }
-    private IEnumerator WaitForTimeThenEvent(LevelDataSO levelData)
+    private IEnumerator WaitForTimeThenEvent(LevelDataSO levelData, int sceneIndexToUnload)
     {
         yield return new WaitForSeconds(1);
         EventHandler.StartStoryMode(levelData);
-        SceneManager.UnloadSceneAsync("MenuScene");
+        SceneManager.UnloadSceneAsync(sceneIndexToUnload);
     }
     private IEnumerator LoadEndScreen_Win()
     {
-        Time.timeScale = 0;
         yield return new WaitForSeconds(timeToWait);
         SceneManager.LoadScene("WinScene");
-        Time.timeScale = 1;
     }
+    #region events
     private void OnEnable()
     {
         EventHandler.OnWinGame += LoadWinScreen;
         EventHandler.OnLooseGame += LoadLooseScreen;
     }
-    private void OnDestroy()
+    private void OnDisable()
     {
         EventHandler.OnWinGame -= LoadWinScreen;
         EventHandler.OnLooseGame -= LoadLooseScreen;
     }
+    #endregion
 }

@@ -24,12 +24,14 @@ public class PlayerHealthManager : MonoBehaviour
         if (currentHealth <= 0)
             EventHandler.LooseGame();
     }
+    #region events
     private void OnEnable()
     {
         EventHandler.OnLostLife += LooseLife;
     }
-    private void OnDestroy()
+    private void OnDisable()
     {
         EventHandler.OnLostLife -= LooseLife;
     }
+    #endregion
 }

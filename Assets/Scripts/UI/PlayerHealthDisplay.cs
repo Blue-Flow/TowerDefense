@@ -27,12 +27,14 @@ public class PlayerHealthDisplay : MonoBehaviour
         if (index <= livesList.Count)
             index++;
     }
+    #region events
     private void OnEnable()
     {
         EventHandler.OnLostLife += DisplayLostLife;
     }
-    private void OnDestroy()
+    private void OnDisable()
     {
         EventHandler.OnLostLife -= DisplayLostLife;
     }
+    #endregion
 }

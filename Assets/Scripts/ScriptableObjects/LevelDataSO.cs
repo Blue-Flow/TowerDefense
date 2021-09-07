@@ -7,7 +7,7 @@ public class LevelDataSO : ScriptableObject
 {
     public int levelID;
     public int numberOfLives;
-    public int[] activeLinesNumbers;
+    public List<AttackerSpawner> activeSpawnPoints;
 
     [Header("Player")]
     public List<Defender> defendersToSpawn;

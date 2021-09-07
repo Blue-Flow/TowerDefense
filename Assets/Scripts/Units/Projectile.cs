@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    [SerializeField] ProjectileDataSO data;
+    [SerializeField] private ProjectileDataSO data;
     private int damageToInflict;
-    [SerializeField] bool isDefenderProjectile = true;
+    [SerializeField] private bool isDefenderProjectile = true;
 
     private Vector2 moveRight = new Vector2(1, 0);
     private Vector2 moveLeft = new Vector2(-1, 0);
