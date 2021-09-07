@@ -9,7 +9,7 @@ public class EventHandler : MonoBehaviour
 
     public static event Action OnStartGame;
     public static event Action OnLooseGame;
-    public static event Action OnWinGame;
+    public static event Action<int> OnWinGame;
 
     public static event Action OnAttackerDie;
     public static event Action OnDefenderDie;
@@ -45,11 +45,11 @@ public class EventHandler : MonoBehaviour
         }
         else Debug.Log("Error with event OnLooseGame, no subscriber");
     }
-    public static void WinGame()
+    public static void WinGame(int levelNumber)
     {
         if (OnWinGame != null)
         {
-            OnWinGame();
+            OnWinGame(levelNumber);
         }
         else Debug.Log("Error with event OnWinGame, no subscriber");
     }

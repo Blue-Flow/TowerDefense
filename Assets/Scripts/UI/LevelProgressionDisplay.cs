@@ -23,7 +23,7 @@ public class LevelProgressionDisplay : MonoBehaviour
         levelCompletedCanvas.gameObject.SetActive(true);
         levelLostText.SetActive(true);
     }
-    private void DisplayWinMessage()
+    private void DisplayWinMessage(int levelNumber)
     {
         levelCompletedCanvas.gameObject.SetActive(true);
         levelCompletedText.SetActive(true);

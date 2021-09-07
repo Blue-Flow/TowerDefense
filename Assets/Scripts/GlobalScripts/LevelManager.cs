@@ -49,7 +49,7 @@ public class LevelManager : MonoBehaviour
         UpdateCurrentLevelProgression();
         if (numberOfDeadAttacker == data.numberOfEnemies)
         {
-            EventHandler.WinGame();
+            EventHandler.WinGame(data.levelID);
         }
     }
     private void CountAttackerSpawned()
