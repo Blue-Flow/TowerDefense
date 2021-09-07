@@ -24,6 +24,12 @@ public class MainManager : MonoBehaviour
         LoadLevelCompleted();
     }
 
+    public List<bool> GetLevelCompletion()
+    {
+        List<bool> levelCompletionList = new List<bool> { level1Completed, level2Completed };
+        return levelCompletionList;
+    }
+
     private void SetMaxLevelReached(int levelNumber)
     {
         switch (levelNumber)

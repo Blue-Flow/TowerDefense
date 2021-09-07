@@ -23,7 +23,7 @@ public class Audio : MonoBehaviour
     {
         audioSource.PlayOneShot(defenderDeathSFX);
     }
-    private void PlayWinSFX()
+    private void PlayWinSFX(int levelNumber)
     {
         audioSource.PlayOneShot(winSFX);
     }
