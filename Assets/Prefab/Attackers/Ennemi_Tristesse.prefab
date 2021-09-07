@@ -31,7 +31,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5639901465126721906}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.445933, y: 2.1864016, z: -0.82994896}
+  m_LocalPosition: {x: 6.491, y: 2.165, z: -0.82994896}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -1128813155181456575, guid: efa1c7b35fc54ea42ba1b927bee51027, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.83, y: 0.88}
@@ -133,7 +133,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1281dadb6cfb3e34d856ce632531aa17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPoints: 1
   deathVFX: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5, type: 3}
 --- !u!61 &8581580985976143316
 BoxCollider2D:
