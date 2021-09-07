@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -1128813155181456575, guid: efa1c7b35fc54ea42ba1b927bee51027, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9433962, g: 0.27945885, b: 0.27945885, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -133,7 +133,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1281dadb6cfb3e34d856ce632531aa17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPoints: 1
   deathVFX: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5, type: 3}
 --- !u!61 &8581580985976143316
 BoxCollider2D:
