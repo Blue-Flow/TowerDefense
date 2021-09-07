@@ -14,7 +14,11 @@ public class LevelButtonsFunctionnality : MonoBehaviour
         for (int index = 0; index<levelButtonsListInOrder.Count; index ++)
         {
             if (levelCompletionList[index] == true)
-                levelButtonsListInOrder[index + 1].gameObject.SetActive(true);
+            {
+                levelButtonsListInOrder[index + 1].GetComponent<Image>().color = new Color(1,1,1, 0.0784f);
+                levelButtonsListInOrder[index + 1].interactable = true;
+            }
+                
         }
     }
 }
