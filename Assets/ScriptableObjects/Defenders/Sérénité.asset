@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3ad45e3e3842624bac1ccb928d4d19c, type: 3}
   m_Name: "S\xE9r\xE9nit\xE9"
   m_EditorClassIdentifier: 
-  defenderName: "S\xE9r\xE9nit\xE9"
+  defenderPrefab: {fileID: 3622053500362825303, guid: f2629ab3ff724034da2fb4031ae1f040, type: 3}
   moveSpeed: 0
   damage: 0
   health: 4
@@ -21,3 +21,4 @@ MonoBehaviour:
   targetLayerMask:
     serializedVersion: 2
     m_Bits: 0
+  defenderBaseSprite: {fileID: 21300000, guid: 662d4d50c537b7342a971a1fafa032ce, type: 3}

@@ -4,22 +4,18 @@ using UnityEngine;
 
 public class DefenderPlacement : MonoBehaviour
 {
-    private List<Defender> defendersPrefabs;
     private bool isSpawning = false;
-    private int indexOfDefenderToSpawn;
-    public void SetDefendersToSpawn(List<Defender> defenderList)
+    private DefenderDataSO currentDefenderToSpawn;
+    private void ActivateSpawnMode(DefenderDataSO defenderToSpawn)
     {
-        defendersPrefabs = defenderList;
-    }
-    private void ActivateSpawnMode(Defender defenderToSpawn)
-    {
-        // Find the right prefab to spawn inside the list according to the currentDefenderToSpawn
-        indexOfDefenderToSpawn = defendersPrefabs.FindIndex(x => x == defenderToSpawn);
+        currentDefenderToSpawn = defenderToSpawn;
         isSpawning = true;
     }
     private void DeactivateSpawnMode()
     {
         isSpawning = false;
+        currentDefenderToSpawn = null;
+        EventHandler.SelectionCanceled();
     }
     private void OnMouseDown()
     {
@@ -41,17 +37,18 @@ public class DefenderPlacement : MonoBehaviour
     }
     private void SpawnDefender(Vector2 finalPosition)
     {
-        Instantiate(defendersPrefabs[indexOfDefenderToSpawn], finalPosition, Quaternion.identity);
+        Instantiate(currentDefenderToSpawn.defenderPrefab, finalPosition, Quaternion.identity);
+        EventHandler.DefenderSpawned(currentDefenderToSpawn);
         DeactivateSpawnMode();
     }
     #region events
     private void OnEnable()
     {
-        EventHandler.OnSpawnDefender += ActivateSpawnMode;
+        EventHandler.OnStartSpawnDefender += ActivateSpawnMode;
     }
     private void OnDisable()
     {
-        EventHandler.OnSpawnDefender -= ActivateSpawnMode;
+        EventHandler.OnStartSpawnDefender -= ActivateSpawnMode;
     }
     #endregion
 }

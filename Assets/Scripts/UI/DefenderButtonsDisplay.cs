@@ -4,26 +4,13 @@ using UnityEngine;
 
 public class DefenderButtonsDisplay : MonoBehaviour
 {
-    [SerializeField] GameObject Button_Amusement;
-    [SerializeField] GameObject Button_Joie;
-    [SerializeField] GameObject Button_Résilience;
-    [SerializeField] GameObject Button_Sérénité;
-    private List<Defender> activeDefenderList;
-
-    public void SetDefendersButtons(List<Defender> thisLevelDefenderList)
+    [SerializeField] private GameObject spawnButtonPrefab;
+    public void SetDefenderButtons(List<DefenderDataSO> dataList)
     {
-        activeDefenderList = thisLevelDefenderList;
-
-        foreach(Defender defender in activeDefenderList)
+        foreach(DefenderDataSO data in dataList)
         {
-            if (defender.name == "Defender_Joie")
-                Button_Joie.SetActive(true);
-            if (defender.name == "Defender_Amusement")
-                Button_Amusement.SetActive(true);
-            if (defender.name == "Defender_Sérénité")
-                Button_Sérénité.SetActive(true);
-            if (defender.name == "Defender_Résilience")
-                Button_Résilience.SetActive(true);
+            GameObject newButton = Instantiate(spawnButtonPrefab, transform);
+            newButton.GetComponent<DefenderSpawnButton>().SetButtonData(data);
         }
     }
 }

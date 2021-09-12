@@ -12,8 +12,13 @@ public class LevelManager : MonoBehaviour
     {
         data = levelData;
         SetLevelValues();
-        EventHandler.StartGame();
         EventHandler.ResourceValueChanged(data.startingSerenityAmount);
+        StartCoroutine(nameof(WaitForTimeThenLaunch));
+    }
+    private IEnumerator WaitForTimeThenLaunch()
+    {
+        yield return new WaitForSeconds(data.initialSpawnDelay);
+        EventHandler.StartGame();
     }
     private void SetLevelValues()
     {
@@ -31,11 +36,9 @@ public class LevelManager : MonoBehaviour
         
         FindObjectOfType<PlayerHealthDisplay>().SetLiveDisplaySettings(data.numberOfLives);
 
-        FindObjectOfType<DefenderPlacement>().SetDefendersToSpawn(data.defendersToSpawn);
-
         FindObjectOfType<DefenderSpawner>().SetSerenityAmount(data.startingSerenityAmount);
 
-        FindObjectOfType<DefenderButtonsDisplay>().SetDefendersButtons(data.defendersToSpawn);
+        FindObjectOfType<DefenderButtonsDisplay>().SetDefenderButtons(data.defenderList);
 
     }
     private void UpdateCurrentLevelProgression()
