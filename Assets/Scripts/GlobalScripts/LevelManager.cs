@@ -31,8 +31,6 @@ public class LevelManager : MonoBehaviour
         
         FindObjectOfType<PlayerHealthDisplay>().SetLiveDisplaySettings(data.numberOfLives);
 
-        FindObjectOfType<DefenderPlacement>().SetDefendersToSpawn(data.defendersToSpawn);
-
         FindObjectOfType<DefenderSpawner>().SetSerenityAmount(data.startingSerenityAmount);
 
         FindObjectOfType<DefenderButtonsDisplay>().SetDefenderButtons(data.defenderList);

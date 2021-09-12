@@ -250,6 +250,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6157614009007202424, guid: 80be7d3c78bf99f4da16599c0d3e21f6, type: 3}
   m_PrefabInstance: {fileID: 6157614009227989641}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1050003674 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4783769642707479036, guid: 14b02b5be38b6d14b8ea77085882d21f, type: 3}
+  m_PrefabInstance: {fileID: 4783769642751889754}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2066994562
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -722,6 +733,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8035919647813980784, guid: 14b02b5be38b6d14b8ea77085882d21f, type: 3}
+      propertyPath: levelButtonsListInOrder.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035919647813980784, guid: 14b02b5be38b6d14b8ea77085882d21f, type: 3}
+      propertyPath: levelButtonsListInOrder.Array.data[2]
+      value: 
+      objectReference: {fileID: 1050003674}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14b02b5be38b6d14b8ea77085882d21f, type: 3}
 --- !u!1001 &6157614009227989641

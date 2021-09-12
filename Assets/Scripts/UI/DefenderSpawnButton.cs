@@ -10,7 +10,15 @@ public class DefenderSpawnButton : MonoBehaviour
     private DefenderDataSO defenderData;
     private Sprite spriteToShow;
     private int costToShow;
-
+    private DefenderSpawner defenderSpawner;
+    private void Start()
+    {
+        defenderSpawner = FindObjectOfType<DefenderSpawner>();
+    }
+    private void OnMouseDown()
+    {
+        defenderSpawner.CheckDefenderCost(defenderData);
+    }
     public void SetButtonData(DefenderDataSO data)
     {
         defenderData = data;

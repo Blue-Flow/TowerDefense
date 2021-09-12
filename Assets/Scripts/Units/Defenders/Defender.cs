@@ -39,10 +39,6 @@ public class Defender : MonoBehaviour
         if (hit.collider == null && isAttacking)
             StopAttacking();
     }
-    public int GetCost()
-    {
-        return data.spawnCost;
-    }
     private void StartAttacking()
     {
         animator.SetBool("isAttacking", true);
@@ -57,12 +53,6 @@ public class Defender : MonoBehaviour
     {
         EventHandler.DefenderDie();
     }
-}  /*
-public enum Defenders
-{
-    Joie,
-    Sérénité,
-    Amusement
-} */
+}
 
 

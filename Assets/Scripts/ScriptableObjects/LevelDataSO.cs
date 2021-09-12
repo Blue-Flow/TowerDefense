@@ -10,7 +10,6 @@ public class LevelDataSO : ScriptableObject
     public List<AttackerSpawner> activeSpawnPoints;
 
     [Header("Player")]
-    public List<Defender> defendersToSpawn;
     public List<DefenderDataSO> defenderList;
     public int startingSerenityAmount;
 

@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "NewDefenderData", menuName = "Unit/Defender")]
 public class DefenderDataSO : ScriptableObject
 {
-    public string defenderName;
+    public GameObject defenderPrefab;
     public float moveSpeed;
     public int damage;
     public int health;
