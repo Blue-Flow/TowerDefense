@@ -6,10 +6,11 @@ using UnityEngine;
 public class LevelDataSO : ScriptableObject
 {
     public int levelID;
-    public int numberOfLives;
+    public float initialSpawnDelay;
     public List<AttackerSpawner> activeSpawnPoints;
 
     [Header("Player")]
+    public int numberOfLives;
     public List<DefenderDataSO> defenderList;
     public int startingSerenityAmount;
 

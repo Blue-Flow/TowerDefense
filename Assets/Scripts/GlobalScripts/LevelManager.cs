@@ -12,8 +12,13 @@ public class LevelManager : MonoBehaviour
     {
         data = levelData;
         SetLevelValues();
-        EventHandler.StartGame();
         EventHandler.ResourceValueChanged(data.startingSerenityAmount);
+        StartCoroutine(nameof(WaitForTimeThenLaunch));
+    }
+    private IEnumerator WaitForTimeThenLaunch()
+    {
+        yield return new WaitForSeconds(data.initialSpawnDelay);
+        EventHandler.StartGame();
     }
     private void SetLevelValues()
     {

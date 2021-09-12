@@ -13,15 +13,12 @@ MonoBehaviour:
   m_Name: Level1
   m_EditorClassIdentifier: 
   levelID: 1
-  numberOfLives: 5
+  initialSpawnDelay: 3
   activeSpawnPoints:
   - {fileID: 7818019239737009502, guid: d1e7ac54aded61647be1cfb63cc8aa1c, type: 3}
   - {fileID: 4389148917022102277, guid: 23c895a65dade9640bf61f27e630d2d9, type: 3}
   - {fileID: 633814721117164040, guid: 50780cf6065b7c046b3cf04aa4aeff1f, type: 3}
-  defendersToSpawn:
-  - {fileID: 8228716421565765270, guid: ede40c2bebffd2443849ab59b89d8cae, type: 3}
-  - {fileID: 6084068942332240114, guid: 9a762474c07b4f24ba2c22120000c36e, type: 3}
-  - {fileID: 4271820879086872625, guid: f2629ab3ff724034da2fb4031ae1f040, type: 3}
+  numberOfLives: 5
   defenderList:
   - {fileID: 11400000, guid: d8ecad53051d52842a5b85cb57b2f312, type: 2}
   - {fileID: 11400000, guid: 4371c23e3a71c4b438e7f5569b167f7f, type: 2}
