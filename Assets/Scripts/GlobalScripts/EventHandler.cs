@@ -21,7 +21,9 @@ public class EventHandler : MonoBehaviour
     public static event Action OnLostLife;
     public static event Action OnSpawnCapReached;
 
-    public static void StartStoryMode (LevelDataSO levelDataToLoad)
+    public static event Action OnSelectionCanceled;
+
+    public static void StartStoryMode(LevelDataSO levelDataToLoad)
     {
         if (OnStartStoryMode != null)
         {
@@ -124,6 +126,14 @@ public class EventHandler : MonoBehaviour
             OnSpawnCapReached();
         }
         else Debug.Log("Error with event OnSpawnCapReached, no subscriber");
+    }
+    public static void SelectionCanceled()
+    {
+        if (OnSelectionCanceled != null)
+        {
+            OnSelectionCanceled();
+        }
+        else Debug.Log("Error with eventOnSelectionCanceled, no subscriber");
     }
 }
     

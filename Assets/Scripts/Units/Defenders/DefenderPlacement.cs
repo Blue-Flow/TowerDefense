@@ -15,6 +15,7 @@ public class DefenderPlacement : MonoBehaviour
     {
         isSpawning = false;
         currentDefenderToSpawn = null;
+        EventHandler.SelectionCanceled();
     }
     private void OnMouseDown()
     {

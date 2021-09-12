@@ -7,8 +7,10 @@ using UnityEngine.UI;
 
 public class DefenderSpawnButton : MonoBehaviour
 {
+    [SerializeField] private Color baseColor;
     private DefenderDataSO defenderData;
     private Sprite spriteToShow;
+    private Image image;
     private int costToShow;
     private DefenderSpawner defenderSpawner;
     private void Start()
@@ -17,7 +19,9 @@ public class DefenderSpawnButton : MonoBehaviour
     }
     private void OnMouseDown()
     {
+        EventHandler.SelectionCanceled();
         defenderSpawner.CheckDefenderCost(defenderData);
+        image.color = Color.white;
     }
     public void SetButtonData(DefenderDataSO data)
     {
@@ -34,7 +38,25 @@ public class DefenderSpawnButton : MonoBehaviour
 
     private void SetButtonImage()
     {
+        image = GetComponent<Image>();
         spriteToShow = defenderData.defenderBaseSprite;
-        GetComponent<Image>().sprite = spriteToShow;
+        image.sprite = spriteToShow;
     }
+
+    private void ResetButtonColor()
+    {
+        image.color = baseColor;
+    }
+    #region events
+    private void OnEnable()
+    {
+        EventHandler.OnSelectionCanceled += ResetButtonColor;
+    }
+
+    private void OnDisable()
+    {
+        EventHandler.OnSelectionCanceled += ResetButtonColor;
+
+    }
+    #endregion
 }
