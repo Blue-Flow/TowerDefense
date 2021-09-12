@@ -12,4 +12,5 @@ public class DefenderDataSO : ScriptableObject
     public float attackRange;
     public int spawnCost;
     public LayerMask targetLayerMask;
+    public Sprite defenderBaseSprite;
 }

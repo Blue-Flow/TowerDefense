@@ -21,3 +21,4 @@ MonoBehaviour:
   targetLayerMask:
     serializedVersion: 2
     m_Bits: 0
+  defenderBaseSprite: {fileID: 21300000, guid: 662d4d50c537b7342a971a1fafa032ce, type: 3}

@@ -22,6 +22,10 @@ MonoBehaviour:
   - {fileID: 8228716421565765270, guid: ede40c2bebffd2443849ab59b89d8cae, type: 3}
   - {fileID: 6084068942332240114, guid: 9a762474c07b4f24ba2c22120000c36e, type: 3}
   - {fileID: 4271820879086872625, guid: f2629ab3ff724034da2fb4031ae1f040, type: 3}
+  defenderList:
+  - {fileID: 11400000, guid: d8ecad53051d52842a5b85cb57b2f312, type: 2}
+  - {fileID: 11400000, guid: 4371c23e3a71c4b438e7f5569b167f7f, type: 2}
+  - {fileID: 11400000, guid: 3204134c0d2d89c4fb8fd6c6f4552313, type: 2}
   startingSerenityAmount: 100
   numberOfEnemies: 10
   enemiesToSpawn:

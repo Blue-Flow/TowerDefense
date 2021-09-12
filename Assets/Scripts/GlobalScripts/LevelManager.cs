@@ -35,7 +35,7 @@ public class LevelManager : MonoBehaviour
 
         FindObjectOfType<DefenderSpawner>().SetSerenityAmount(data.startingSerenityAmount);
 
-        FindObjectOfType<DefenderButtonsDisplay>().SetDefendersButtons(data.defendersToSpawn);
+        FindObjectOfType<DefenderButtonsDisplay>().SetDefenderButtons(data.defenderList);
 
     }
     private void UpdateCurrentLevelProgression()

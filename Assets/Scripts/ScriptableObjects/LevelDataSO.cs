@@ -11,6 +11,7 @@ public class LevelDataSO : ScriptableObject
 
     [Header("Player")]
     public List<Defender> defendersToSpawn;
+    public List<DefenderDataSO> defenderList;
     public int startingSerenityAmount;
 
     [Header("Enemies")]
