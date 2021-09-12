@@ -18,14 +18,13 @@ public class DefenderSpawner : MonoBehaviour
     {
         if (defenderData.spawnCost <= serenityAmount)
         {
-            SubstractResourceToCount(defenderData.spawnCost);
-            EventHandler.SpawnDefender(defenderData);
+            EventHandler.StartSpawnDefender(defenderData);
         }
         else Debug.Log("Not enough ressources" + serenityAmount + "/" + defenderData.spawnCost);
     }
-    private void SubstractResourceToCount(int amountToSubstract)
+    private void SubstractResourceToCount(DefenderDataSO defenderData)
     {
-        serenityAmount -= amountToSubstract;
+        serenityAmount -= defenderData.spawnCost;
         EventHandler.ResourceValueChanged(serenityAmount);
     }
     private void AddResourceToCount(int amountToAdd)
@@ -37,11 +36,13 @@ public class DefenderSpawner : MonoBehaviour
     private void OnEnable()
     {
         EventHandler.OnResourceProduced += AddResourceToCount;
+        EventHandler.OnDefenderSpawned += SubstractResourceToCount;
     }
 
     private void OnDisable()
     {
         EventHandler.OnResourceProduced -= AddResourceToCount;
+        EventHandler.OnDefenderSpawned -= SubstractResourceToCount;
     }
     #endregion
 }

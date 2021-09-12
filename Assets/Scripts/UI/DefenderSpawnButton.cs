@@ -55,7 +55,7 @@ public class DefenderSpawnButton : MonoBehaviour
 
     private void OnDisable()
     {
-        EventHandler.OnSelectionCanceled += ResetButtonColor;
+        EventHandler.OnSelectionCanceled -= ResetButtonColor;
 
     }
     #endregion
