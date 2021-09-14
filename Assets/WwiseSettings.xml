@@ -10,7 +10,7 @@
   <ShowSpatialAudioWarningMsg>true</ShowSpatialAudioWarningMsg>
   <WwiseInstallationPathMac />
   <WwiseInstallationPathWindows>H:\Wwise\Wwise 2021.1.1.7601</WwiseInstallationPathWindows>
-  <WwiseProjectPath>../../../Wwise Projects/TowerDefense/TowerDefense.wproj</WwiseProjectPath>
+  <WwiseProjectPath>StreamingAssets/Audio/TowerDefense/TowerDefense.wproj</WwiseProjectPath>
   <UseWaapi>true</UseWaapi>
   <WaapiPort>8080</WaapiPort>
   <WaapiIP>127.0.0.1</WaapiIP>

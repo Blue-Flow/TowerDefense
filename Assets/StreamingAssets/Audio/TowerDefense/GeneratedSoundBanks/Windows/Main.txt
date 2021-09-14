@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1103461852	InGameLoop			\Default Work Unit\InGameLoop	
+	3236081754	MenuLoop			\Default Work Unit\MenuLoop	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	108264615	MenuLoop_80bpm_44	D:\Wwise Projects\TowerDefense\.cache\Windows\SFX\MenuLoop_80bpm_44_D79FB2B7.wem		\Interactive Music Hierarchy\Music\MenuLoop\MenuLoop\MenuLoop_80bpm_44		17300544
+	508930095	InGameLoop_110bpm_44	D:\Wwise Projects\TowerDefense\.cache\Windows\SFX\InGameLoop_110bpm_44_D79FB2B7.wem		\Interactive Music Hierarchy\Music\InGameLoop\InGameLoop_110bpm_44\InGameLoop_110bpm_44		27786256
+

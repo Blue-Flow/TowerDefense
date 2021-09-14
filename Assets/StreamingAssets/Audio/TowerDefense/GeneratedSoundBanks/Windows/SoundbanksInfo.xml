@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>D:\Wwise Projects\TowerDefense\</ProjectRoot>
+		<SourceFilesRoot>D:\Wwise Projects\TowerDefense\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Wwise Projects\TowerDefense\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Wwise Projects\TowerDefense\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="1958929096">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="1738865430">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1103461852" Name="InGameLoop" ObjectPath="\Events\Default Work Unit\InGameLoop" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="508930095" Language="SFX">
+							<ShortName>InGameLoop_110bpm_44.wav</ShortName>
+							<Path>SFX\InGameLoop_110bpm_44_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3236081754" Name="MenuLoop" ObjectPath="\Events\Default Work Unit\MenuLoop" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="108264615" Language="SFX">
+							<ShortName>MenuLoop_80bpm_44.wav</ShortName>
+							<Path>SFX\MenuLoop_80bpm_44_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="108264615" Language="SFX">
+					<ShortName>MenuLoop_80bpm_44.wav</ShortName>
+					<Path>SFX\MenuLoop_80bpm_44_D79FB2B7.wem</Path>
+				</File>
+				<File Id="508930095" Language="SFX">
+					<ShortName>InGameLoop_110bpm_44.wav</ShortName>
+					<Path>SFX\InGameLoop_110bpm_44_D79FB2B7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
