@@ -2,12 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Attack_Distance_All : MonoBehaviour
+public class Attacker_All : MonoBehaviour
 {
     private bool isAttacking = false;
     private LayerMask enemyLayerMask;
     private float attackRange;
     private Animator animator;
+    private Vector2 attackDirection;
+    private int damage;
+
+    [SerializeField] private GameObject thisCharacterGun;
+    [SerializeField] private Projectile projectile;
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -21,6 +26,9 @@ public class Attack_Distance_All : MonoBehaviour
             DefenderDataSO data = baseComponent.GiveBaseInfo();
             enemyLayerMask = data.targetLayerMask;
             attackRange = data.attackRange;
+            attackDirection = Vector2.right;
+            damage = data.damage;
+            ///!\ défenseurs ne peuvent pas tirer derrière eux
         }
         else
         {
@@ -30,6 +38,8 @@ public class Attack_Distance_All : MonoBehaviour
                 EnemyDataSO data = baseComponent_Attacker.GiveBaseInfo();
                 enemyLayerMask = data.targetLayerMask;
                 attackRange = data.attackRange;
+                attackDirection = Vector2.left;
+                damage = data.damage;
             }
             else Debug.Log("Attacker or Defender component missing");
         }
@@ -40,7 +50,7 @@ public class Attack_Distance_All : MonoBehaviour
     }
     private void CheckForEnemyInRange()
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right, attackRange, enemyLayerMask);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, attackDirection, attackRange, enemyLayerMask);
         if (hit.collider != null && !isAttacking)
             StartAttacking();
         if (hit.collider == null && isAttacking)
@@ -55,5 +65,10 @@ public class Attack_Distance_All : MonoBehaviour
     {
         animator.SetBool("isAttacking", false);
         isAttacking = false;
+    }
+    public void Shoot()
+    {
+        Projectile projectileToShoot = Instantiate(projectile, thisCharacterGun.transform.position, Quaternion.identity);
+        projectileToShoot.SetDamage(damage);
     }
 }

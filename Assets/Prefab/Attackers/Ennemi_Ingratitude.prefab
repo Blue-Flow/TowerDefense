@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4394914903468049690}
   - component: {fileID: 3171819756268762018}
   - component: {fileID: 1246644610431189241}
-  - component: {fileID: 6907457206334540424}
+  - component: {fileID: 1832025078644632226}
   m_Layer: 7
   m_Name: Ennemi_Ingratitude
   m_TagString: Attacker
@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e14ad9c4ce6ef24389c9229b4457561, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6907457206334540424
+--- !u!114 &1832025078644632226
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -164,9 +164,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8994067725937222474}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b009a6a02236ed54db7d95a262678f75, type: 3}
+  m_Script: {fileID: 11500000, guid: d5ca9d1cbb753c14393db2d58cc2fa09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  thisCharacterGun: {fileID: 8994067726472193862}
+  projectile: {fileID: 8771229866159394456, guid: d9bfba2e9f0926042985550d59ee8c40, type: 3}
 --- !u!1 &8994067726472193862
 GameObject:
   m_ObjectHideFlags: 0

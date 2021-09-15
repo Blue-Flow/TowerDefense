@@ -15,8 +15,7 @@ public class Jumper : MonoBehaviour
             {
                 GetComponent<Mover>().TriggerJump();
             }
-            else 
-            GetComponent<Attack_Melee_All>().StartAttacking(otherObject);
+            //else GetComponent<Attacker_All>().StartAttacking(otherObject);
         }
     }
 }
