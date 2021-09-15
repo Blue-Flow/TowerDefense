@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 6084068942332240114}
   - component: {fileID: 6774250482354977897}
   - component: {fileID: -6865133409558286883}
+  - component: {fileID: -1106478242415872422}
   m_Layer: 0
   m_Name: Defender_Joie
   m_TagString: Defender
@@ -166,7 +167,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisCharacterGun: {fileID: 870027966688505415}
   projectile: {fileID: -8354519513383699604, guid: ceefde8ab3269b54baa8fd41dd2005b9, type: 3}
-  projectileSpeed: 1
 --- !u!114 &6084068942332240114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,3 +227,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &-1106478242415872422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4439607708957231643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5ca9d1cbb753c14393db2d58cc2fa09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

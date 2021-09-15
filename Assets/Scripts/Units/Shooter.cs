@@ -7,10 +7,28 @@ public class Shooter : MonoBehaviour
     [SerializeField] private GameObject thisCharacterGun;
     [SerializeField] private Projectile projectile;
     private int damage;
-    
-    public void SetDamage(int value)
+    private void Start()
     {
-        damage = value;
+        GetInfo();
+    }
+    private void GetInfo()
+    {
+        TryGetComponent<Defender>(out Defender baseComponent);
+        if (baseComponent)
+        {
+            DefenderDataSO data = baseComponent.GiveBaseInfo();
+            damage = data.damage;
+        }
+        else
+        {
+            TryGetComponent<Attacker>(out Attacker baseComponent_Attacker);
+            if (baseComponent_Attacker)
+            {
+                EnemyDataSO data = baseComponent_Attacker.GiveBaseInfo();
+                damage = data.damage;
+            }
+            else Debug.Log("Attacker or Defender component missing");
+        }
     }
     public void Shoot ()
     {

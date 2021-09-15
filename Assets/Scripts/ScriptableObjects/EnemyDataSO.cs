@@ -12,6 +12,6 @@ public class EnemyDataSO : ScriptableObject
     public float attackRange;
     public int spawnCost;
     public int serenityAmountToGive;
+    public LayerMask targetLayerMask;
 
-    // possible d'ajouter le modèle d'ennemi (sprite etc) directement ici. Utile ?
 }

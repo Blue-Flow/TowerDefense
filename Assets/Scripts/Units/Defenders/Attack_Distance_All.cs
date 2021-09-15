@@ -7,7 +7,7 @@ public class Attack_Distance_All : MonoBehaviour
     private bool isAttacking = false;
     private LayerMask enemyLayerMask;
     private float attackRange;
-    Animator animator;
+    private Animator animator;
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -18,10 +18,21 @@ public class Attack_Distance_All : MonoBehaviour
         TryGetComponent<Defender>(out Defender baseComponent);
         if (baseComponent)
         {
-            enemyLayerMask = baseComponent.data.targetLayerMask;
-            attackRange = baseComponent.data.attackRange;
+            DefenderDataSO data = baseComponent.GiveBaseInfo();
+            enemyLayerMask = data.targetLayerMask;
+            attackRange = data.attackRange;
         }
-        else Debug.Log("Defender component missing");
+        else
+        {
+            TryGetComponent<Attacker>(out Attacker baseComponent_Attacker);
+            if (baseComponent_Attacker)
+            {
+                EnemyDataSO data = baseComponent_Attacker.GiveBaseInfo();
+                enemyLayerMask = data.targetLayerMask;
+                attackRange = data.attackRange;
+            }
+            else Debug.Log("Attacker or Defender component missing");
+        }
     }
     private void Update()
     {

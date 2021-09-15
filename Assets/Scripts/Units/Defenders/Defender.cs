@@ -4,24 +4,11 @@ using UnityEngine;
 
 public class Defender : MonoBehaviour
 {
-    [SerializeField] public DefenderDataSO data;
+    [SerializeField] private DefenderDataSO data;
 
-    private void Start()
+    public DefenderDataSO GiveBaseInfo()
     {
-        SetBaseHealth();
-        SetBaseDamage();
-    }
-    private void SetBaseHealth()
-    {
-        TryGetComponent(out Health health);
-        if (health)
-            health.SetHealthPoints(data.health);
-    }
-    private void SetBaseDamage()
-    {
-        TryGetComponent(out Shooter shooter);
-        if (shooter)
-            shooter.SetDamage(data.damage);
+        return data;
     }
     private void OnDestroy()
     {
