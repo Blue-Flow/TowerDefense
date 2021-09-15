@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1501202651211629084}
   - component: {fileID: 6380584212138920292}
   - component: {fileID: 6270568550030979055}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ParticleEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4821,9 +4821,9 @@ GameObject:
   - component: {fileID: -2450452227540605399}
   - component: {fileID: 2731665614902165317}
   - component: {fileID: 6987457889270285630}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Defender_S\xE9r\xE9nit\xE9"
-  m_TagString: Untagged
+  m_TagString: Defender
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4960,7 +4960,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3622053500400104080}
   - component: {fileID: 3622053500400104081}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5043,7 +5043,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3622053500721068851}
   - component: {fileID: 3622053500721068876}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9126173940828885309}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: _Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 6774250482354977897}
   - component: {fileID: -6865133409558286883}
   - component: {fileID: -1106478242415872422}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Defender_Joie
   m_TagString: Defender
   m_Icon: {fileID: 0}

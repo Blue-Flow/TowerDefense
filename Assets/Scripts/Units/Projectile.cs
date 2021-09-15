@@ -6,22 +6,14 @@ public class Projectile : MonoBehaviour
 {
     [SerializeField] private ProjectileDataSO data;
     private int damageToInflict;
-    [SerializeField] private bool isDefenderProjectile = true;
-
-    private Vector2 moveRight = new Vector2(1, 0);
-    private Vector2 moveLeft = new Vector2(-1, 0);
     private Vector2 directionToMove;
+    private string target;
 
-    // Get the direction in which to move, and set the move function
-    private void Start()
-    {
-        if (data.direction == MovingDirection.Right)
-            directionToMove = moveRight;
-        else directionToMove = moveLeft;
-    }
-    public void SetDamage(int value)
+    public void SetProjectileInfo(int value, Vector2 direction, string target)
     {
         damageToInflict = value;
+        directionToMove = direction;
+        this.target = target;
     }
     private void Update()
     {
@@ -36,15 +28,11 @@ public class Projectile : MonoBehaviour
         // est-ce qu'on peut faire autrement qu'avec un getcomponent qui consomme ?
         // est-ce qu'un compareTag consomme moins qu'un getComponent ?
         var health = collision.GetComponent<Health>();
-        if (isDefenderProjectile && collision.gameObject.CompareTag("Attacker"))
+        if (collision.gameObject.CompareTag(target))
         {
             health.DealDamage(damageToInflict);
+            Debug.Log("Hit");
             Destroy(gameObject);
         }
     }
-}
-public enum MovingDirection
-{
-    Right,
-    Left,
 }

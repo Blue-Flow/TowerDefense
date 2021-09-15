@@ -10,6 +10,7 @@ public class Attacker_All : MonoBehaviour
     private Animator animator;
     private Vector2 attackDirection;
     private int damage;
+    private string target;
 
     [SerializeField] private GameObject thisCharacterGun;
     [SerializeField] private Projectile projectile;
@@ -28,6 +29,8 @@ public class Attacker_All : MonoBehaviour
             attackRange = data.attackRange;
             attackDirection = Vector2.right;
             damage = data.damage;
+            target = "Attacker";
+
             ///!\ défenseurs ne peuvent pas tirer derrière eux
         }
         else
@@ -40,6 +43,7 @@ public class Attacker_All : MonoBehaviour
                 attackRange = data.attackRange;
                 attackDirection = Vector2.left;
                 damage = data.damage;
+                target = "Defender";
             }
             else Debug.Log("Attacker or Defender component missing");
         }
@@ -69,6 +73,7 @@ public class Attacker_All : MonoBehaviour
     public void Shoot()
     {
         Projectile projectileToShoot = Instantiate(projectile, thisCharacterGun.transform.position, Quaternion.identity);
-        projectileToShoot.SetDamage(damage);
+        projectileToShoot.SetProjectileInfo(damage, attackDirection, target);
+
     }
 }
