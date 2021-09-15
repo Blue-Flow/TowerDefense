@@ -4,14 +4,10 @@ using UnityEngine;
 
 public class Defender : MonoBehaviour
 {
-    [SerializeField] private DefenderDataSO data;
-    private bool isAttacking = false;
-    LayerMask enemyLayerMask;
-    Animator animator;
+    [SerializeField] public DefenderDataSO data;
+
     private void Start()
     {
-        enemyLayerMask = data.targetLayerMask;
-        animator = GetComponent<Animator>();
         SetBaseHealth();
         SetBaseDamage();
     }
@@ -26,28 +22,6 @@ public class Defender : MonoBehaviour
         TryGetComponent(out Shooter shooter);
         if (shooter)
             shooter.SetDamage(data.damage);
-    }
-    private void Update()
-    {
-        CheckForEnemyInRange();
-    }
-    private void CheckForEnemyInRange()
-    {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right, data.attackRange, enemyLayerMask);
-        if (hit.collider != null && !isAttacking)
-            StartAttacking();
-        if (hit.collider == null && isAttacking)
-            StopAttacking();
-    }
-    private void StartAttacking()
-    {
-        animator.SetBool("isAttacking", true);
-        isAttacking = true;
-    }
-    private void StopAttacking()
-    {
-        animator.SetBool("isAttacking", false);
-        isAttacking = false;
     }
     private void OnDestroy()
     {
