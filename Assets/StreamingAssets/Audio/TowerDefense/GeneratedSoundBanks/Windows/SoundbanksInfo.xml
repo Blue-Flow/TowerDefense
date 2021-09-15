@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>D:\Wwise Projects\TowerDefense\</ProjectRoot>
-		<SourceFilesRoot>D:\Wwise Projects\TowerDefense\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>D:\Wwise Projects\TowerDefense\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\</ProjectRoot>
+		<SourceFilesRoot>D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\Wwise Projects\TowerDefense\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1958929096">
+		<SoundBank Id="1355168291" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="1958929096">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1738865430">
+		<SoundBank Id="3161908922" GUID="{4E3CA297-4731-4FF0-AC8C-D86B7A1CF4F5}" Language="SFX" Hash="1738865430">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1103461852" Name="InGameLoop" ObjectPath="\Events\Default Work Unit\InGameLoop" DurationType="Infinite">
+				<Event Id="1103461852" Name="InGameLoop" ObjectPath="\Events\Default Work Unit\InGameLoop" GUID="{2E2D775F-E9FC-4064-B61D-3655B719AB3C}" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="508930095" Language="SFX">
 							<ShortName>InGameLoop_110bpm_44.wav</ShortName>
@@ -29,7 +29,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3236081754" Name="MenuLoop" ObjectPath="\Events\Default Work Unit\MenuLoop" DurationType="Infinite">
+				<Event Id="3236081754" Name="MenuLoop" ObjectPath="\Events\Default Work Unit\MenuLoop" GUID="{98176EB6-B130-41F0-B519-5E37975BD83C}" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="108264615" Language="SFX">
 							<ShortName>MenuLoop_80bpm_44.wav</ShortName>

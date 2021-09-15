@@ -623,7 +623,6 @@ GameObject:
   - component: {fileID: 1808198491}
   - component: {fileID: 1808198488}
   - component: {fileID: 1808198492}
-  - component: {fileID: 1808198493}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -758,30 +757,6 @@ MonoBehaviour:
   attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
   LargeModePositions: []
   multiPositionArray: []
---- !u!114 &1808198493
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1808198487}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98923321da4fc7b4ca3da14a54bc1cc4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 5a53badbff9a8aa48ae14d360f4fe0e2, type: 2}
-  decodeBank: 0
-  loadAsynchronous: 0
-  saveDecodedBank: 0
-  unloadTriggerList: 958ca0ea
-  bankNameInternal: 
-  valueGuidInternal: 
 --- !u!1001 &5048182143961598809
 PrefabInstance:
   m_ObjectHideFlags: 0
