@@ -6,5 +6,4 @@ using UnityEngine;
 public class ProjectileDataSO : ScriptableObject
 {
     public float moveSpeed;
-    public MovingDirection direction;
 }

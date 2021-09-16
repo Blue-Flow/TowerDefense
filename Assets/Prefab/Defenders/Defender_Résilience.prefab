@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4596538600221607981}
   - component: {fileID: 4596538600221607980}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,9 +98,9 @@ GameObject:
   - component: {fileID: 4596538600383484362}
   - component: {fileID: 1148820273949312338}
   - component: {fileID: 2240613466365394514}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "Defender_R\xE9silience"
-  m_TagString: Untagged
+  m_TagString: Defender
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -151,9 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c2909a19ac1f90439b4809271146ee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defenderCost: 15
-  defenserRange: 0
-  canAttack: 0
+  data: {fileID: 0}
 --- !u!114 &2175763636807293727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,7 +176,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1281dadb6cfb3e34d856ce632531aa17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPoints: 10
   deathVFX: {fileID: 0}
 --- !u!61 &1148820273949312338
 BoxCollider2D:

@@ -19,3 +19,6 @@ MonoBehaviour:
   attackRange: 3
   spawnCost: 5
   serenityAmountToGive: 5
+  targetLayerMask:
+    serializedVersion: 2
+    m_Bits: 256
