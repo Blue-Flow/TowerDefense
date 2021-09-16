@@ -13,20 +13,19 @@ MonoBehaviour:
   m_Name: LevelTestProg
   m_EditorClassIdentifier: 
   levelID: 3
-  numberOfLives: 1
+  initialSpawnDelay: 0
   activeSpawnPoints:
   - {fileID: 7818019239737009502, guid: d1e7ac54aded61647be1cfb63cc8aa1c, type: 3}
   - {fileID: 2590796015544270812, guid: 3155276b6b649864a9313357765d9330, type: 3}
   - {fileID: 4389148917022102277, guid: 23c895a65dade9640bf61f27e630d2d9, type: 3}
   - {fileID: 7382874360297095071, guid: f84a0f519fcaa2c4e97d1cd84371ca04, type: 3}
   - {fileID: 633814721117164040, guid: 50780cf6065b7c046b3cf04aa4aeff1f, type: 3}
-  defendersToSpawn:
-  - {fileID: 4271820879086872625, guid: f2629ab3ff724034da2fb4031ae1f040, type: 3}
+  numberOfLives: 10
   defenderList:
-  - {fileID: 11400000, guid: 3204134c0d2d89c4fb8fd6c6f4552313, type: 2}
-  startingSerenityAmount: 0
+  - {fileID: 11400000, guid: d8ecad53051d52842a5b85cb57b2f312, type: 2}
+  startingSerenityAmount: 100
   numberOfEnemies: 50
   enemiesToSpawn:
   - {fileID: 8057496370945090169, guid: 4af54c0a86b5ddd40a799c4246926c9a, type: 3}
-  minSpawnDelayInSec: 0.1
-  maxSpawnDelayInSec: 0.2
+  minSpawnDelayInSec: 0.5
+  maxSpawnDelayInSec: 1
