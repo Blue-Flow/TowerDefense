@@ -16,19 +16,11 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" GUID="{4E3CA297-4731-4FF0-AC8C-D86B7A1CF4F5}" Language="SFX" Hash="1738865430">
+		<SoundBank Id="3161908922" GUID="{4E3CA297-4731-4FF0-AC8C-D86B7A1CF4F5}" Language="SFX" Hash="2025348057">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1103461852" Name="InGameLoop" ObjectPath="\Events\Default Work Unit\InGameLoop" GUID="{2E2D775F-E9FC-4064-B61D-3655B719AB3C}" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="508930095" Language="SFX">
-							<ShortName>InGameLoop_110bpm_44.wav</ShortName>
-							<Path>SFX\InGameLoop_110bpm_44_D79FB2B7.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
 				<Event Id="3236081754" Name="MenuLoop" ObjectPath="\Events\Default Work Unit\MenuLoop" GUID="{98176EB6-B130-41F0-B519-5E37975BD83C}" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="108264615" Language="SFX">
@@ -43,6 +35,23 @@
 					<ShortName>MenuLoop_80bpm_44.wav</ShortName>
 					<Path>SFX\MenuLoop_80bpm_44_D79FB2B7.wem</Path>
 				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="3976021583" GUID="{1971E665-40B5-4A69-BE64-473B7EBDF628}" Language="SFX" Hash="1232342008">
+			<ObjectPath>\SoundBanks\Default Work Unit\LevelScene</ObjectPath>
+			<ShortName>LevelScene</ShortName>
+			<Path>LevelScene.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1103461852" Name="InGameLoop" ObjectPath="\Events\Default Work Unit\InGameLoop" GUID="{2E2D775F-E9FC-4064-B61D-3655B719AB3C}" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="508930095" Language="SFX">
+							<ShortName>InGameLoop_110bpm_44.wav</ShortName>
+							<Path>SFX\InGameLoop_110bpm_44_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
 				<File Id="508930095" Language="SFX">
 					<ShortName>InGameLoop_110bpm_44.wav</ShortName>
 					<Path>SFX\InGameLoop_110bpm_44_D79FB2B7.wem</Path>

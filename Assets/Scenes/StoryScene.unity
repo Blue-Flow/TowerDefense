@@ -622,6 +622,7 @@ GameObject:
   - component: {fileID: 1808198489}
   - component: {fileID: 1808198491}
   - component: {fileID: 1808198488}
+  - component: {fileID: 1808198493}
   - component: {fileID: 1808198492}
   m_Layer: 0
   m_Name: Main Camera
@@ -732,7 +733,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1808198487}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e003c982affbf334680dfe9fe4cc6733, type: 3}
+  m_Script: {fileID: 11500000, guid: 537b8701b6b91c44bbc72f5d4da232f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   triggerList: f7e1664c
@@ -752,11 +753,30 @@ MonoBehaviour:
   eventIdInternal: 0
   valueGuidInternal: 
   m_callbackDataInternal: {fileID: 0}
-  MultiPositionType: 1
-  multiPositionTypeLabel: 0
-  attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
-  LargeModePositions: []
-  multiPositionArray: []
+--- !u!114 &1808198493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808198487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98923321da4fc7b4ca3da14a54bc1cc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: ae8d9d44
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 0b3f4cef0cf5a854c9f36995779ebd4b, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1001 &5048182143961598809
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1103461852	InGameLoop			\Default Work Unit\InGameLoop	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	508930095	InGameLoop_110bpm_44	D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\.cache\Windows\SFX\InGameLoop_110bpm_44_D79FB2B7.wem		\Interactive Music Hierarchy\Music\InGameLoop\InGameLoop_110bpm_44\InGameLoop_110bpm_44		27786256
+
