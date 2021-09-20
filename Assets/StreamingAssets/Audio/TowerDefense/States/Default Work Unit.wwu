@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{F2EE20CB-397A-44D8-A90E-BEA6CE4A9744}" SchemaVersion="103">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{F2EE20CB-397A-44D8-A90E-BEA6CE4A9744}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{F2EE20CB-397A-44D8-A90E-BEA6CE4A9744}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="MusicState" ID="{29AAD179-C49E-43D2-9F49-B6404C82D4AE}">
+					<ChildrenList>
+						<State Name="None" ID="{D2C7C52F-096E-4C87-B90A-339F666DD918}"/>
+						<State Name="Menu" ID="{4CAFC0B1-53E3-4E17-A6C6-18366C6396D6}"/>
+						<State Name="Level1" ID="{ACF430D7-AE6B-4D99-86C3-7A6B6E37F55D}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="PlayerLife" ID="{767FE9B6-4C7E-4D17-B174-7485841B6E44}">
+					<ChildrenList>
+						<State Name="None" ID="{3EC10ED1-E44D-4BA7-8091-BB997F60C08A}"/>
+						<State Name="Alive" ID="{FC41D3DF-BD6F-4174-89A3-9A4F9E754D62}"/>
+						<State Name="Dead" ID="{135E6DC0-264D-42A5-AD74-20AAC8A9B929}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

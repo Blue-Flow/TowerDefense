@@ -622,8 +622,8 @@ GameObject:
   - component: {fileID: 1808198489}
   - component: {fileID: 1808198491}
   - component: {fileID: 1808198488}
-  - component: {fileID: 1808198493}
   - component: {fileID: 1808198492}
+  - component: {fileID: 1808198493}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -733,26 +733,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1808198487}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 537b8701b6b91c44bbc72f5d4da232f3, type: 3}
+  m_Script: {fileID: 11500000, guid: c9aca7761d9ab7b498f23250ff74210e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   triggerList: f7e1664c
   useOtherObject: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  enableActionOnEvent: 0
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 428fa9aa43070ea4fb5855d84e7a1ac7, type: 2}
-  useCallbacks: 0
-  Callbacks: []
-  playingId: 0
-  soundEmitterObject: {fileID: 0}
-  transitionDuration: 0
-  eventIdInternal: 0
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 48067d9a69addcc45a0a5b16cc3e4aa6, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
   valueGuidInternal: 
-  m_callbackDataInternal: {fileID: 0}
+  groupGuidInternal: 
 --- !u!114 &1808198493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -762,21 +757,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1808198487}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98923321da4fc7b4ca3da14a54bc1cc4, type: 3}
+  m_Script: {fileID: 11500000, guid: c9aca7761d9ab7b498f23250ff74210e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: ae8d9d44
+  triggerList: f7e1664c
   useOtherObject: 0
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 0b3f4cef0cf5a854c9f36995779ebd4b, type: 2}
-  decodeBank: 0
-  loadAsynchronous: 0
-  saveDecodedBank: 0
-  unloadTriggerList: 958ca0ea
-  bankNameInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 3c27200dcbb908442a260a379ac335a0, type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
   valueGuidInternal: 
+  groupGuidInternal: 
 --- !u!1001 &5048182143961598809
 PrefabInstance:
   m_ObjectHideFlags: 0

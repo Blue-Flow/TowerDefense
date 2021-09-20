@@ -1,6 +1,18 @@
 Event	ID	Name			Wwise Object Path	Notes
 	3236081754	MenuLoop			\Default Work Unit\MenuLoop	
 
+State Group	ID	Name			Wwise Object Path	Notes
+	444815956	PlayerLife			\Default Work Unit\PlayerLife	
+	1021618141	MusicState			\Default Work Unit\MusicState	
+
+State	ID	Name	State Group			Notes
+	655265632	Alive	PlayerLife			
+	748895195	None	PlayerLife			
+	2044049779	Dead	PlayerLife			
+	748895195	None	MusicState			
+	2607556080	Menu	MusicState			
+	2678230382	Level1	MusicState			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	108264615	MenuLoop_80bpm_44	D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\.cache\Windows\SFX\MenuLoop_80bpm_44_D79FB2B7.wem		\Interactive Music Hierarchy\Music\MenuLoop\MenuLoop\MenuLoop_80bpm_44		17300544
+	108264615	MenuLoop_80bpm_44	D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\.cache\Windows\SFX\MenuLoop_80bpm_44_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Music\MenuLoop\MenuLoop\MenuLoop_80bpm_44		17300544
 

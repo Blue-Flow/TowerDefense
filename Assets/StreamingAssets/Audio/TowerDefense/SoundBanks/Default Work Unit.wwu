@@ -5,9 +5,24 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{4E3CA297-4731-4FF0-AC8C-D86B7A1CF4F5}">
 					<ObjectInclusionList>
-						<ObjectRef Name="InGameLoop" ID="{2E2D775F-E9FC-4064-B61D-3655B719AB3C}" WorkUnitID="{00A6F063-C61F-430A-99FE-3CE8ECFB8904}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Music" ID="{10C2F9BD-3C87-4171-B551-384B40D7233B}" WorkUnitID="{10C2F9BD-3C87-4171-B551-384B40D7233B}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="MenuLoop" ID="{98176EB6-B130-41F0-B519-5E37975BD83C}" WorkUnitID="{00A6F063-C61F-430A-99FE-3CE8ECFB8904}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="MenuLoop" ID="{F2782A7D-BBFA-48C0-9729-10761398F98B}" WorkUnitID="{10C2F9BD-3C87-4171-B551-384B40D7233B}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="LevelScene" ID="{1971E665-40B5-4A69-BE64-473B7EBDF628}">
+					<ObjectInclusionList>
+						<ObjectRef Name="InGameLoop" ID="{2E2D775F-E9FC-4064-B61D-3655B719AB3C}" WorkUnitID="{00A6F063-C61F-430A-99FE-3CE8ECFB8904}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="InGameLoop" ID="{64272070-E275-48F9-9F05-894C5C374FF3}" WorkUnitID="{10C2F9BD-3C87-4171-B551-384B40D7233B}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="MusicGlobal" ID="{808B2C92-D701-4B6A-885A-C3AF15E73E1E}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Music" ID="{1CAC98A2-3EF1-4527-811A-B370CD26CF34}" WorkUnitID="{10C2F9BD-3C87-4171-B551-384B40D7233B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music" ID="{EE91EC3C-E38F-4A96-87CD-51CBE3FF8753}" WorkUnitID="{00A6F063-C61F-430A-99FE-3CE8ECFB8904}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

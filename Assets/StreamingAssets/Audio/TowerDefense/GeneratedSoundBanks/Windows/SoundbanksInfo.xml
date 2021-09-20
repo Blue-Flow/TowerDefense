@@ -11,12 +11,77 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="1958929096">
+		<SoundBank Id="1355168291" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="1653954878">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" GUID="{4E3CA297-4731-4FF0-AC8C-D86B7A1CF4F5}" Language="SFX" Hash="2025348057">
+		<SoundBank Id="1499314831" GUID="{808B2C92-D701-4B6A-885A-C3AF15E73E1E}" Language="SFX" Hash="473124190">
+			<ObjectPath>\SoundBanks\Default Work Unit\MusicGlobal</ObjectPath>
+			<ShortName>MusicGlobal</ShortName>
+			<Path>MusicGlobal.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3991942870" Name="Music" ObjectPath="\Events\Default Work Unit\Music" GUID="{EE91EC3C-E38F-4A96-87CD-51CBE3FF8753}" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="108264615" Language="SFX">
+							<ShortName>MenuLoop_80bpm_44.wav</ShortName>
+							<Path>SFX\MenuLoop_80bpm_44_D79FB2B7.wem</Path>
+						</File>
+						<File Id="508930095" Language="SFX">
+							<ShortName>InGameLoop_110bpm_44.wav</ShortName>
+							<Path>SFX\InGameLoop_110bpm_44_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{4CAFC0B1-53E3-4E17-A6C6-18366C6396D6}">
+							<Children>
+								<SwitchContainer SwitchValue="{767FE9B6-4C7E-4D17-B174-7485841B6E44}">
+									<Media>
+										<File Id="108264615"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{ACF430D7-AE6B-4D99-86C3-7A6B6E37F55D}">
+							<Children>
+								<SwitchContainer SwitchValue="{FC41D3DF-BD6F-4174-89A3-9A4F9E754D62}">
+									<Media>
+										<File Id="508930095"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="108264615" Language="SFX">
+					<ShortName>MenuLoop_80bpm_44.wav</ShortName>
+					<Path>SFX\MenuLoop_80bpm_44_D79FB2B7.wem</Path>
+				</File>
+				<File Id="508930095" Language="SFX">
+					<ShortName>InGameLoop_110bpm_44.wav</ShortName>
+					<Path>SFX\InGameLoop_110bpm_44_D79FB2B7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+			<StateGroups>
+				<StateGroup Id="444815956" Name="PlayerLife" ObjectPath="\States\Default Work Unit\PlayerLife" GUID="{767FE9B6-4C7E-4D17-B174-7485841B6E44}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\PlayerLife\None" GUID="{3EC10ED1-E44D-4BA7-8091-BB997F60C08A}"/>
+						<State Id="655265632" Name="Alive" ObjectPath="\States\Default Work Unit\PlayerLife\Alive" GUID="{FC41D3DF-BD6F-4174-89A3-9A4F9E754D62}"/>
+						<State Id="2044049779" Name="Dead" ObjectPath="\States\Default Work Unit\PlayerLife\Dead" GUID="{135E6DC0-264D-42A5-AD74-20AAC8A9B929}"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="1021618141" Name="MusicState" ObjectPath="\States\Default Work Unit\MusicState" GUID="{29AAD179-C49E-43D2-9F49-B6404C82D4AE}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\MusicState\None" GUID="{D2C7C52F-096E-4C87-B90A-339F666DD918}"/>
+						<State Id="2607556080" Name="Menu" ObjectPath="\States\Default Work Unit\MusicState\Menu" GUID="{4CAFC0B1-53E3-4E17-A6C6-18366C6396D6}"/>
+						<State Id="2678230382" Name="Level1" ObjectPath="\States\Default Work Unit\MusicState\Level1" GUID="{ACF430D7-AE6B-4D99-86C3-7A6B6E37F55D}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+		<SoundBank Id="3161908922" GUID="{4E3CA297-4731-4FF0-AC8C-D86B7A1CF4F5}" Language="SFX" Hash="1857842218">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -37,7 +102,7 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="3976021583" GUID="{1971E665-40B5-4A69-BE64-473B7EBDF628}" Language="SFX" Hash="1232342008">
+		<SoundBank Id="3976021583" GUID="{1971E665-40B5-4A69-BE64-473B7EBDF628}" Language="SFX" Hash="45217449">
 			<ObjectPath>\SoundBanks\Default Work Unit\LevelScene</ObjectPath>
 			<ShortName>LevelScene</ShortName>
 			<Path>LevelScene.bnk</Path>
