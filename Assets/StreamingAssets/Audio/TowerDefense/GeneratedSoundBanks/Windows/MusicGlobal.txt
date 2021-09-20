@@ -2,18 +2,20 @@ Event	ID	Name			Wwise Object Path	Notes
 	3991942870	Music			\Default Work Unit\Music	
 
 State Group	ID	Name			Wwise Object Path	Notes
-	444815956	PlayerLife			\Default Work Unit\PlayerLife	
 	1021618141	MusicState			\Default Work Unit\MusicState	
 
 State	ID	Name	State Group			Notes
-	655265632	Alive	PlayerLife			
-	748895195	None	PlayerLife			
-	2044049779	Dead	PlayerLife			
 	748895195	None	MusicState			
+	1593864692	Defeat	MusicState			
 	2607556080	Menu	MusicState			
 	2678230382	Level1	MusicState			
+	2716678721	Victory	MusicState			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	108264615	MenuLoop_80bpm_44	D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\.cache\Windows\SFX\MenuLoop_80bpm_44_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Music\MenuLoop\MenuLoop\MenuLoop_80bpm_44		17300544
+	430400140	TransitionMenuToInGameLoop80bpm4-4	D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\.cache\Windows\SFX\TransitionMenuToInGameLoop80bpm4-4_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Music\TransitionMenuToInGameLoop80bpm4-4\TransitionMenuToInGameLoop80bpm4-4\TransitionMenuToInGameLoop80bpm4-4		2358336
 	508930095	InGameLoop_110bpm_44	D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\.cache\Windows\SFX\InGameLoop_110bpm_44_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Music\InGameLoop\InGameLoop_110bpm_44\InGameLoop_110bpm_44		27786256
+	610353908	Victory110bpm4-4	D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\.cache\Windows\SFX\Victory110bpm4-4_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Music\Victory\Victory110bpm4-4\Victory110bpm4-4		2096192
+	802117939	TransitionInGameLoopToMenu110bpm4-4	D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\.cache\Windows\SFX\TransitionInGameLoopToMenu110bpm4-4_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Music\TransitionInGameLoopToMenu110bpm4-4\TransitionInGameLoopToMenu110bpm4-4\TransitionInGameLoopToMenu110bpm4-4		3669008
+	871482263	Defeat110bpm4-4	D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\.cache\Windows\SFX\Defeat110bpm4-4_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Music\Defeat\Defeat110bpm4-4\Defeat110bpm4-4		1834048
 

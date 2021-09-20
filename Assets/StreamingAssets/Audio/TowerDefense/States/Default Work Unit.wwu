@@ -8,13 +8,8 @@
 						<State Name="None" ID="{D2C7C52F-096E-4C87-B90A-339F666DD918}"/>
 						<State Name="Menu" ID="{4CAFC0B1-53E3-4E17-A6C6-18366C6396D6}"/>
 						<State Name="Level1" ID="{ACF430D7-AE6B-4D99-86C3-7A6B6E37F55D}"/>
-					</ChildrenList>
-				</StateGroup>
-				<StateGroup Name="PlayerLife" ID="{767FE9B6-4C7E-4D17-B174-7485841B6E44}">
-					<ChildrenList>
-						<State Name="None" ID="{3EC10ED1-E44D-4BA7-8091-BB997F60C08A}"/>
-						<State Name="Alive" ID="{FC41D3DF-BD6F-4174-89A3-9A4F9E754D62}"/>
-						<State Name="Dead" ID="{135E6DC0-264D-42A5-AD74-20AAC8A9B929}"/>
+						<State Name="Victory" ID="{C1C02890-E376-41F0-932B-0178047A2857}"/>
+						<State Name="Defeat" ID="{3D31ABC6-E267-4EA9-A873-40FD1B715069}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

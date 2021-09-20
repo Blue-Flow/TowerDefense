@@ -13,8 +13,6 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID INGAMELOOP = 1103461852U;
-        static const AkUniqueID MENULOOP = 3236081754U;
         static const AkUniqueID MUSIC = 3991942870U;
     } // namespace EVENTS
 
@@ -26,23 +24,13 @@ namespace AK
 
             namespace STATE
             {
+                static const AkUniqueID DEFEAT = 1593864692U;
                 static const AkUniqueID LEVEL1 = 2678230382U;
                 static const AkUniqueID MENU = 2607556080U;
                 static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID VICTORY = 2716678721U;
             } // namespace STATE
         } // namespace MUSICSTATE
-
-        namespace PLAYERLIFE
-        {
-            static const AkUniqueID GROUP = 444815956U;
-
-            namespace STATE
-            {
-                static const AkUniqueID ALIVE = 655265632U;
-                static const AkUniqueID DEAD = 2044049779U;
-                static const AkUniqueID NONE = 748895195U;
-            } // namespace STATE
-        } // namespace PLAYERLIFE
 
     } // namespace STATES
 
@@ -65,8 +53,6 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
-        static const AkUniqueID LEVELSCENE = 3976021583U;
-        static const AkUniqueID MAIN = 3161908922U;
         static const AkUniqueID MUSICGLOBAL = 1499314831U;
     } // namespace BANKS
 

@@ -345,36 +345,8 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: f647b8324d5e35438e5256a90b0843bb
     GuidInternal: 
-    m_lastTime: -8585694737630248693
+    m_lastTime: -8585694615410353965
     List:
-    - name: LevelScene
-      guid: 65e67119b540694abe64473b7ebdf628
-      id: 3976021583
-      PathAndIcons:
-      - ElementName: SoundBanks
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: f647b8324d5e35438e5256a90b0843bb
-      - ElementName: LevelScene
-        ObjectType: 7
-        guid: 65e67119b540694abe64473b7ebdf628
-      Path: SoundBanks\Default Work Unit\LevelScene
-    - name: Main
-      guid: 97a23c4e3147f04fac8cd86b7a1cf4f5
-      id: 3161908922
-      PathAndIcons:
-      - ElementName: SoundBanks
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: f647b8324d5e35438e5256a90b0843bb
-      - ElementName: Main
-        ObjectType: 7
-        guid: 97a23c4e3147f04fac8cd86b7a1cf4f5
-      Path: SoundBanks\Default Work Unit\Main
     - name: MusicGlobal
       guid: 922c8b8001d76a4b885ac3af15e73e1e
       id: 1499314831
@@ -674,7 +646,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: cb20eef27a39d844a90ebea6ce4a9744
     GuidInternal: 
-    m_lastTime: -8585694751439825769
+    m_lastTime: -8585694563165615141
     List:
     - name: MusicState
       guid: 79d1aa299ec4d2439f49b6404c82d4ae
@@ -691,6 +663,22 @@ MonoBehaviour:
         guid: 79d1aa299ec4d2439f49b6404c82d4ae
       Path: States\Default Work Unit\MusicState
       values:
+      - name: Defeat
+        guid: c6ab313d67e2a94ea87340fd1b715069
+        id: 1593864692
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: cb20eef27a39d844a90ebea6ce4a9744
+        - ElementName: MusicState
+          ObjectType: 9
+          guid: 79d1aa299ec4d2439f49b6404c82d4ae
+        - ElementName: Defeat
+          ObjectType: 8
+          guid: c6ab313d67e2a94ea87340fd1b715069
       - name: Level1
         guid: d730f4ac6bae994d86c37a6b6e37f55d
         id: 2678230382
@@ -739,27 +727,9 @@ MonoBehaviour:
         - ElementName: None
           ObjectType: 8
           guid: 2fc5c7d26e09874cb90a339f666dd918
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
-    - name: PlayerLife
-      guid: b6e97f767e4c174db1747485841b6e44
-      id: 444815956
-      PathAndIcons:
-      - ElementName: States
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: cb20eef27a39d844a90ebea6ce4a9744
-      - ElementName: PlayerLife
-        ObjectType: 9
-        guid: b6e97f767e4c174db1747485841b6e44
-      Path: States\Default Work Unit\PlayerLife
-      values:
-      - name: Alive
-        guid: dfd341fc6fbd744189a39a4f9e754d62
-        id: 655265632
+      - name: Victory
+        guid: 9028c0c176e3f041932b0178047a2857
+        id: 2716678721
         PathAndIcons:
         - ElementName: States
           ObjectType: 5
@@ -767,44 +737,12 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: cb20eef27a39d844a90ebea6ce4a9744
-        - ElementName: PlayerLife
+        - ElementName: MusicState
           ObjectType: 9
-          guid: b6e97f767e4c174db1747485841b6e44
-        - ElementName: Alive
+          guid: 79d1aa299ec4d2439f49b6404c82d4ae
+        - ElementName: Victory
           ObjectType: 8
-          guid: dfd341fc6fbd744189a39a4f9e754d62
-      - name: Dead
-        guid: c06d5e134d26a542ad7420aac8a9b929
-        id: 2044049779
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: cb20eef27a39d844a90ebea6ce4a9744
-        - ElementName: PlayerLife
-          ObjectType: 9
-          guid: b6e97f767e4c174db1747485841b6e44
-        - ElementName: Dead
-          ObjectType: 8
-          guid: c06d5e134d26a542ad7420aac8a9b929
-      - name: None
-        guid: d10ec13e4de4a74b8091bb997f60c08a
-        id: 748895195
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: cb20eef27a39d844a90ebea6ce4a9744
-        - ElementName: PlayerLife
-          ObjectType: 9
-          guid: b6e97f767e4c174db1747485841b6e44
-        - ElementName: None
-          ObjectType: 8
-          guid: d10ec13e4de4a74b8091bb997f60c08a
+          guid: 9028c0c176e3f041932b0178047a2857
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -837,7 +775,7 @@ MonoBehaviour:
     m_lastTime: -8585705951336906435
     List: []
   ExpandedFileSystemItemIds: 02000000030000000400000007000000080000000d0000000e000000
-  ExpandedWaapiItemIds: 02000000030000000400000007000000080000000b0000000c0000000d0000000e0000000f00000010000000
+  ExpandedWaapiItemIds: 0100000002000000030000000400000007000000080000000b0000000c0000000d0000000e0000000f0000001000000012000000b6010000b7010000b8010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

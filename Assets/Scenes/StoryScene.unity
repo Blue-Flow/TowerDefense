@@ -466,7 +466,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1685529571}
   - component: {fileID: 1685529570}
-  - component: {fileID: 1685529572}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -513,30 +512,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1685529572
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1685529569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68703720d93d80a4c88a255d4b45f662, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
-  valueIdInternal: 0
-  groupIdInternal: 0
-  valueGuidInternal: 
-  groupGuidInternal: 
 --- !u!1001 &1797133290
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -621,9 +596,7 @@ GameObject:
   - component: {fileID: 1808198490}
   - component: {fileID: 1808198489}
   - component: {fileID: 1808198491}
-  - component: {fileID: 1808198488}
   - component: {fileID: 1808198492}
-  - component: {fileID: 1808198493}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -631,20 +604,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1808198488
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1808198487}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1753fa489d03f454383785d6c9c8df72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isDefaultListener: 1
-  listenerId: 0
 --- !u!20 &1808198489
 Camera:
   m_ObjectHideFlags: 0
@@ -748,30 +707,6 @@ MonoBehaviour:
   groupIdInternal: 0
   valueGuidInternal: 
   groupGuidInternal: 
---- !u!114 &1808198493
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1808198487}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9aca7761d9ab7b498f23250ff74210e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 3c27200dcbb908442a260a379ac335a0, type: 2}
-  valueIdInternal: 0
-  groupIdInternal: 0
-  valueGuidInternal: 
-  groupGuidInternal: 
 --- !u!1001 &5048182143961598809
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -779,6 +714,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5048182143440705192, guid: b1a35ab2e4ff3ce4faa36aac53271658, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5048182143440705194, guid: b1a35ab2e4ff3ce4faa36aac53271658, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
