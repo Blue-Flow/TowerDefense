@@ -74,6 +74,5 @@ public class Attacker_All : MonoBehaviour
     {
         Projectile projectileToShoot = Instantiate(projectile, thisCharacterGun.transform.position, Quaternion.identity);
         projectileToShoot.SetProjectileInfo(damage, attackDirection, target);
-
     }
 }

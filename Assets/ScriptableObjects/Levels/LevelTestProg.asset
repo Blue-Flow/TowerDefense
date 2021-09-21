@@ -27,5 +27,5 @@ MonoBehaviour:
   numberOfEnemies: 50
   enemiesToSpawn:
   - {fileID: 8057496370945090169, guid: 4af54c0a86b5ddd40a799c4246926c9a, type: 3}
-  minSpawnDelayInSec: 0.5
-  maxSpawnDelayInSec: 1
+  minSpawnDelayInSec: 1
+  maxSpawnDelayInSec: 3

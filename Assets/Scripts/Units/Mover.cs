@@ -55,9 +55,9 @@ public class Mover : MonoBehaviour
     {
         moveSpeed = baseMoveSpeed;
     }
-    public void TriggerJump()
+    /*public void TriggerJump()
     {
         animator.SetTrigger("jumpTrigger");
-    }
+    }*/
     #endregion
 }

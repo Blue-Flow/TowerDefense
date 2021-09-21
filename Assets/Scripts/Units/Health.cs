@@ -35,15 +35,14 @@ public class Health : MonoBehaviour
         healthPoints -= damageToInflict;
         if (healthPoints < 1)
         {
-            TriggerDeathVFX();
             Destroy(gameObject);
         }
     }
-    private void TriggerDeathVFX()
+    /*private void TriggerDeathVFX()
     {
         // death SFX géré ailleurs, retirer la partie VFX aussi ?
         if (!deathVFX) return;
         GameObject deathVFXObject = Instantiate(deathVFX, transform.position, Quaternion.identity);
         Destroy(deathVFXObject, 1f);
-    }
+    }*/
 }

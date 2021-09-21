@@ -15,7 +15,7 @@ MonoBehaviour:
   enemyName: Ingratitude
   moveSpeed: 1.6
   damage: 5
-  health: 4
+  health: 60
   attackRange: 1
   spawnCost: 2
   serenityAmountToGive: 5

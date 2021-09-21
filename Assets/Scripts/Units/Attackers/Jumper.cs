@@ -6,7 +6,7 @@ public class Jumper : MonoBehaviour
 {
     // A class of attackers that jump over defenders that have the obstacle component
     // But also attack all the other defenders
-    private void OnTriggerEnter2D(Collider2D collision)
+   /* private void OnTriggerEnter2D(Collider2D collision)
     {
         GameObject otherObject = collision.gameObject;
         if (otherObject.GetComponent<Defender>())
@@ -18,4 +18,5 @@ public class Jumper : MonoBehaviour
             //else GetComponent<Attacker_All>().StartAttacking(otherObject);
         }
     }
+   */
 }
