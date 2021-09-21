@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 1387987730772767966}
   - component: {fileID: 6477847602811816727}
   - component: {fileID: 4806795561641845687}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Projectile_Chagicien
-  m_TagString: Untagged
+  m_TagString: DefenderProjectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7462565733734095316}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 751.90094, y: 567.48303, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
