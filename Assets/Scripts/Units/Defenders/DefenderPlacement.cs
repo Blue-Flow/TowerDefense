@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class DefenderPlacement : MonoBehaviour
 {
@@ -24,7 +25,7 @@ public class DefenderPlacement : MonoBehaviour
     }
     private Vector2 GetSelectedTilePosition()
     {
-        Vector2 clickPosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+        Vector2 clickPosition = new Vector2(Mouse.current.position.ReadValue().x, Mouse.current.position.ReadValue().y);
         Vector2 worldPosition = Camera.main.ScreenToWorldPoint(clickPosition);
         Vector2 gridPosition = SnapToGrid(worldPosition);
         return gridPosition;

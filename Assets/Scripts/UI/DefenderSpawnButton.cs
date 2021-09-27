@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class DefenderSpawnButton : MonoBehaviour
 {
@@ -12,15 +13,15 @@ public class DefenderSpawnButton : MonoBehaviour
     private Sprite spriteToShow;
     private Image image;
     private int costToShow;
-    private DefenderSpawner defenderSpawner;
-    private void Start()
-    {
-        defenderSpawner = FindObjectOfType<DefenderSpawner>();
-    }
+
     private void OnMouseDown()
     {
+        SendSelectedDefender();
+    }
+    public void SendSelectedDefender()
+    {
         EventHandler.SelectionCanceled();
-        defenderSpawner.CheckDefenderCost(defenderData);
+        EventHandler.TrySpawnDefender(defenderData);
         image.color = Color.white;
     }
     public void SetButtonData(DefenderDataSO data)
@@ -56,7 +57,6 @@ public class DefenderSpawnButton : MonoBehaviour
     private void OnDisable()
     {
         EventHandler.OnSelectionCanceled -= ResetButtonColor;
-
     }
     #endregion
 }

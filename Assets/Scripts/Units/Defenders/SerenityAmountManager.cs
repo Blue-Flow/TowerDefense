@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DefenderSpawner : MonoBehaviour
+public class SerenityAmountManager : MonoBehaviour
 {
     private int serenityAmount;
 
@@ -14,13 +14,13 @@ public class DefenderSpawner : MonoBehaviour
     {
         EventHandler.ResourceValueChanged(serenityAmount);
     }
-    public void CheckDefenderCost(DefenderDataSO defenderData)
+    private void CheckDefenderCost(DefenderDataSO defenderData)
     {
         if (defenderData.spawnCost <= serenityAmount)
         {
             EventHandler.StartSpawnDefender(defenderData);
         }
-        else Debug.Log("Not enough ressources" + serenityAmount + "/" + defenderData.spawnCost);
+        else Debug.Log($"Not enough ressources {serenityAmount} / {defenderData.spawnCost}");
     }
     private void SubstractResourceToCount(DefenderDataSO defenderData)
     {
@@ -37,12 +37,14 @@ public class DefenderSpawner : MonoBehaviour
     {
         EventHandler.OnResourceProduced += AddResourceToCount;
         EventHandler.OnDefenderSpawned += SubstractResourceToCount;
+        EventHandler.OnTrySpawnDefender += CheckDefenderCost;
     }
 
     private void OnDisable()
     {
         EventHandler.OnResourceProduced -= AddResourceToCount;
         EventHandler.OnDefenderSpawned -= SubstractResourceToCount;
+        EventHandler.OnTrySpawnDefender -= CheckDefenderCost;
     }
     #endregion
 }

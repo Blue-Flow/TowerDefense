@@ -13,6 +13,7 @@ public class EventHandler : MonoBehaviour
 
     public static event Action OnAttackerDie;
     public static event Action OnDefenderDie;
+    public static event Action<DefenderDataSO> OnTrySpawnDefender;
     public static event Action<DefenderDataSO> OnStartSpawnDefender;
     public static event Action<DefenderDataSO> OnDefenderSpawned;
     public static event Action<int> OnResourceValueChange;
@@ -71,6 +72,14 @@ public class EventHandler : MonoBehaviour
             OnDefenderDie();
         }
         else Debug.Log("Error with event OnDefenderDie, no subscriber");
+    }
+    public static void TrySpawnDefender(DefenderDataSO defender)
+    {
+        if (OnTrySpawnDefender != null)
+        {
+            OnTrySpawnDefender(defender);
+        }
+        else Debug.Log("Error with event OnTrySpawnDefender, no subscriber");
     }
     public static void DefenderSpawned(DefenderDataSO defender)
     {
