@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationCache Version="1" SchemaVersion="103">
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Virtual Acoustics\Factory Acoustic Textures.wwu" DateLow="1630997029" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Virtual Acoustics\Default Work Unit.wwu" DateLow="1631011751" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Triggers\Default Work Unit.wwu" DateLow="1631011751" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\TowerDefense.wproj" DateLow="1631012556" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\TowerDefense.Utilisateur.wsettings" DateLow="1631625558" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Switches\Default Work Unit.wwu" DateLow="1631011751" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\States\Default Work Unit.wwu" DateLow="1631011751" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1631011751" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\SoundBanks\Default Work Unit.wwu" DateLow="1631614643" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Queries\Factory Queries.wwu" DateLow="1630997029" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Queries\Default Work Unit.wwu" DateLow="1631011751" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Presets\Factory Spatial Audio.wwu" DateLow="1630997029" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Presets\Factory Reflect.wwu" DateLow="1630997044" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Presets\Default Work Unit.wwu" DateLow="1631011751" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Modulators\Default Work Unit.wwu" DateLow="1631011751" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Mixing Sessions\Default Work Unit.wwu" DateLow="1631011751" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Metadata\Default Work Unit.wwu" DateLow="1631011751" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1631011765" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Interactive Music Hierarchy\Music.wwu" DateLow="1631625557" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1631022207" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="1630997045" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Game Parameters\Factory Motion.wwu" DateLow="1630997041" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Game Parameters\Default Work Unit.wwu" DateLow="1631011751" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Events\Default Work Unit.wwu" DateLow="1631614099" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Effects\Factory Reflect.wwu" DateLow="1630997044" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Effects\Factory McDSP Effects.wwu" DateLow="1630997089" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Effects\Factory Mastering Suite.wwu" DateLow="1630997041" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Effects\Factory iZotope Singleband Distortion.wwu" DateLow="1630997152" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Effects\Factory iZotope Multiband Distortion.wwu" DateLow="1630997152" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Effects\Factory iZotope Hybrid Reverb Effects.wwu" DateLow="1630997152" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Effects\Factory iZotope Filters.wwu" DateLow="1630997152" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Effects\Factory iZotope Dynamics.wwu" DateLow="1630997152" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Effects\Factory iZotope Delay.wwu" DateLow="1630997152" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Effects\Factory iZotope Box Modeler.wwu" DateLow="1630997152" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Effects\Factory Effects.wwu" DateLow="1630997029" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Effects\Factory Auro Headphone.wwu" DateLow="1630997057" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Effects\Default Work Unit.wwu" DateLow="1631011751" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1631011751" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1630997029" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Conversion Settings\Default Work Unit.wwu" DateLow="1631011751" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Control Surface Sessions\Default Work Unit.wwu" DateLow="1631011751" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Audio Devices\Default Work Unit.wwu" DateLow="1631011765" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Attenuations\Default Work Unit.wwu" DateLow="1631011751" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="1630997029" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="1630997045" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Actor-Mixer Hierarchy\Factory Motion.wwu" DateLow="1631011765" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise Projects\TowerDefense\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1631614099" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Virtual Acoustics\Factory Acoustic Textures.wwu" DateLow="1630997029" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Virtual Acoustics\Default Work Unit.wwu" DateLow="1631011751" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Triggers\Default Work Unit.wwu" DateLow="1631011751" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\TowerDefense.wproj" DateLow="1631716075" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\TowerDefense.Utilisateur.wsettings" DateLow="1631956091" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Switches\Default Work Unit.wwu" DateLow="1631011751" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\States\Default Work Unit.wwu" DateLow="1632150568" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1631011751" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\SoundBanks\Default Work Unit.wwu" DateLow="1632145344" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Queries\Factory Queries.wwu" DateLow="1630997029" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Queries\Default Work Unit.wwu" DateLow="1631011751" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Presets\Factory Spatial Audio.wwu" DateLow="1630997029" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Presets\Factory Reflect.wwu" DateLow="1630997044" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Presets\Default Work Unit.wwu" DateLow="1631011751" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Modulators\Default Work Unit.wwu" DateLow="1631011751" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Mixing Sessions\Default Work Unit.wwu" DateLow="1631011751" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Metadata\Default Work Unit.wwu" DateLow="1631011751" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1631011765" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Interactive Music Hierarchy\Music.wwu" DateLow="1632150913" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1631022207" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Game Parameters\Factory SoundSeed Air Game Syncs.wwu" DateLow="1630997045" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Game Parameters\Factory Motion.wwu" DateLow="1630997041" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Game Parameters\Default Work Unit.wwu" DateLow="1631011751" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Events\Default Work Unit.wwu" DateLow="1632133122" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Effects\Factory Reflect.wwu" DateLow="1630997044" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Effects\Factory McDSP Effects.wwu" DateLow="1630997089" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Effects\Factory Mastering Suite.wwu" DateLow="1630997041" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Effects\Factory iZotope Singleband Distortion.wwu" DateLow="1630997152" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Effects\Factory iZotope Multiband Distortion.wwu" DateLow="1630997152" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Effects\Factory iZotope Hybrid Reverb Effects.wwu" DateLow="1630997152" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Effects\Factory iZotope Filters.wwu" DateLow="1630997152" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Effects\Factory iZotope Dynamics.wwu" DateLow="1630997152" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Effects\Factory iZotope Delay.wwu" DateLow="1630997152" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Effects\Factory iZotope Box Modeler.wwu" DateLow="1630997152" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Effects\Factory Effects.wwu" DateLow="1630997029" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Effects\Factory Auro Headphone.wwu" DateLow="1630997057" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Effects\Default Work Unit.wwu" DateLow="1631011751" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1631011751" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1630997029" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Conversion Settings\Default Work Unit.wwu" DateLow="1631011751" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Control Surface Sessions\Default Work Unit.wwu" DateLow="1631011751" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Audio Devices\Default Work Unit.wwu" DateLow="1631011765" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Attenuations\Default Work Unit.wwu" DateLow="1631011751" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="1630997029" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="1630997045" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Actor-Mixer Hierarchy\Factory Motion.wwu" DateLow="1631011765" DateHigh="0"/>
+	<ValidationCacheItem File="D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1631614099" DateHigh="0"/>
+</ValidationCache>

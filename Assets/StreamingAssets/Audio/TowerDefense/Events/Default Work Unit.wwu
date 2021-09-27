@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{00A6F063-C61F-430A-99FE-3CE8ECFB8904}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{00A6F063-C61F-430A-99FE-3CE8ECFB8904}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="MenuLoop" ID="{98176EB6-B130-41F0-B519-5E37975BD83C}">
+					<ChildrenList>
+						<Action Name="" ID="{BB8AD2CF-18CE-40A7-82E8-604299EE7EA2}" ShortID="334840683">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MenuLoop" ID="{F2782A7D-BBFA-48C0-9729-10761398F98B}" WorkUnitID="{10C2F9BD-3C87-4171-B551-384B40D7233B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="InGameLoop" ID="{2E2D775F-E9FC-4064-B61D-3655B719AB3C}">
+					<ChildrenList>
+						<Action Name="" ID="{54E38F24-8C16-4FEC-BA6A-C89365A1FD41}" ShortID="458935919">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="InGameLoop" ID="{64272070-E275-48F9-9F05-894C5C374FF3}" WorkUnitID="{10C2F9BD-3C87-4171-B551-384B40D7233B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Music" ID="{EE91EC3C-E38F-4A96-87CD-51CBE3FF8753}">
+					<ChildrenList>
+						<Action Name="" ID="{AEA387B9-CC19-4A3A-895F-719D0B5883F6}" ShortID="903329790">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{1CAC98A2-3EF1-4527-811A-B370CD26CF34}" WorkUnitID="{10C2F9BD-3C87-4171-B551-384B40D7233B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
