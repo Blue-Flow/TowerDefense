@@ -27,6 +27,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	985987111	Motion Factory Bus			\Default Work Unit\Motion Factory Bus	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3898083304	SoundEffects			\Default Work Unit\SoundEffects	
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

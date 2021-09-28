@@ -11,28 +11,68 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" GUID="{06003181-071E-45C0-AEF9-DDBA6A866052}" Language="SFX" Hash="3604492880">
+		<SoundBank Id="393239870" GUID="{06003181-071E-45C0-AEF9-DDBA6A866052}" Language="SFX" Hash="884617252">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2344834053" Name="AttackIngratitude" ObjectPath="\Events\Default Work Unit\SFX\AttackIngratitude" GUID="{EEC2FB95-AB97-4092-8FD5-ED0AAB0B1A0E}" DurationType="OneShot" DurationMin="0.210414" DurationMax="0.459265">
+				<Event Id="2979880141" Name="AttackColision" ObjectPath="\Events\Default Work Unit\SFX\Defenders\Amusement\AttackColision" GUID="{16014B56-A666-4F8A-B9C5-F429DFF40F24}" DurationType="OneShot" DurationMin="0.410904" DurationMax="0.673019">
 					<IncludedMemoryFiles>
-						<File Id="288182309" Language="SFX">
-							<ShortName>PlayerMozJump.wav</ShortName>
-							<Path>SFX\PlayerMozJump_6F6280BA.wem</Path>
+						<File Id="70646795" Language="SFX">
+							<ShortName>metrock_04-converted.wav</ShortName>
+							<Path>SFX\metrock_04-converted_10C4C929.wem</Path>
 						</File>
-						<File Id="694837517" Language="SFX">
-							<ShortName>PlayerMozJump.wav</ShortName>
-							<Path>SFX\PlayerMozJump_C2A41A52.wem</Path>
+						<File Id="668881136" Language="SFX">
+							<ShortName>metrock_01-converted.wav</ShortName>
+							<Path>SFX\metrock_01-converted_10C4C929.wem</Path>
 						</File>
-						<File Id="1017460896" Language="SFX">
-							<ShortName>PlayerMozJump.wav</ShortName>
-							<Path>SFX\PlayerMozJump_D41E8CBA.wem</Path>
+						<File Id="850205369" Language="SFX">
+							<ShortName>metrock_02-converted.wav</ShortName>
+							<Path>SFX\metrock_02-converted_10C4C929.wem</Path>
+						</File>
+						<File Id="1050163694" Language="SFX">
+							<ShortName>metrock_03-converted.wav</ShortName>
+							<Path>SFX\metrock_03-converted_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="885292041" Name="AttackTristesse" ObjectPath="\Events\Default Work Unit\SFX\AttackTristesse" GUID="{EAAF852A-A377-4CD2-A3BC-0E06CA3D490C}" DurationType="OneShot" DurationMin="0.692327" DurationMax="1.099000">
+				<Event Id="2344834053" Name="AttackIngratitude" ObjectPath="\Events\Default Work Unit\SFX\Attackers\Ingratitude\AttackIngratitude" GUID="{EEC2FB95-AB97-4092-8FD5-ED0AAB0B1A0E}" DurationType="OneShot" DurationMin="0.292859" DurationMax="1.220324">
+					<IncludedMemoryFiles>
+						<File Id="109631978" Language="SFX">
+							<ShortName>wolfattack_4-converted.wav</ShortName>
+							<Path>SFX\wolfattack_4-converted_10C4C929.wem</Path>
+						</File>
+						<File Id="504630963" Language="SFX">
+							<ShortName>wolfattack_3-converted.wav</ShortName>
+							<Path>SFX\wolfattack_3-converted_10C4C929.wem</Path>
+						</File>
+						<File Id="716671261" Language="SFX">
+							<ShortName>wolfattack_2-converted.wav</ShortName>
+							<Path>SFX\wolfattack_2-converted_10C4C929.wem</Path>
+						</File>
+						<File Id="947165166" Language="SFX">
+							<ShortName>wolfattack_1-converted.wav</ShortName>
+							<Path>SFX\wolfattack_1-converted_10C4C929.wem</Path>
+						</File>
+						<File Id="1060193530" Language="SFX">
+							<ShortName>wolfattack_5-converted.wav</ShortName>
+							<Path>SFX\wolfattack_5-converted_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2166428342" Name="AttackShoot" ObjectPath="\Events\Default Work Unit\SFX\Defenders\Amusement\AttackShoot" GUID="{F1147272-BF45-4DDE-8B84-617199BA66FF}" DurationType="OneShot" DurationMin="0.153511" DurationMax="0.230691">
+					<IncludedMemoryFiles>
+						<File Id="641465518" Language="SFX">
+							<ShortName>arrowbasic_02-converted.wav</ShortName>
+							<Path>SFX\arrowbasic_02-converted_362E42EF.wem</Path>
+						</File>
+						<File Id="1036017881" Language="SFX">
+							<ShortName>arrowbasic_01-converted.wav</ShortName>
+							<Path>SFX\arrowbasic_01-converted_F2C3549D.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="885292041" Name="AttackTristesse" ObjectPath="\Events\Default Work Unit\SFX\Attackers\Tristesse\AttackTristesse" GUID="{EAAF852A-A377-4CD2-A3BC-0E06CA3D490C}" DurationType="OneShot" DurationMin="0.692327" DurationMax="1.099000">
 					<IncludedMemoryFiles>
 						<File Id="17188455" Language="SFX">
 							<ShortName>Gunshot_tuto.wav</ShortName>
@@ -40,7 +80,55 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3928916067" Name="EntryIngratitude" ObjectPath="\Events\Default Work Unit\SFX\EntryIngratitude" GUID="{2D4D3BF7-2978-4F14-8A6F-3215EC55300A}" DurationType="OneShot" DurationMin="0.505699" DurationMax="0.757693">
+				<Event Id="722463161" Name="DeathIngratitude" ObjectPath="\Events\Default Work Unit\SFX\Attackers\Ingratitude\DeathIngratitude" GUID="{396CD60C-59A5-440B-B9F6-5906CE2ACE91}" DurationType="OneShot" DurationMin="0.164362" DurationMax="0.414166">
+					<IncludedMemoryFiles>
+						<File Id="48794901" Language="SFX">
+							<ShortName>wolfdies_1-converted.wav</ShortName>
+							<Path>SFX\wolfdies_1-converted_10C4C929.wem</Path>
+						</File>
+						<File Id="211169880" Language="SFX">
+							<ShortName>wolfdies_2-converted.wav</ShortName>
+							<Path>SFX\wolfdies_2-converted_10C4C929.wem</Path>
+						</File>
+						<File Id="405311136" Language="SFX">
+							<ShortName>wolfdies_3-converted.wav</ShortName>
+							<Path>SFX\wolfdies_3-converted_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1850547637" Name="DeathTristesse" ObjectPath="\Events\Default Work Unit\SFX\Attackers\Tristesse\DeathTristesse" GUID="{AD10A2CE-DCA7-49A6-A496-757C303EC61F}" DurationType="OneShot" DurationMin="0.460038" DurationMax="0.980881">
+					<IncludedMemoryFiles>
+						<File Id="230617331" Language="SFX">
+							<ShortName>smartsound_ANIMAL_PANTHER_Young_Snarl_01.wav</ShortName>
+							<Path>SFX\smartsound_ANIMAL_PANTHER_Young_Snarl_01_950B8BF0.wem</Path>
+						</File>
+						<File Id="546684341" Language="SFX">
+							<ShortName>smartsound_ANIMAL_PANTHER_Young_Snarl_01.wav</ShortName>
+							<Path>SFX\smartsound_ANIMAL_PANTHER_Young_Snarl_01_D25CBD29.wem</Path>
+						</File>
+						<File Id="860247795" Language="SFX">
+							<ShortName>smartsound_ANIMAL_PANTHER_Young_Snarl_01.wav</ShortName>
+							<Path>SFX\smartsound_ANIMAL_PANTHER_Young_Snarl_01_2952EA88.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2048571938" Name="EntryAmusement" ObjectPath="\Events\Default Work Unit\SFX\Defenders\Amusement\EntryAmusement" GUID="{439A60F7-1250-4D2A-AD39-051DB3B72F43}" DurationType="OneShot" DurationMin="0.287633" DurationMax="0.569478">
+					<IncludedMemoryFiles>
+						<File Id="51546356" Language="SFX">
+							<ShortName>plank1-converted.wav</ShortName>
+							<Path>SFX\plank1-converted_10C4C929.wem</Path>
+						</File>
+						<File Id="874606342" Language="SFX">
+							<ShortName>plank3-converted.wav</ShortName>
+							<Path>SFX\plank3-converted_10C4C929.wem</Path>
+						</File>
+						<File Id="996040508" Language="SFX">
+							<ShortName>plank2-converted.wav</ShortName>
+							<Path>SFX\plank2-converted_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3928916067" Name="EntryIngratitude" ObjectPath="\Events\Default Work Unit\SFX\Attackers\Ingratitude\EntryIngratitude" GUID="{2D4D3BF7-2978-4F14-8A6F-3215EC55300A}" DurationType="OneShot" DurationMin="0.505699" DurationMax="0.757693">
 					<IncludedMemoryFiles>
 						<File Id="490495913" Language="SFX">
 							<ShortName>Sound Design Test Téléportation.wav</ShortName>
@@ -48,7 +136,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2073937387" Name="EntryTristesse" ObjectPath="\Events\Default Work Unit\SFX\EntryTristesse" GUID="{9C6FD448-A6B4-41B5-A62F-D637D2F7D73B}" DurationType="OneShot" DurationMin="0.610998" DurationMax="1.373050">
+				<Event Id="2073937387" Name="EntryTristesse" ObjectPath="\Events\Default Work Unit\SFX\Attackers\Tristesse\EntryTristesse" GUID="{9C6FD448-A6B4-41B5-A62F-D637D2F7D73B}" DurationType="OneShot" DurationMin="0.610998" DurationMax="1.373050">
 					<IncludedMemoryFiles>
 						<File Id="4326836" Language="SFX">
 							<ShortName>Elevator.wav</ShortName>
@@ -66,12 +154,12 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1355168291" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="1426921700">
+		<SoundBank Id="1355168291" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="2200429197">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1499314831" GUID="{808B2C92-D701-4B6A-885A-C3AF15E73E1E}" Language="SFX" Hash="2433572152">
+		<SoundBank Id="1499314831" GUID="{808B2C92-D701-4B6A-885A-C3AF15E73E1E}" Language="SFX" Hash="4124922913">
 			<ObjectPath>\SoundBanks\Default Work Unit\MusicGlobal</ObjectPath>
 			<ShortName>MusicGlobal</ShortName>
 			<Path>MusicGlobal.bnk</Path>
@@ -127,32 +215,6 @@
 					</SwitchContainers>
 				</Event>
 			</IncludedEvents>
-			<IncludedMemoryFiles>
-				<File Id="108264615" Language="SFX">
-					<ShortName>MenuLoop_80bpm_44.wav</ShortName>
-					<Path>SFX\MenuLoop_80bpm_44_D79FB2B7.wem</Path>
-				</File>
-				<File Id="430400140" Language="SFX">
-					<ShortName>TransitionMenuToInGameLoop80bpm4-4.wav</ShortName>
-					<Path>SFX\TransitionMenuToInGameLoop80bpm4-4_D79FB2B7.wem</Path>
-				</File>
-				<File Id="508930095" Language="SFX">
-					<ShortName>InGameLoop_110bpm_44.wav</ShortName>
-					<Path>SFX\InGameLoop_110bpm_44_D79FB2B7.wem</Path>
-				</File>
-				<File Id="610353908" Language="SFX">
-					<ShortName>Victory110bpm4-4.wav</ShortName>
-					<Path>SFX\Victory110bpm4-4_D79FB2B7.wem</Path>
-				</File>
-				<File Id="802117939" Language="SFX">
-					<ShortName>TransitionInGameLoopToMenu110bpm4-4.wav</ShortName>
-					<Path>SFX\TransitionInGameLoopToMenu110bpm4-4_D79FB2B7.wem</Path>
-				</File>
-				<File Id="871482263" Language="SFX">
-					<ShortName>Defeat110bpm4-4.wav</ShortName>
-					<Path>SFX\Defeat110bpm4-4_D79FB2B7.wem</Path>
-				</File>
-			</IncludedMemoryFiles>
 			<StateGroups>
 				<StateGroup Id="1021618141" Name="MusicState" ObjectPath="\States\Default Work Unit\MusicState" GUID="{29AAD179-C49E-43D2-9F49-B6404C82D4AE}">
 					<States>

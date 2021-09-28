@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 6706270695476627178}
   - component: {fileID: 5674003925074326006}
   - component: {fileID: 47874306991685051}
+  - component: {fileID: -7425625613981725686}
   m_Layer: 7
   m_Name: Ennemi_Tristesse
   m_TagString: Attacker
@@ -249,7 +250,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5639901465126721906}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 12a514cf2b44c4c43a7825e1be2319de, type: 3}
   m_Name: 
@@ -285,6 +286,35 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 6b98e727b0324624ea9550d9203b3727, type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+--- !u!114 &-7425625613981725686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5639901465126721906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537b8701b6b91c44bbc72f5d4da232f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: 958ca0ea
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8321a2675d51f2f41a1531656e9a359c, type: 2}
   useCallbacks: 0
   Callbacks: []
   playingId: 0

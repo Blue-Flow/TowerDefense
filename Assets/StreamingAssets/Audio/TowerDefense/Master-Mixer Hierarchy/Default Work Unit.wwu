@@ -19,6 +19,21 @@
 					</ReferenceList>
 					<ObjectLists/>
 				</Bus>
+				<Bus Name="SoundEffects" ID="{068CA0E9-FEE4-4F35-9FB1-CE3492529781}">
+					<PropertyList>
+						<Property Name="BusVolume" Type="Real64">
+							<ValueList>
+								<Value>-12</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{C1139E91-527A-43C1-9524-00F97F513934}" WorkUnitID="{D8BD76FE-4B58-4BF9-B9A4-B3047FEFDF4E}"/>
+						</Reference>
+					</ReferenceList>
+					<ObjectLists/>
+				</Bus>
 			</ChildrenList>
 		</WorkUnit>
 	</Busses>

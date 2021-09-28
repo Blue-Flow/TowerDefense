@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: e594bdce93f1a94b985f805451bac805
     GuidInternal: 
-    m_lastTime: -8585688675838709980
+    m_lastTime: -8585687653903011318
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -333,6 +333,20 @@ MonoBehaviour:
         ObjectType: 2
         guid: c6b9f92af16ee946b5f2e30c9e602c74
       Path: Master-Mixer Hierarchy\Default Work Unit\Motion Factory Bus
+    - name: SoundEffects
+      guid: e9a08c06e4fe354f9fb1ce3492529781
+      id: 3898083304
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: e594bdce93f1a94b985f805451bac805
+      - ElementName: SoundEffects
+        ObjectType: 2
+        guid: e9a08c06e4fe354f9fb1ce3492529781
+      Path: Master-Mixer Hierarchy\Default Work Unit\SoundEffects
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -345,7 +359,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: f647b8324d5e35438e5256a90b0843bb
     GuidInternal: 
-    m_lastTime: -8585687834514806229
+    m_lastTime: -8585687651539751585
     List:
     - name: MusicGlobal
       guid: 922c8b8001d76a4b885ac3af15e73e1e
@@ -387,8 +401,77 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 63f0a6001fc60a4399fe3ce8ecfb8904
     GuidInternal: 
-    m_lastTime: -8585687822509031829
+    m_lastTime: -8585687649313527355
     List:
+    - name: Amusement
+      guid: 928e9d966e34544ba4690b566786eb57
+      id: 3781011736
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 63f0a6001fc60a4399fe3ce8ecfb8904
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 6df0f55baf8a634e97abd891899508b5
+      - ElementName: Defenders
+        ObjectType: 4
+        guid: 8adc7487258a044eb0f969800f41d1ff
+      - ElementName: Amusement
+        ObjectType: 4
+        guid: 928e9d966e34544ba4690b566786eb57
+      Path: Events\Default Work Unit\SFX\Defenders\Amusement
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: AttackColision
+      guid: 564b011666a68a4fb9c5f429dff40f24
+      id: 2979880141
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 63f0a6001fc60a4399fe3ce8ecfb8904
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 6df0f55baf8a634e97abd891899508b5
+      - ElementName: Defenders
+        ObjectType: 4
+        guid: 8adc7487258a044eb0f969800f41d1ff
+      - ElementName: Amusement
+        ObjectType: 4
+        guid: 928e9d966e34544ba4690b566786eb57
+      - ElementName: AttackColision
+        ObjectType: 3
+        guid: 564b011666a68a4fb9c5f429dff40f24
+      Path: Events\Default Work Unit\SFX\Defenders\Amusement\AttackColision
+      maxAttenuation: 0
+      maxDuration: 0.673019
+      minDuration: 0.410904
+    - name: Attackers
+      guid: e96b77a356e19943bcd990bc02918db6
+      id: 1304282687
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 63f0a6001fc60a4399fe3ce8ecfb8904
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 6df0f55baf8a634e97abd891899508b5
+      - ElementName: Attackers
+        ObjectType: 4
+        guid: e96b77a356e19943bcd990bc02918db6
+      Path: Events\Default Work Unit\SFX\Attackers
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: AttackIngratitude
       guid: 95fbc2ee97ab92408fd5ed0aab0b1a0e
       id: 2344834053
@@ -402,13 +485,45 @@ MonoBehaviour:
       - ElementName: SFX
         ObjectType: 4
         guid: 6df0f55baf8a634e97abd891899508b5
+      - ElementName: Attackers
+        ObjectType: 4
+        guid: e96b77a356e19943bcd990bc02918db6
+      - ElementName: Ingratitude
+        ObjectType: 4
+        guid: 8eb18477ddd38541ad9fb796157a05f5
       - ElementName: AttackIngratitude
         ObjectType: 3
         guid: 95fbc2ee97ab92408fd5ed0aab0b1a0e
-      Path: Events\Default Work Unit\SFX\AttackIngratitude
+      Path: Events\Default Work Unit\SFX\Attackers\Ingratitude\AttackIngratitude
       maxAttenuation: 0
-      maxDuration: 0.459265
-      minDuration: 0.210414
+      maxDuration: 1.220324
+      minDuration: 0.292859
+    - name: AttackShoot
+      guid: 727214f145bfde4d8b84617199ba66ff
+      id: 2166428342
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 63f0a6001fc60a4399fe3ce8ecfb8904
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 6df0f55baf8a634e97abd891899508b5
+      - ElementName: Defenders
+        ObjectType: 4
+        guid: 8adc7487258a044eb0f969800f41d1ff
+      - ElementName: Amusement
+        ObjectType: 4
+        guid: 928e9d966e34544ba4690b566786eb57
+      - ElementName: AttackShoot
+        ObjectType: 3
+        guid: 727214f145bfde4d8b84617199ba66ff
+      Path: Events\Default Work Unit\SFX\Defenders\Amusement\AttackShoot
+      maxAttenuation: 0
+      maxDuration: 0.230691
+      minDuration: 0.153511
     - name: AttackTristesse
       guid: 2a85afea77a3d24ca3bc0e06ca3d490c
       id: 885292041
@@ -422,13 +537,117 @@ MonoBehaviour:
       - ElementName: SFX
         ObjectType: 4
         guid: 6df0f55baf8a634e97abd891899508b5
+      - ElementName: Attackers
+        ObjectType: 4
+        guid: e96b77a356e19943bcd990bc02918db6
+      - ElementName: Tristesse
+        ObjectType: 4
+        guid: 7a60207d7089844ca54a6fbabf29d1d6
       - ElementName: AttackTristesse
         ObjectType: 3
         guid: 2a85afea77a3d24ca3bc0e06ca3d490c
-      Path: Events\Default Work Unit\SFX\AttackTristesse
+      Path: Events\Default Work Unit\SFX\Attackers\Tristesse\AttackTristesse
       maxAttenuation: 0
       maxDuration: 1.099
       minDuration: 0.692327
+    - name: DeathIngratitude
+      guid: 0cd66c39a5590b44b9f65906ce2ace91
+      id: 722463161
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 63f0a6001fc60a4399fe3ce8ecfb8904
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 6df0f55baf8a634e97abd891899508b5
+      - ElementName: Attackers
+        ObjectType: 4
+        guid: e96b77a356e19943bcd990bc02918db6
+      - ElementName: Ingratitude
+        ObjectType: 4
+        guid: 8eb18477ddd38541ad9fb796157a05f5
+      - ElementName: DeathIngratitude
+        ObjectType: 3
+        guid: 0cd66c39a5590b44b9f65906ce2ace91
+      Path: Events\Default Work Unit\SFX\Attackers\Ingratitude\DeathIngratitude
+      maxAttenuation: 0
+      maxDuration: 0.414166
+      minDuration: 0.164362
+    - name: DeathTristesse
+      guid: cea210ada7dca649a496757c303ec61f
+      id: 1850547637
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 63f0a6001fc60a4399fe3ce8ecfb8904
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 6df0f55baf8a634e97abd891899508b5
+      - ElementName: Attackers
+        ObjectType: 4
+        guid: e96b77a356e19943bcd990bc02918db6
+      - ElementName: Tristesse
+        ObjectType: 4
+        guid: 7a60207d7089844ca54a6fbabf29d1d6
+      - ElementName: DeathTristesse
+        ObjectType: 3
+        guid: cea210ada7dca649a496757c303ec61f
+      Path: Events\Default Work Unit\SFX\Attackers\Tristesse\DeathTristesse
+      maxAttenuation: 0
+      maxDuration: 0.980881
+      minDuration: 0.460038
+    - name: Defenders
+      guid: 8adc7487258a044eb0f969800f41d1ff
+      id: 2853666603
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 63f0a6001fc60a4399fe3ce8ecfb8904
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 6df0f55baf8a634e97abd891899508b5
+      - ElementName: Defenders
+        ObjectType: 4
+        guid: 8adc7487258a044eb0f969800f41d1ff
+      Path: Events\Default Work Unit\SFX\Defenders
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: EntryAmusement
+      guid: f7609a4350122a4dad39051db3b72f43
+      id: 2048571938
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 63f0a6001fc60a4399fe3ce8ecfb8904
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 6df0f55baf8a634e97abd891899508b5
+      - ElementName: Defenders
+        ObjectType: 4
+        guid: 8adc7487258a044eb0f969800f41d1ff
+      - ElementName: Amusement
+        ObjectType: 4
+        guid: 928e9d966e34544ba4690b566786eb57
+      - ElementName: EntryAmusement
+        ObjectType: 3
+        guid: f7609a4350122a4dad39051db3b72f43
+      Path: Events\Default Work Unit\SFX\Defenders\Amusement\EntryAmusement
+      maxAttenuation: 0
+      maxDuration: 0.569478
+      minDuration: 0.287633
     - name: EntryIngratitude
       guid: f73b4d2d7829144f8a6f3215ec55300a
       id: 3928916067
@@ -442,10 +661,16 @@ MonoBehaviour:
       - ElementName: SFX
         ObjectType: 4
         guid: 6df0f55baf8a634e97abd891899508b5
+      - ElementName: Attackers
+        ObjectType: 4
+        guid: e96b77a356e19943bcd990bc02918db6
+      - ElementName: Ingratitude
+        ObjectType: 4
+        guid: 8eb18477ddd38541ad9fb796157a05f5
       - ElementName: EntryIngratitude
         ObjectType: 3
         guid: f73b4d2d7829144f8a6f3215ec55300a
-      Path: Events\Default Work Unit\SFX\EntryIngratitude
+      Path: Events\Default Work Unit\SFX\Attackers\Ingratitude\EntryIngratitude
       maxAttenuation: 0
       maxDuration: 0.757693
       minDuration: 0.505699
@@ -462,10 +687,16 @@ MonoBehaviour:
       - ElementName: SFX
         ObjectType: 4
         guid: 6df0f55baf8a634e97abd891899508b5
+      - ElementName: Attackers
+        ObjectType: 4
+        guid: e96b77a356e19943bcd990bc02918db6
+      - ElementName: Tristesse
+        ObjectType: 4
+        guid: 7a60207d7089844ca54a6fbabf29d1d6
       - ElementName: EntryTristesse
         ObjectType: 3
         guid: 48d46f9cb4a6b541a62fd637d2f7d73b
-      Path: Events\Default Work Unit\SFX\EntryTristesse
+      Path: Events\Default Work Unit\SFX\Attackers\Tristesse\EntryTristesse
       maxAttenuation: 0
       maxDuration: 1.37305
       minDuration: 0.610998
@@ -486,6 +717,29 @@ MonoBehaviour:
         ObjectType: 3
         guid: 5f772d2efce96440b61d3655b719ab3c
       Path: Events\Default Work Unit\Musics\InGameLoop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Ingratitude
+      guid: 8eb18477ddd38541ad9fb796157a05f5
+      id: 1286046909
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 63f0a6001fc60a4399fe3ce8ecfb8904
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 6df0f55baf8a634e97abd891899508b5
+      - ElementName: Attackers
+        ObjectType: 4
+        guid: e96b77a356e19943bcd990bc02918db6
+      - ElementName: Ingratitude
+        ObjectType: 4
+        guid: 8eb18477ddd38541ad9fb796157a05f5
+      Path: Events\Default Work Unit\SFX\Attackers\Ingratitude
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -560,6 +814,29 @@ MonoBehaviour:
         ObjectType: 4
         guid: 6df0f55baf8a634e97abd891899508b5
       Path: Events\Default Work Unit\SFX
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Tristesse
+      guid: 7a60207d7089844ca54a6fbabf29d1d6
+      id: 3375131777
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 63f0a6001fc60a4399fe3ce8ecfb8904
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 6df0f55baf8a634e97abd891899508b5
+      - ElementName: Attackers
+        ObjectType: 4
+        guid: e96b77a356e19943bcd990bc02918db6
+      - ElementName: Tristesse
+        ObjectType: 4
+        guid: 7a60207d7089844ca54a6fbabf29d1d6
+      Path: Events\Default Work Unit\SFX\Attackers\Tristesse
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -912,7 +1189,7 @@ MonoBehaviour:
     m_lastTime: -8585688675819876058
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 07000000080000000a0000000c0000000e0000000f000000
+  ExpandedWaapiItemIds: 0700000008000000090000000a0000000b0000000c0000000e0000000f0000002e0000003e000000560000005700000059000000c2000000c3000000c500000011010000120100001401000058010000590100005b0100006c1600006d1600008c6800007d400f00
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

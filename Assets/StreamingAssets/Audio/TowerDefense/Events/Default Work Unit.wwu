@@ -5,50 +5,125 @@
 			<ChildrenList>
 				<Folder Name="SFX" ID="{5BF5F06D-8AAF-4E63-97AB-D891899508B5}" ShortID="344354821">
 					<ChildrenList>
-						<Event Name="EntryTristesse" ID="{9C6FD448-A6B4-41B5-A62F-D637D2F7D73B}">
+						<Folder Name="Defenders" ID="{8774DC8A-8A25-4E04-B0F9-69800F41D1FF}" ShortID="654340239">
 							<ChildrenList>
-								<Action Name="" ID="{15039334-6ADA-49B0-B3FB-DE85C3D100E5}" ShortID="555118648">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="EntryTristesse" ID="{268D14A0-00AE-45AA-A7D0-BDE5BBF828BA}" WorkUnitID="{C0B17388-9D9F-495B-91D3-A8F89CCD6AEB}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
+								<Folder Name="Amusement" ID="{969D8E92-346E-4B54-A469-0B566786EB57}" ShortID="614441254">
+									<ChildrenList>
+										<Event Name="AttackColision" ID="{16014B56-A666-4F8A-B9C5-F429DFF40F24}">
+											<ChildrenList>
+												<Action Name="" ID="{3C82CD23-A02F-4A5E-BA2C-1884BB83EA49}" ShortID="867893125">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AttackColision" ID="{6E54295E-22F7-4F4D-BE2B-FEECE92BD3D8}" WorkUnitID="{C0B17388-9D9F-495B-91D3-A8F89CCD6AEB}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="EntryAmusement" ID="{439A60F7-1250-4D2A-AD39-051DB3B72F43}">
+											<ChildrenList>
+												<Action Name="" ID="{042AC295-296E-49CE-8190-1CD10296191A}" ShortID="590197776">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="EntryAmusement" ID="{26AA05AA-B3E5-4B63-9A26-EC1FB14587D7}" WorkUnitID="{C0B17388-9D9F-495B-91D3-A8F89CCD6AEB}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="AttackShoot" ID="{F1147272-BF45-4DDE-8B84-617199BA66FF}">
+											<ChildrenList>
+												<Action Name="" ID="{4389AB00-7ED2-45A3-8681-1B5366DBE089}" ShortID="976601757">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AttackShoot" ID="{C33ED2E2-00A4-4F1C-B14E-3190A8B10644}" WorkUnitID="{C0B17388-9D9F-495B-91D3-A8F89CCD6AEB}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
 							</ChildrenList>
-						</Event>
-						<Event Name="AttackTristesse" ID="{EAAF852A-A377-4CD2-A3BC-0E06CA3D490C}">
+						</Folder>
+						<Folder Name="Attackers" ID="{A3776BE9-E156-4399-BCD9-90BC02918DB6}" ShortID="293630782">
 							<ChildrenList>
-								<Action Name="" ID="{B86B5B94-A0F0-4CB9-9FE8-BB9D4EA36CF6}" ShortID="343514196">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="AttackTristesse" ID="{48B4F3F6-819D-451A-A479-C9DED86BCDA6}" WorkUnitID="{C0B17388-9D9F-495B-91D3-A8F89CCD6AEB}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
+								<Folder Name="Ingratitude" ID="{7784B18E-D3DD-4185-AD9F-B796157A05F5}" ShortID="702315524">
+									<ChildrenList>
+										<Event Name="AttackIngratitude" ID="{EEC2FB95-AB97-4092-8FD5-ED0AAB0B1A0E}">
+											<ChildrenList>
+												<Action Name="" ID="{C1ECFA42-CDE7-4042-A33E-8A14C8B72F34}" ShortID="533589428">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AttackIngratitude" ID="{2E5B4C76-818B-4A54-89DB-6088D025321F}" WorkUnitID="{C0B17388-9D9F-495B-91D3-A8F89CCD6AEB}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="DeathIngratitude" ID="{396CD60C-59A5-440B-B9F6-5906CE2ACE91}">
+											<ChildrenList>
+												<Action Name="" ID="{64AF5E04-1667-40E9-9A24-F9FAC26A99F4}" ShortID="654305425">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="DeathIngratitude" ID="{B33DDBEF-87F2-4CB1-A384-A52C14C7FD5D}" WorkUnitID="{C0B17388-9D9F-495B-91D3-A8F89CCD6AEB}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="EntryIngratitude" ID="{2D4D3BF7-2978-4F14-8A6F-3215EC55300A}">
+											<ChildrenList>
+												<Action Name="" ID="{260E632C-09A9-46A5-836A-3D4537C6DC0D}" ShortID="126142286">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="EntryIngratitude" ID="{B3F608C5-4160-4179-B6A2-FDA1AAB58884}" WorkUnitID="{C0B17388-9D9F-495B-91D3-A8F89CCD6AEB}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Tristesse" ID="{7D20607A-8970-4C84-A54A-6FBABF29D1D6}" ShortID="680054144">
+									<ChildrenList>
+										<Event Name="AttackTristesse" ID="{EAAF852A-A377-4CD2-A3BC-0E06CA3D490C}">
+											<ChildrenList>
+												<Action Name="" ID="{B86B5B94-A0F0-4CB9-9FE8-BB9D4EA36CF6}" ShortID="343514196">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="AttackTristesse" ID="{48B4F3F6-819D-451A-A479-C9DED86BCDA6}" WorkUnitID="{C0B17388-9D9F-495B-91D3-A8F89CCD6AEB}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="EntryTristesse" ID="{9C6FD448-A6B4-41B5-A62F-D637D2F7D73B}">
+											<ChildrenList>
+												<Action Name="" ID="{15039334-6ADA-49B0-B3FB-DE85C3D100E5}" ShortID="555118648">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="EntryTristesse" ID="{268D14A0-00AE-45AA-A7D0-BDE5BBF828BA}" WorkUnitID="{C0B17388-9D9F-495B-91D3-A8F89CCD6AEB}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+										<Event Name="DeathTristesse" ID="{AD10A2CE-DCA7-49A6-A496-757C303EC61F}">
+											<ChildrenList>
+												<Action Name="" ID="{A9F16C38-7903-45E4-8A79-49749D5106B8}" ShortID="927004492">
+													<ReferenceList>
+														<Reference Name="Target">
+															<ObjectRef Name="DeathTristesse" ID="{6118A7EB-84DA-484B-9804-F41CDA1EFC04}" WorkUnitID="{C0B17388-9D9F-495B-91D3-A8F89CCD6AEB}"/>
+														</Reference>
+													</ReferenceList>
+												</Action>
+											</ChildrenList>
+										</Event>
+									</ChildrenList>
+								</Folder>
 							</ChildrenList>
-						</Event>
-						<Event Name="EntryIngratitude" ID="{2D4D3BF7-2978-4F14-8A6F-3215EC55300A}">
-							<ChildrenList>
-								<Action Name="" ID="{260E632C-09A9-46A5-836A-3D4537C6DC0D}" ShortID="126142286">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="EntryIngratitude" ID="{B3F608C5-4160-4179-B6A2-FDA1AAB58884}" WorkUnitID="{C0B17388-9D9F-495B-91D3-A8F89CCD6AEB}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="AttackIngratitude" ID="{EEC2FB95-AB97-4092-8FD5-ED0AAB0B1A0E}">
-							<ChildrenList>
-								<Action Name="" ID="{C1ECFA42-CDE7-4042-A33E-8A14C8B72F34}" ShortID="533589428">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="AttackIngratitude" ID="{2E5B4C76-818B-4A54-89DB-6088D025321F}" WorkUnitID="{C0B17388-9D9F-495B-91D3-A8F89CCD6AEB}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Musics" ID="{BE493835-EB69-43DA-9789-E3D5BB5AA283}" ShortID="469772968">
