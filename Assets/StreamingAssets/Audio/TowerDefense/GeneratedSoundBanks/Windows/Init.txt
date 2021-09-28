@@ -3,8 +3,10 @@ State Group	ID	Name			Wwise Object Path	Notes
 
 State	ID	Name	State Group			Notes
 	748895195	None	MusicState			
+	1593864692	Defeat	MusicState			
 	2607556080	Menu	MusicState			
 	2678230382	Level1	MusicState			
+	2716678721	Victory	MusicState			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	504532776	Brick			\Factory Acoustic Textures\Textures\Brick	

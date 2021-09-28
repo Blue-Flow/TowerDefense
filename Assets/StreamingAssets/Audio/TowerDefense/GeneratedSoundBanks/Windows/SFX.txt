@@ -1,0 +1,16 @@
+Event	ID	Name			Wwise Object Path	Notes
+	885292041	AttackTristesse			\Default Work Unit\SFX\AttackTristesse	
+	2073937387	EntryTristesse			\Default Work Unit\SFX\EntryTristesse	
+	2344834053	AttackIngratitude			\Default Work Unit\SFX\AttackIngratitude	
+	3928916067	EntryIngratitude			\Default Work Unit\SFX\EntryIngratitude	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	4326836	EntryTristesse_01	D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\.cache\Windows\SFX\Elevator_F6EF3988.wem		\Actor-Mixer Hierarchy\Default Work Unit\EntryTristesse\EntryTristesse_01		179032
+	17188455	AttackTristesse	D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\.cache\Windows\SFX\Gunshot_tuto_F23CED81.wem		\Actor-Mixer Hierarchy\Default Work Unit\AttackTristesse\AttackTristesse		167540
+	288182309	AttackIngratitude_01	D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\.cache\Windows\SFX\PlayerMozJump_6F6280BA.wem		\Actor-Mixer Hierarchy\Default Work Unit\AttackIngratitude\AttackIngratitude_01		50964
+	325186977	EntryTristesse	D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\.cache\Windows\SFX\Elevator_DD0B5009.wem		\Actor-Mixer Hierarchy\Default Work Unit\EntryTristesse\EntryTristesse		209304
+	409676645	EntryTristesse_02	D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\.cache\Windows\SFX\Elevator_D4E9E798.wem		\Actor-Mixer Hierarchy\Default Work Unit\EntryTristesse\EntryTristesse_02		147868
+	490495913	EntryIngratitude	D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\.cache\Windows\SFX\Sound Design Test Téléportation_450B4923.wem		\Actor-Mixer Hierarchy\Default Work Unit\EntryIngratitude\EntryIngratitude		137376
+	694837517	AttackIngratitude	D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\.cache\Windows\SFX\PlayerMozJump_C2A41A52.wem		\Actor-Mixer Hierarchy\Default Work Unit\AttackIngratitude\AttackIngratitude		70052
+	1017460896	AttackIngratitude_02	D:\GitKraken\TowerDefense\Assets\StreamingAssets\Audio\TowerDefense\.cache\Windows\SFX\PlayerMozJump_D41E8CBA.wem		\Actor-Mixer Hierarchy\Default Work Unit\AttackIngratitude\AttackIngratitude_02		61144
+

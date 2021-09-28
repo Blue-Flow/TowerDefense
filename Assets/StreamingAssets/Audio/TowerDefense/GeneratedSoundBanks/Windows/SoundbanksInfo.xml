@@ -11,17 +11,72 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
+		<SoundBank Id="393239870" GUID="{06003181-071E-45C0-AEF9-DDBA6A866052}" Language="SFX" Hash="3604492880">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
+			<ShortName>SFX</ShortName>
+			<Path>SFX.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2344834053" Name="AttackIngratitude" ObjectPath="\Events\Default Work Unit\SFX\AttackIngratitude" GUID="{EEC2FB95-AB97-4092-8FD5-ED0AAB0B1A0E}" DurationType="OneShot" DurationMin="0.210414" DurationMax="0.459265">
+					<IncludedMemoryFiles>
+						<File Id="288182309" Language="SFX">
+							<ShortName>PlayerMozJump.wav</ShortName>
+							<Path>SFX\PlayerMozJump_6F6280BA.wem</Path>
+						</File>
+						<File Id="694837517" Language="SFX">
+							<ShortName>PlayerMozJump.wav</ShortName>
+							<Path>SFX\PlayerMozJump_C2A41A52.wem</Path>
+						</File>
+						<File Id="1017460896" Language="SFX">
+							<ShortName>PlayerMozJump.wav</ShortName>
+							<Path>SFX\PlayerMozJump_D41E8CBA.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="885292041" Name="AttackTristesse" ObjectPath="\Events\Default Work Unit\SFX\AttackTristesse" GUID="{EAAF852A-A377-4CD2-A3BC-0E06CA3D490C}" DurationType="OneShot" DurationMin="0.692327" DurationMax="1.099000">
+					<IncludedMemoryFiles>
+						<File Id="17188455" Language="SFX">
+							<ShortName>Gunshot_tuto.wav</ShortName>
+							<Path>SFX\Gunshot_tuto_F23CED81.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3928916067" Name="EntryIngratitude" ObjectPath="\Events\Default Work Unit\SFX\EntryIngratitude" GUID="{2D4D3BF7-2978-4F14-8A6F-3215EC55300A}" DurationType="OneShot" DurationMin="0.505699" DurationMax="0.757693">
+					<IncludedMemoryFiles>
+						<File Id="490495913" Language="SFX">
+							<ShortName>Sound Design Test Téléportation.wav</ShortName>
+							<Path>SFX\Sound Design Test Téléportation_450B4923.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2073937387" Name="EntryTristesse" ObjectPath="\Events\Default Work Unit\SFX\EntryTristesse" GUID="{9C6FD448-A6B4-41B5-A62F-D637D2F7D73B}" DurationType="OneShot" DurationMin="0.610998" DurationMax="1.373050">
+					<IncludedMemoryFiles>
+						<File Id="4326836" Language="SFX">
+							<ShortName>Elevator.wav</ShortName>
+							<Path>SFX\Elevator_F6EF3988.wem</Path>
+						</File>
+						<File Id="325186977" Language="SFX">
+							<ShortName>Elevator.wav</ShortName>
+							<Path>SFX\Elevator_DD0B5009.wem</Path>
+						</File>
+						<File Id="409676645" Language="SFX">
+							<ShortName>Elevator.wav</ShortName>
+							<Path>SFX\Elevator_D4E9E798.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
 		<SoundBank Id="1355168291" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="1426921700">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1499314831" GUID="{808B2C92-D701-4B6A-885A-C3AF15E73E1E}" Language="SFX" Hash="2919120212">
+		<SoundBank Id="1499314831" GUID="{808B2C92-D701-4B6A-885A-C3AF15E73E1E}" Language="SFX" Hash="2433572152">
 			<ObjectPath>\SoundBanks\Default Work Unit\MusicGlobal</ObjectPath>
 			<ShortName>MusicGlobal</ShortName>
 			<Path>MusicGlobal.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3991942870" Name="Music" ObjectPath="\Events\Default Work Unit\Music" GUID="{EE91EC3C-E38F-4A96-87CD-51CBE3FF8753}" DurationType="Infinite">
+				<Event Id="3991942870" Name="Music" ObjectPath="\Events\Default Work Unit\Musics\Music" GUID="{EE91EC3C-E38F-4A96-87CD-51CBE3FF8753}" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="108264615" Language="SFX">
 							<ShortName>MenuLoop_80bpm_44.wav</ShortName>

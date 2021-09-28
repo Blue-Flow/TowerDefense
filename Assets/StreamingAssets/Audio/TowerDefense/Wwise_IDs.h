@@ -13,6 +13,10 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID ATTACKINGRATITUDE = 2344834053U;
+        static const AkUniqueID ATTACKTRISTESSE = 885292041U;
+        static const AkUniqueID ENTRYINGRATITUDE = 3928916067U;
+        static const AkUniqueID ENTRYTRISTESSE = 2073937387U;
         static const AkUniqueID MUSIC = 3991942870U;
     } // namespace EVENTS
 
@@ -54,6 +58,7 @@ namespace AK
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID MUSICGLOBAL = 1499314831U;
+        static const AkUniqueID SFX = 393239870U;
     } // namespace BANKS
 
     namespace BUSSES

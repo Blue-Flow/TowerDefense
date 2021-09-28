@@ -11,6 +11,13 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="SFX" ID="{06003181-071E-45C0-AEF9-DDBA6A866052}">
+					<ObjectInclusionList>
+						<ObjectRef Name="SFX" ID="{5BF5F06D-8AAF-4E63-97AB-D891899508B5}" WorkUnitID="{00A6F063-C61F-430A-99FE-3CE8ECFB8904}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

@@ -1,5 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
-	3991942870	Music			\Default Work Unit\Music	
+	3991942870	Music			\Default Work Unit\Musics\Music	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1021618141	MusicState			\Default Work Unit\MusicState	

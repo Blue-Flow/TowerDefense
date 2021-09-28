@@ -99,6 +99,8 @@ GameObject:
   - component: {fileID: -5654898285858331912}
   - component: {fileID: 1625108938849579336}
   - component: {fileID: 6706270695476627178}
+  - component: {fileID: 5674003925074326006}
+  - component: {fileID: 47874306991685051}
   m_Layer: 7
   m_Name: Ennemi_Tristesse
   m_TagString: Attacker
@@ -240,6 +242,57 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thisCharacterGun: {fileID: 7861529389952689021}
   projectile: {fileID: -8354519513383699604, guid: aaf51cb821381184188352131bbef16c, type: 3}
+--- !u!114 &5674003925074326006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5639901465126721906}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12a514cf2b44c4c43a7825e1be2319de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 0
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
+--- !u!114 &47874306991685051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5639901465126721906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 537b8701b6b91c44bbc72f5d4da232f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 6b98e727b0324624ea9550d9203b3727, type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
 --- !u!1 &7861529389952689021
 GameObject:
   m_ObjectHideFlags: 0

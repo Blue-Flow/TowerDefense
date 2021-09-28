@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 435ed7d447ec0b4a969d51f7b569eb67
     GuidInternal: 
-    m_lastTime: -8585705951336856911
+    m_lastTime: -8585688675819826185
     List: []
   - PhysicalPath: Virtual Acoustics\Factory Acoustic Textures.wwu
     PathAndIcons:
@@ -37,7 +37,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Factory Acoustic Textures
     guid: 6b663d46a83ca54f8b4a5fef12b883f6
     GuidInternal: 
-    m_lastTime: -8585706098562181125
+    m_lastTime: -8585688675819826185
     List:
     - name: Acoustic_Banner
       guid: f2532d2fccda8e408b8898b1b52a26d6
@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: e594bdce93f1a94b985f805451bac805
     GuidInternal: 
-    m_lastTime: -8585705951201088547
+    m_lastTime: -8585688675838709980
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -345,7 +345,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: f647b8324d5e35438e5256a90b0843bb
     GuidInternal: 
-    m_lastTime: -8585694615410353965
+    m_lastTime: -8585687834514806229
     List:
     - name: MusicGlobal
       guid: 922c8b8001d76a4b885ac3af15e73e1e
@@ -361,6 +361,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: 922c8b8001d76a4b885ac3af15e73e1e
       Path: SoundBanks\Default Work Unit\MusicGlobal
+    - name: SFX
+      guid: 813100061e07c045aef9ddba6a866052
+      id: 393239870
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f647b8324d5e35438e5256a90b0843bb
+      - ElementName: SFX
+        ObjectType: 7
+        guid: 813100061e07c045aef9ddba6a866052
+      Path: SoundBanks\Default Work Unit\SFX
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -373,8 +387,88 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 63f0a6001fc60a4399fe3ce8ecfb8904
     GuidInternal: 
-    m_lastTime: -8585694737630328476
+    m_lastTime: -8585687822509031829
     List:
+    - name: AttackIngratitude
+      guid: 95fbc2ee97ab92408fd5ed0aab0b1a0e
+      id: 2344834053
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 63f0a6001fc60a4399fe3ce8ecfb8904
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 6df0f55baf8a634e97abd891899508b5
+      - ElementName: AttackIngratitude
+        ObjectType: 3
+        guid: 95fbc2ee97ab92408fd5ed0aab0b1a0e
+      Path: Events\Default Work Unit\SFX\AttackIngratitude
+      maxAttenuation: 0
+      maxDuration: 0.459265
+      minDuration: 0.210414
+    - name: AttackTristesse
+      guid: 2a85afea77a3d24ca3bc0e06ca3d490c
+      id: 885292041
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 63f0a6001fc60a4399fe3ce8ecfb8904
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 6df0f55baf8a634e97abd891899508b5
+      - ElementName: AttackTristesse
+        ObjectType: 3
+        guid: 2a85afea77a3d24ca3bc0e06ca3d490c
+      Path: Events\Default Work Unit\SFX\AttackTristesse
+      maxAttenuation: 0
+      maxDuration: 1.099
+      minDuration: 0.692327
+    - name: EntryIngratitude
+      guid: f73b4d2d7829144f8a6f3215ec55300a
+      id: 3928916067
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 63f0a6001fc60a4399fe3ce8ecfb8904
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 6df0f55baf8a634e97abd891899508b5
+      - ElementName: EntryIngratitude
+        ObjectType: 3
+        guid: f73b4d2d7829144f8a6f3215ec55300a
+      Path: Events\Default Work Unit\SFX\EntryIngratitude
+      maxAttenuation: 0
+      maxDuration: 0.757693
+      minDuration: 0.505699
+    - name: EntryTristesse
+      guid: 48d46f9cb4a6b541a62fd637d2f7d73b
+      id: 2073937387
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 63f0a6001fc60a4399fe3ce8ecfb8904
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 6df0f55baf8a634e97abd891899508b5
+      - ElementName: EntryTristesse
+        ObjectType: 3
+        guid: 48d46f9cb4a6b541a62fd637d2f7d73b
+      Path: Events\Default Work Unit\SFX\EntryTristesse
+      maxAttenuation: 0
+      maxDuration: 1.37305
+      minDuration: 0.610998
     - name: InGameLoop
       guid: 5f772d2efce96440b61d3655b719ab3c
       id: 1103461852
@@ -385,10 +479,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 63f0a6001fc60a4399fe3ce8ecfb8904
+      - ElementName: Musics
+        ObjectType: 4
+        guid: 353849be69ebda439789e3d5bb5aa283
       - ElementName: InGameLoop
         ObjectType: 3
         guid: 5f772d2efce96440b61d3655b719ab3c
-      Path: Events\Default Work Unit\InGameLoop
+      Path: Events\Default Work Unit\Musics\InGameLoop
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -402,10 +499,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 63f0a6001fc60a4399fe3ce8ecfb8904
+      - ElementName: Musics
+        ObjectType: 4
+        guid: 353849be69ebda439789e3d5bb5aa283
       - ElementName: MenuLoop
         ObjectType: 3
         guid: b66e179830b1f041b5195e37975bd83c
-      Path: Events\Default Work Unit\MenuLoop
+      Path: Events\Default Work Unit\Musics\MenuLoop
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -419,10 +519,47 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 63f0a6001fc60a4399fe3ce8ecfb8904
+      - ElementName: Musics
+        ObjectType: 4
+        guid: 353849be69ebda439789e3d5bb5aa283
       - ElementName: Music
         ObjectType: 3
         guid: 3cec91ee8fe3964a87cd51cbe3ff8753
-      Path: Events\Default Work Unit\Music
+      Path: Events\Default Work Unit\Musics\Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Musics
+      guid: 353849be69ebda439789e3d5bb5aa283
+      id: 1730564753
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 63f0a6001fc60a4399fe3ce8ecfb8904
+      - ElementName: Musics
+        ObjectType: 4
+        guid: 353849be69ebda439789e3d5bb5aa283
+      Path: Events\Default Work Unit\Musics
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX
+      guid: 6df0f55baf8a634e97abd891899508b5
+      id: 393239870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 63f0a6001fc60a4399fe3ce8ecfb8904
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 6df0f55baf8a634e97abd891899508b5
+      Path: Events\Default Work Unit\SFX
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -438,7 +575,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: cd5099b735111b4a9b228266c764a66c
     GuidInternal: 
-    m_lastTime: -8585705951336088964
+    m_lastTime: -8585688675839946669
     List: []
   - PhysicalPath: Game Parameters\Factory Motion.wwu
     PathAndIcons:
@@ -451,7 +588,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Factory Motion
     guid: 225213d7dbd1d042adc0930743567776
     GuidInternal: 
-    m_lastTime: -8585706098436940186
+    m_lastTime: -8585688675839896811
     List:
     - name: Playback_Rate
       guid: e37e38283ac11643b9c3db5c521624af
@@ -492,7 +629,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Factory SoundSeed Air Game Syncs
     guid: 5577163b42fb8b4598bf96f557afb3b9
     GuidInternal: 
-    m_lastTime: -8585706098401576224
+    m_lastTime: -8585688675839916752
     List:
     - name: SS_Air_Fear
       guid: 59062ef746431c4ea1b1dab46a05101e
@@ -646,7 +783,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: cb20eef27a39d844a90ebea6ce4a9744
     GuidInternal: 
-    m_lastTime: -8585694563165615141
+    m_lastTime: -8585688675819905974
     List:
     - name: MusicState
       guid: 79d1aa299ec4d2439f49b6404c82d4ae
@@ -758,7 +895,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 7e39ffc86a9bd34c8f6c8a0d188fa5fb
     GuidInternal: 
-    m_lastTime: -8585705951335291096
+    m_lastTime: -8585688675819896001
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -772,10 +909,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: bde4986211789f42b7904ec7f8f05ed2
     GuidInternal: 
-    m_lastTime: -8585705951336906435
+    m_lastTime: -8585688675819876058
     List: []
-  ExpandedFileSystemItemIds: 02000000030000000400000007000000080000000d0000000e000000
-  ExpandedWaapiItemIds: 0100000002000000030000000400000007000000080000000b0000000c0000000d0000000e0000000f0000001000000012000000b6010000b7010000b8010000
+  ExpandedFileSystemItemIds: 
+  ExpandedWaapiItemIds: 07000000080000000a0000000c0000000e0000000f000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 450345507}
   - component: {fileID: 450345506}
   - component: {fileID: 450345510}
+  - component: {fileID: 450345512}
   - component: {fileID: 450345509}
   - component: {fileID: 450345508}
   - component: {fileID: 450345511}
@@ -272,6 +273,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isDefaultListener: 1
   listenerId: 0
+--- !u!114 &450345512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 450345505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98923321da4fc7b4ca3da14a54bc1cc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: ae8d9d44
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e169873396bae5f41b258055a2996a67, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1 &666872485
 GameObject:
   m_ObjectHideFlags: 0
